@@ -8,6 +8,7 @@ import {
 } from "@material-tailwind/react";
 import { FaChevronDown } from "react-icons/fa";
 import { BiChevronRight } from "react-icons/bi";
+import logo from "../assets/Cloudstry2-removebg-preview.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,7 +20,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <img
             className="h-12 sm:h-14 w-auto transition-transform hover:scale-[1.02]"
-            src="https://agent511.com/app/uploads/2024/10/Light-Primary-Lockup-Blue-2.svg"
+            src={logo}
             alt="Logo"
           />
         </div>
