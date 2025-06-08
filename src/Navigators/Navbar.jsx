@@ -14,7 +14,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+    <nav className="bg-white  fixed top-0 shadow-md left-0 right-0 z-50">
       <div className="container mx-auto px-8 py-3 flex items-center justify-between">
         {/* Logo with hover effect */}
         <div className="flex items-center">
