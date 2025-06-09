@@ -1,7 +1,6 @@
 import Navbar from "../Navigators/Navbar";
 import { useState, useEffect } from "react";
-import { NestedMenu } from "./Demo";
-
+import CarouselSlider from "../CustomeComponents/Slider";
 function Home() {
   const [scrolled, setScrolled] = useState(false);
 
@@ -22,29 +21,15 @@ function Home() {
     };
   }, [scrolled]); // Only re-run if scrolled state changes
   return (
-    <div className="min-h-screen bg-gray-50">
+    //margin or padding from top {90px}
+    <div className="min-h-screen mt-[90px] bg-gray-50">
       <Navbar dynamicBG={scrolled} />
 
+      <section>
+        <CarouselSlider />
+      </section>
       <main className="pt-24 px-4 sm:px-6 lg:px-8 pb-12 max-w-7xl mx-auto">
         {/* Hero Section */}
-        <section className="text-center py-12 md:py-20">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            Welcome to Our Platform
-          </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
-            Discover innovative solutions for your business needs with our
-            cutting-edge technology.
-          </p>
-          <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-            <button className="px-6 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 font-semibold">
-              Get Started
-            </button>
-            <NestedMenu />
-            <button className="px-6 py-3 bg-white text-indigo-600 border border-indigo-600 rounded-full hover:bg-gray-50 font-semibold">
-              Learn More
-            </button>
-          </div>
-        </section>
 
         {/* Features Section */}
         <section className="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
