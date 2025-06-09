@@ -19,7 +19,7 @@ const Navbar = () => {
         {/* Logo with hover effect */}
         <div className="flex items-center">
           <img
-            className="h-12 sm:h-14 w-auto transition-transform hover:scale-[1.02]"
+            className="h-[40px] sm:h-20 w-auto transition-transform hover:scale-[1.02]"
             src={logo}
             alt="Logo"
           />
