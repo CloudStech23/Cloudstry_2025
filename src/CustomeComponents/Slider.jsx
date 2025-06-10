@@ -41,22 +41,23 @@ const slides = [
 const CarouselSlider = () => {
   return (
     <div
-      className="relative w-full h-screen bg-[#2b3d8a]"
-      style={{ height: "38rem" }}
+      className="relative w-full h-screen"
+      style={{ height: "38rem", background: "#1d1a87" }}
     >
+      <div className="absolute inset-0 z-0 bg-black bg-opacity-40"></div>
       <Swiper
         modules={[Autoplay, EffectFade, Pagination, Navigation]}
         spaceBetween={0}
         slidesPerView={1}
-        loop={true}
+        // loop={true}
         effect="cards"
         speed={1000} // smoother transition speed
-        autoplay={{
-          delay: 4000,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true, // Pause autoplay on mouse enter
-          pauseOnMouseLeave: true,
-        }}
+        // autoplay={{
+        //   delay: 4000,
+        //   disableOnInteraction: false,
+        //   pauseOnMouseEnter: true, // Pause autoplay on mouse enter
+        //   pauseOnMouseLeave: true,
+        // }}
         pagination={{ clickable: true }}
         navigation={true}
         className="w-full"
@@ -88,7 +89,7 @@ const CarouselSlider = () => {
                   {item.title}
                 </h2>
                 <p
-                  className="text-lg md:text-2xl max-w-2xl drop-shadow-md" //we can do 3xl to 2xl and vise versa
+                  className="text-lg md:text-2xl font-medium max-w-2xl drop-shadow-md" //we can do 3xl to 2xl and vise versa
                   // style={{ fontFamily: "Inter Tight, sans-serif" }}
                   style={{ fontFamily: "Montserrat, sans-serif" }}
                   // style={{ fontFamily: "Poppins, sans-serif" }}

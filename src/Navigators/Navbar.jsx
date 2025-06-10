@@ -29,7 +29,6 @@ const Navbar = () => {
             <img
               className="w-auto transition-transform hover:scale-[1.02]"
               src={logo}
-              alt="Logo"
               style={{ height: "70px", objectFit: "cover" }}
             />
           </Link>
@@ -194,7 +193,7 @@ const Navbar = () => {
           {/* Articles, Pricing, Contact */}
 
           <Menu>
-            <Link to="/article">
+            <Link to="">
               <Button
                 size="sm"
                 variant="text"

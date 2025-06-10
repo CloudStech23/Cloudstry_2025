@@ -173,6 +173,17 @@ function Home() {
       <section>
         <Counter />
       </section>
+
+      <main className="pt-4 px-4 sm:px-6 lg:px-8 pb-12 max-w-7xl mx-auto">
+        <div className="text-center mt-[2rem]">
+          <h2
+            className="sm:text-4xl text-3xl font-bold text-gray-900 sm:leading-none"
+            style={{ fontFamily: "Poppines, sans-serif", color: HeadTextColor }}
+          >
+            OUR CLIENTS
+          </h2>
+        </div>
+      </main>
     </div>
   );
 }
