@@ -58,7 +58,7 @@ function Home() {
           </h5>
 
           <div className="flex flex-row flex-wrap justify-center mt-14 gap-8">
-            <div className="shadow-md rounded-lg px-5 py-4 bg-white w-[300px]">
+            <div className="shadow-md rounded-lg px-5 py-4 bg-white w-[300px] ">
               <div className="rounded-full flex items-center justify-center mb-3 w-[55px] h-[55px] mx-auto text-xs font-bold text-white bg-[#2b3d8a]">
                 <TbCertificate size={40} />
               </div>

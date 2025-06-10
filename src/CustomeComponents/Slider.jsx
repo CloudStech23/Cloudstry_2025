@@ -18,23 +18,27 @@ const slides = [
   },
   {
     src: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1920&q=80",
-    title: "Embrace Technology",
-    description: "The future is built with modern tech innovations.",
+    title: "SOFTWARE & STAFFING SERVICES",
+    description:
+      "Get custom software that powers your operations. Hire skilled professionals through our reliable staffing solutions",
   },
   {
     src: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80",
-    title: "Mountains of Wisdom",
-    description: "Climb towards your dreams, one peak at a time.",
+    title: "DIGITAL CERTIFICATION",
+    description:
+      "Go paperless with secure, verifiable digital credentials. Trusted by universities, institutions, and organizations globally",
   },
   {
     src: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1920&q=80",
-    title: "Sky High Thoughts",
-    description: "Let your imagination fly among the clouds.",
+    title: "CATTLE AADHAAR",
+    description:
+      "Digitally tag and track livestock with ease and accuracy. Empowering government and rural bodies with smart identification",
   },
   {
     src: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80",
-    title: "Urban Dreams",
-    description: "Where architecture and dreams meet innovation.",
+    title: "3PL SOLUTION",
+    description:
+      "Plan smarter with demand-driven logistics solutions. Optimize inventory, reduce costs, and boost supply chain efficiency",
   },
 ];
 
@@ -49,15 +53,15 @@ const CarouselSlider = () => {
         modules={[Autoplay, EffectFade, Pagination, Navigation]}
         spaceBetween={0}
         slidesPerView={1}
-        // loop={true}
+        loop={true}
         effect="cards"
         speed={1000} // smoother transition speed
-        // autoplay={{
-        //   delay: 4000,
-        //   disableOnInteraction: false,
-        //   pauseOnMouseEnter: true, // Pause autoplay on mouse enter
-        //   pauseOnMouseLeave: true,
-        // }}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true, // Pause autoplay on mouse enter
+          pauseOnMouseLeave: true,
+        }}
         pagination={{ clickable: true }}
         navigation={true}
         className="w-full"
