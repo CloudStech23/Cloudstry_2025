@@ -7,12 +7,14 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./slider.css";
+import { CarouselTextColor } from "./Theme";
 
 const slides = [
   {
-    src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80",
-    title: "Explore Nature",
-    description: "Discover the beauty of nature in its rawest form.",
+    src: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80",
+    title: "IT STRATEGY CONSULTANCY",
+    description:
+      "Unlock growth with expert IT roadmaps tailored to your business. We align technology with your goals for smarter outcomes",
   },
   {
     src: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1920&q=80",
@@ -20,17 +22,17 @@ const slides = [
     description: "The future is built with modern tech innovations.",
   },
   {
-    src: "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?auto=format&fit=crop&w=1920&q=80",
+    src: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80",
     title: "Mountains of Wisdom",
     description: "Climb towards your dreams, one peak at a time.",
   },
   {
-    src: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80",
+    src: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1920&q=80",
     title: "Sky High Thoughts",
     description: "Let your imagination fly among the clouds.",
   },
   {
-    src: "https://images.unsplash.com/photo-1604079628048-94303b8d19d9?auto=format&fit=crop&w=1920&q=80",
+    src: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80",
     title: "Urban Dreams",
     description: "Where architecture and dreams meet innovation.",
   },
@@ -38,7 +40,10 @@ const slides = [
 
 const CarouselSlider = () => {
   return (
-    <div className="relative w-full h-screen bg-black">
+    <div
+      className="relative w-full h-screen bg-[#2b3d8a]"
+      style={{ height: "38rem" }}
+    >
       <Swiper
         modules={[Autoplay, EffectFade, Pagination, Navigation]}
         spaceBetween={0}
@@ -49,10 +54,13 @@ const CarouselSlider = () => {
         autoplay={{
           delay: 4000,
           disableOnInteraction: false,
+          pauseOnMouseEnter: true, // Pause autoplay on mouse enter
+          pauseOnMouseLeave: true,
         }}
         pagination={{ clickable: true }}
         navigation={true}
-        className="w-full h-full"
+        className="w-full"
+        style={{ height: "38rem" }}
       >
         {slides.map((item, i) => (
           <SwiperSlide key={i}>
@@ -66,11 +74,25 @@ const CarouselSlider = () => {
               />
 
               {/* Overlay Text */}
-              <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-4 text-white text-center">
-                <h2 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">
+              <div
+                className="absolute inset-0 z-10 flex flex-col items-center justify-center px-4  text-center"
+                style={{
+                  color: CarouselTextColor,
+                }}
+              >
+                <h2
+                  className="text-3xl md:text-6xl font-bold mb-4 drop-shadow-lg"
+                  style={{ fontFamily: "Poppins, sans-serif" }}
+                  // style={{ fontFamily: "Montserrat, sans-serif" }}
+                >
                   {item.title}
                 </h2>
-                <p className="text-lg md:text-2xl max-w-2xl drop-shadow-md">
+                <p
+                  className="text-lg md:text-2xl max-w-2xl drop-shadow-md" //we can do 3xl to 2xl and vise versa
+                  // style={{ fontFamily: "Inter Tight, sans-serif" }}
+                  style={{ fontFamily: "Montserrat, sans-serif" }}
+                  // style={{ fontFamily: "Poppins, sans-serif" }}
+                >
                   {item.description}
                 </p>
               </div>
