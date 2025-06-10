@@ -42,7 +42,7 @@ const CarouselSlider = () => {
   return (
     <div
       className="relative w-full h-screen"
-      style={{ height: "38rem", background: "#1d1a87" }}
+      style={{ height: "39.7rem", background: "#1d1a87" }}
     >
       <div className="absolute inset-0 z-0 bg-black bg-opacity-40"></div>
       <Swiper
@@ -61,7 +61,7 @@ const CarouselSlider = () => {
         pagination={{ clickable: true }}
         navigation={true}
         className="w-full"
-        style={{ height: "38rem" }}
+        style={{ height: "39.7rem" }}
       >
         {slides.map((item, i) => (
           <SwiperSlide key={i}>
