@@ -309,7 +309,7 @@ function Home() {
               style={{
                 fontFamily: HeadFontFamily1,
                 lineHeight: "1.2em",
-                fontSize: "4rem",
+                fontSize: "60px",
               }}
             >
               Ready to get started? Contact us for IT Support, Staffing, Digital
@@ -329,7 +329,7 @@ function Home() {
           <div className="w-full max-w-md mx-auto">
             <form className="bg-white shadow-md rounded-xl px-6 pt-4 pb-4">
               {/* Full Name Field 1 */}
-              <div className="mb-4">
+              <div className="mb-2">
                 <label className="blocktfext-md font-semibold mb-1 text-color">
                   Full Name
                 </label>
@@ -341,7 +341,7 @@ function Home() {
               </div>
 
               {/* Full Name Field 2 */}
-              <div className="mb-4">
+              <div className="mb-2">
                 <label className="block text-color text-md font-semibold mb-1">
                   Email
                 </label>
@@ -353,7 +353,7 @@ function Home() {
               </div>
 
               {/* Full Name Field 3 */}
-              <div className="mb-4">
+              <div className="mb-2">
                 <label className="block text-color text-md font-semibold mb-1">
                   Phone
                 </label>
@@ -365,7 +365,7 @@ function Home() {
               </div>
 
               {/* Full Name Field 4 */}
-              <div className="mb-4 relative">
+              <div className="mb-2 relative">
                 <label
                   className="block text-color text-md font-semibold mb-1"
                   htmlFor="select-field"
@@ -385,7 +385,7 @@ function Home() {
               </div>
 
               {/* Textarea Field */}
-              <div className="mb-6">
+              <div className="mb-3">
                 <label className="block text-gray-500 text-md font-semibold mb-1">
                   Write Something
                 </label>

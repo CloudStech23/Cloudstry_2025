@@ -45,7 +45,7 @@ const Counter = () => {
   }, []);
 
   return (
-    <div className="w-full py-16  mb-[2rem] h-[50vh] flex justify-center items-center relative overflow-hidden bg-gradient-to-r from-[#085d9e] to-[#00c1de]">
+    <div className="w-full py-16  mb-[2rem]  flex justify-center items-center relative overflow-hidden bg-gradient-to-r from-[#085d9e] to-[#00c1de]">
       {/* <div className="absolute inset-0">
         <img
           src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80"
@@ -59,24 +59,30 @@ const Counter = () => {
             {/* clients Counter */}
             <div className="flex flex-col text-white items-center p-6 rounded-lg   ">
               {/* <FaBusinessTime className="text-4xl mb-4" /> */}
-              <span className="text-5xl font-bold mb-2">
+              <span className="text-4xl font-bold mb-2">
                 {Math.floor(counters.clients)}+
               </span>
-              <span className="text-3xl font-bold">DELIGHTED CLIENTS</span>
+              <span className="text-2xl font-bold text-center">
+                DELIGHTED <br /> CLIENTS
+              </span>
             </div>
             <div className="flex flex-col text-white items-center p-6 rounded-lg   ">
               {/* <FaBusinessTime className="text-4xl mb-4" /> */}
-              <span className="text-5xl font-bold mb-2">
+              <span className="text-4xl font-bold mb-2">
                 {Math.floor(counters.experiences)}+
               </span>
-              <span className="text-3xl font-bold">YEARS OF EXPERIENCE</span>
+              <span className="text-2xl font-bold text-center">
+                YEARS OF <br /> EXPERIENCE
+              </span>
             </div>
             <div className="flex flex-col text-white items-center p-6 rounded-lg   ">
               {/* <FaBusinessTime className="text-4xl mb-4" /> */}
-              <span className="text-5xl font-bold mb-2">
+              <span className="text-4xl font-bold mb-2">
                 {Math.floor(counters.products)}+
               </span>
-              <span className="text-3xl font-bold">PRODUCT AND SERVICES</span>
+              <span className="text-2xl font-bold text-center">
+                PRODUCT AND <br /> SERVICES
+              </span>
             </div>
           </div>
         </div>

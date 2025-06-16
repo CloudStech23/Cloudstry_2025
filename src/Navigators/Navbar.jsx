@@ -31,7 +31,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <Link to="/">
             <img
-              className="md:w-auto h-14 sm:h-[4.87rem] w-auto transition-transform hover:scale-[1.02]"
+              className="md:w-auto h-14 sm:h-[3.8rem] w-auto transition-transform hover:scale-[1.02]"
               src={logo}
               style={{ objectFit: "cover" }}
             />
@@ -49,17 +49,17 @@ const Navbar = () => {
                   color: NavbarItemColor,
                   fontFamily: HeadFontFamily1,
                 }}
-                className="text-[22px] font-medium hover:text-black focus:outline-none focus:ring-0 font flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors"
+                className="text-[16px] font-medium hover:text-black focus:outline-none focus:ring-0 font flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors"
               >
                 What we do{" "}
-                <FaChevronDown className="text-xs opacity-70 mt-1 h-5 transition-transform" />
+                <FaChevronDown className="text-[13px] mx-1 opacity-70  h-5 transition-transform" />
               </Button>
             </MenuHandler>
             <MenuList className="px-2 rounded-xl shadow-lg z-50 w-40 mt-2 border border-gray-100 bg-white">
               <Menu allowHover placement="right-start" offset={10}>
                 <MenuHandler>
                   <MenuItem
-                    className="rounded-lg text-lg focus:outline-none focus:ring-0 hover:bg-gray-50 gap-1 px-3 py-2 flex items-center justify-between w-full"
+                    className="rounded-lg text-[16px] focus:outline-none focus:ring-0 hover:bg-gray-50 gap-1 px-3 py-2 flex items-center justify-between w-full"
                     style={{ color: NavbarItemColor }}
                   >
                     <span
@@ -74,19 +74,19 @@ const Navbar = () => {
                 </MenuHandler>
                 <MenuList className="p-2 rounded-xl shadow-lg z-50 w-48 border border-gray-100 bg-white ml-1">
                   <MenuItem
-                    className="rounded-lg text-lg focus:outline-none focus:ring-0 hover:bg-gray-50 px-3 py-2"
+                    className="rounded-lg text-[16px] focus:outline-none focus:ring-0 hover:bg-gray-50 px-3 py-2"
                     style={{ color: NavbarSubItemColor }}
                   >
                     Digital Certificate
                   </MenuItem>
                   <MenuItem
-                    className="rounded-lg text-lg focus:outline-none focus:ring-0 hover:bg-gray-50 px-3 py-2"
+                    className="rounded-lg text-[16px] focus:outline-none focus:ring-0 hover:bg-gray-50 px-3 py-2"
                     style={{ color: NavbarSubItemColor }}
                   >
                     Cattle Aadhar
                   </MenuItem>
                   <MenuItem
-                    className="rounded-lg text-lg focus:outline-none focus:ring-0 hover:bg-gray-50 px-3 py-2"
+                    className="rounded-lg text-[16px] focus:outline-none focus:ring-0 hover:bg-gray-50 px-3 py-2"
                     style={{ color: NavbarSubItemColor }}
                   >
                     3PL Solutions
@@ -96,22 +96,22 @@ const Navbar = () => {
               <Menu allowHover placement="right-start" offset={10}>
                 <MenuHandler>
                   <MenuItem
-                    className="rounded-lg hover:bg-gray-50 text-lg gap-1 focus:outline-none focus:ring-0 px-3 py-2 flex items-center justify-between w-full"
+                    className="rounded-lg hover:bg-gray-50 text-[16px] gap-1 focus:outline-none focus:ring-0 px-3 py-2 flex items-center justify-between w-full"
                     style={{ color: NavbarItemColor }}
                   >
                     <span style={{ color: NavbarSubItemColor }}>Services</span>
-                    <BiChevronRight className="text-lg opacity-70 mr-2 transition-transform" />
+                    <BiChevronRight className=" text-[16px] opacity-70 mr-2 transition-transform" />
                   </MenuItem>
                 </MenuHandler>
                 <MenuList className="p-2 rounded-xl shadow-lg z-50 w-[250px] border border-gray-100 bg-white ml-1">
                   <MenuItem
-                    className="rounded-lg text-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                    className="rounded-lg text-[16px] hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
                     style={{ color: NavbarSubItemColor }}
                   >
                     IT Strategy Consultancy
                   </MenuItem>
                   <MenuItem
-                    className="rounded-lg text-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                    className="rounded-lg text-[16px] hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
                     style={{ color: NavbarSubItemColor }}
                   >
                     Software Services/Staffing Solution
@@ -131,27 +131,27 @@ const Navbar = () => {
                   color: NavbarItemColor,
                   fontFamily: HeadFontFamily1,
                 }}
-                className="text-[22px] font-medium flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-0"
+                className="text-[16px] font-medium flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-0"
               >
                 Industries
-                <FaChevronDown className="text-xs opacity-70 transition-transform" />
+                <FaChevronDown className="text-[13px] mx-1 opacity-70  h-5 transition-transform" />{" "}
               </Button>
             </MenuHandler>
             <MenuList className="p-2 rounded-xl shadow-lg z-50 w-40 mt-2 border border-gray-100 bg-white">
               <MenuItem
-                className="rounded-lg hover:bg-gray-50 text-lg px-3 py-2 focus:outline-none focus:ring-0"
+                className="rounded-lg hover:bg-gray-50 text-[16px] px-3 py-2 focus:outline-none focus:ring-0"
                 style={{ color: NavbarSubItemColor }}
               >
                 Education
               </MenuItem>
               <MenuItem
-                className="rounded-lg text-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                className="rounded-lg text-[16px] hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
                 style={{ color: NavbarSubItemColor }}
               >
                 Government
               </MenuItem>
               <MenuItem
-                className="rounded-lg text-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                className="rounded-lg text-[16px] hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
                 style={{ color: NavbarSubItemColor }}
               >
                 Logistic
@@ -166,27 +166,27 @@ const Navbar = () => {
                 size="sm"
                 variant="text"
                 style={{ color: NavbarItemColor, fontFamily: HeadFontFamily1 }}
-                className="text-[22px] font-medium  flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-0"
+                className="text-[16px] font-medium  flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-0"
               >
                 Resource
-                <FaChevronDown className="text-xs opacity-70 transition-transform" />
+                <FaChevronDown className="text-[13px] mx-1 opacity-70  h-5 transition-transform" />
               </Button>
             </MenuHandler>
             <MenuList className="p-2 rounded-xl shadow-lg z-50 w-40 mt-2 border border-gray-100 bg-white">
               <MenuItem
-                className="rounded-lg text-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                className="rounded-lg text-[16px] hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
                 style={{ color: NavbarSubItemColor }}
               >
                 Podcasts
               </MenuItem>
               <MenuItem
-                className="rounded-lg text-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                className="rounded-lg text-[16px] hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
                 style={{ color: NavbarSubItemColor }}
               >
                 Demo Videos
               </MenuItem>
               <MenuItem
-                className="rounded-lg text-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                className="rounded-lg text-[16px] hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
                 style={{ color: NavbarSubItemColor }}
               >
                 Testimonials
@@ -202,7 +202,7 @@ const Navbar = () => {
                 size="sm"
                 variant="text"
                 style={{ color: NavbarItemColor, fontFamily: HeadFontFamily1 }}
-                className="text-[22px] font-medium px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-0"
+                className="text-[16px] font-medium px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-0"
               >
                 Articles
               </Button>
@@ -233,7 +233,7 @@ const Navbar = () => {
           <div className="flex items-center gap-2 ml-2">
             <Button
               size="md"
-              className="rounded-full text-lg text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-gradient-to-r hover:from-white  hover:to-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
+              className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-gradient-to-r hover:from-white  hover:to-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
               style={{
                 borderRadius: "30px",
                 fontFamily: HeadFontFamily1,

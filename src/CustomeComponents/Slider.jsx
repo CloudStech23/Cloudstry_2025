@@ -97,7 +97,7 @@ const CarouselSlider = () => {
                 {/* Left Text Section */}
                 <div className="w-full md:w-1/2 space-y-4">
                   <h2
-                    className="text-3xl md:text-5xl font-bold"
+                    className="text-2xl md:text-4xl font-bold"
                     style={{
                       color: HeadTextColor,
                       fontFamily: HeadFontFamily1,
@@ -105,12 +105,14 @@ const CarouselSlider = () => {
                   >
                     {item.title}
                   </h2>
-                  <p className="text-color text-2xl">{item.description}</p>
+                  <p className="text-color text-md md:text-[18px]">
+                    {item.description}
+                  </p>
                   {/* <p className="text-gray-700 text-1xl">{item.description}</p> */}
-                  <div className="flex gap-4 pt-[3.5rem]">
+                  <div className="flex gap-4 pt-[2.8rem]">
                     <Button
                       size="md"
-                      className="rounded-full text-lg text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold    transition-all focus:outline-none focus:ring-0"
+                      className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold    transition-all focus:outline-none focus:ring-0"
                       style={{
                         borderRadius: "30px",
                         fontFamily: HeadFontFamily1,
@@ -121,7 +123,7 @@ const CarouselSlider = () => {
                     {item.buttonText1 && (
                       <Button
                         size="md"
-                        className="rounded-full text-lg text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-gradient-to-r hover:from-white  hover:to-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
+                        className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-gradient-to-r hover:from-white  hover:to-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
                         style={{
                           borderRadius: "30px",
                           fontFamily: HeadFontFamily1,
