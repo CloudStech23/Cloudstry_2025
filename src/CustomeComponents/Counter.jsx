@@ -45,14 +45,14 @@ const Counter = () => {
   }, []);
 
   return (
-    <div className="w-full py-16 mt-[2rem] mb-[2rem] h-[50vh] flex justify-center items-center relative overflow-hidden bg-[#2b3d8a] ">
-      <div className="absolute inset-0">
+    <div className="w-full py-16  mb-[2rem] h-[50vh] flex justify-center items-center relative overflow-hidden bg-gradient-to-r from-[#085d9e] to-[#00c1de]">
+      {/* <div className="absolute inset-0">
         <img
           src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80"
           alt="Background"
           className="w-full h-full object-cover opacity-40"
         />
-      </div>
+      </div> */}
       <div className="relative z-10 container mx-auto px-4">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3">
