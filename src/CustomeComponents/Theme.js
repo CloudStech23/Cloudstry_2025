@@ -1,8 +1,9 @@
 //Theme Colors
 export const MainTheme = "#2B3D8A";
 // export const NavbarItemColor = "#2B3D8A";
+// export const NavbarItemColor = "#003e6d";
 export const NavbarItemColor = "#085d9e";
-export const NavbarSubItemColor = "#1273be";
+export const NavbarSubItemColor = "#003e6d";
 // export const NavbarSubItemColor = "#2B3D8A";
 export const ButtonColor = "#04374d";
 export const CarouselTextColor = "#ffff";

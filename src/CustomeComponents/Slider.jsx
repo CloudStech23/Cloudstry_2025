@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./slider.css";
 import { Button } from "@material-tailwind/react";
-import { HeadFontFamily1, HeadTextColor } from "./Theme";
+import { HeadFontFamily1, HeadTextColor, NavbarItemColor } from "./Theme";
 import buttonText from "@material-tailwind/react/theme/components/button/buttonText";
 import { FaPause, FaPlay } from "react-icons/fa";
 import { BiPlay } from "react-icons/bi";
@@ -14,6 +14,7 @@ import { useState, useRef } from "react";
 import { BsArrowLeft, BsPause, BsPlay } from "react-icons/bs";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 // import img1 from "../assets/WebsiteImages/handsome-businessman-with-laptop-isolated-white-background.jpg";
+import bgimg from "../assets/WebsiteImages/bgimg-3.jpg";
 
 const slides = [
   {
@@ -69,7 +70,7 @@ const CarouselSlider = () => {
   };
 
   return (
-    <div className="relative w-full h-[38rem] bg-white">
+    <div className="relative w-full h-[36rem]">
       <Swiper
         modules={[Autoplay, Pagination, Navigation]}
         spaceBetween={0}
@@ -88,24 +89,30 @@ const CarouselSlider = () => {
         // pagination={{ clickable: true }}
         // navigation={true}
         className="w-full h-full"
-        style={{ height: "38rem" }}
+        style={{ height: "36rem" }}
       >
         {slides.map((item, i) => (
           <>
             <SwiperSlide key={i}>
+              <img
+                src={bgimg}
+                alt="background"
+                className="absolute inset-0 -z-10 w-full h-full object-cover"
+                style={{ filter: "blur(1px)", transform: "scaleX(-1)" }}
+              />
               <div className="h-screen flex flex-col md:flex-row items-start md:items-start justify-start md:justify-between px-6 md:px-16 pt-10 md:pt-20">
                 {/* Left Text Section */}
                 <div className="w-full md:w-1/2 space-y-4">
                   <h2
-                    className="text-2xl md:text-4xl font-bold"
+                    className="text-2xl md:text-[35px] font-bold"
                     style={{
-                      color: HeadTextColor,
+                      color: NavbarItemColor,
                       fontFamily: HeadFontFamily1,
                     }}
                   >
                     {item.title}
                   </h2>
-                  <p className="text-color text-md md:text-[18px]">
+                  <p className="text-color text-md md:text-[17.5px]">
                     {item.description}
                   </p>
                   {/* <p className="text-gray-700 text-1xl">{item.description}</p> */}
@@ -138,7 +145,7 @@ const CarouselSlider = () => {
 
                 {/* Right Image Section */}
                 <div className="w-full md:w-1/2 flex justify-center  md:mt-0">
-                  <div className="  rounded-md p-2">
+                  <div className="  rounded-md ">
                     <img
                       src={item.src}
                       alt={`Slide ${i + 1}`}
@@ -154,7 +161,7 @@ const CarouselSlider = () => {
           </>
         ))}
         <div
-          className="absolute bottom-6 left-6 z-20 flex gap-4"
+          className="absolute bottom-10  left-6 z-20 flex gap-4"
           style={{ zIndex: 1 }}
         >
           <div className="bg-white p-2 rounded-md shadow hover:bg-gray-200 transition-all carousel-backward">
@@ -174,19 +181,6 @@ const CarouselSlider = () => {
             <IoIosArrowForward size={25} />
           </div>
         </div>
-        {/* <div class="custom-shape-divider-bottom-1749638402">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-              class="shape-fill"
-            ></path>
-          </svg>
-        </div> */}
       </Swiper>
     </div>
   );

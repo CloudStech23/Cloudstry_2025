@@ -13,6 +13,7 @@ import { GiCow } from "react-icons/gi";
 import { FaAngleDown, FaHandshake } from "react-icons/fa";
 import { LuLaptopMinimalCheck } from "react-icons/lu";
 import Counter from "../CustomeComponents/Counter";
+import "./Home.css";
 
 function Home() {
   const [scrolled, setScrolled] = useState(false);
@@ -35,13 +36,13 @@ function Home() {
   }, [scrolled]); // Only re-run if scrolled state changes
   return (
     //margin or padding from top {90px}
-    <div className="min-h-screen mt-[95px]">
+    <div className="min-h-screen mt-[80px]">
       <section>
         <CarouselSlider />
       </section>
 
       {/* Introduction section */}
-      <div className="bg-gradient-to-b from-white to-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="bg-white py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2
@@ -64,8 +65,8 @@ function Home() {
           <div className=" max-w-6xl mx-auto">
             <div className=" p-4 rounded-xl">
               <p
-                className="text-gray-600 text-lg mb-3 text-center"
-                style={{ fontFamily: SubTextFontFamily }}
+                className="text-color text-[17.5px] mb-3 text-center"
+                // style={{ fontFamily: SubTextFontFamily }}
               >
                 At Cloudstry Technologies, we empower businesses with a diverse
                 range of innovative IT products and services designed to meet
@@ -75,8 +76,8 @@ function Home() {
                 digital transformation across sectors.
               </p>
               <p
-                className="text-gray-600 mb-3 text-lg text-center"
-                style={{ fontFamily: SubTextFontFamily }}
+                className="text-color mb-3 text-[17.5px] text-center"
+                // style={{ fontFamily: SubTextFontFamily }}
               >
                 Our expertise extends to 3PL (Third-Party Logistics) Solutions,
                 offering intelligent demand planning and supply chain
@@ -87,8 +88,8 @@ function Home() {
                 trusted technology partner.
               </p>
               <p
-                className="text-gray-600 mb-3 text-lg text-center"
-                style={{ fontFamily: SubTextFontFamily }}
+                className="text-color mb-3 text-[17.5px] text-center"
+                // style={{ fontFamily: SubTextFontFamily }}
               >
                 At Cloudstry Technologies, we believe in building lasting
                 partnerships by delivering reliable, future-ready solutions. Our
@@ -109,11 +110,11 @@ function Home() {
       </div>
 
       {/* Proudcts and services section  */}
-      <div className="bg-gray-100">
-        <main className="pt-16 px-4 sm:px-6 lg:px-8 pb-12 max-w-7xl mx-auto">
+      <div className="bg-light">
+        <main className="pt-6 px-4 sm:px-6 lg:px-8 pb-12 max-w-7xl mx-auto">
           <div className="text-center mt-[2rem]">
             <h2
-              className="sm:text-4xl text-3xl font-bold  sm:leading-none"
+              className="sm:text-4xl text-3xl font-bold  sm:leading-none mb-6"
               style={{
                 fontFamily: "Poppines, sans-serif",
                 color: HeadTextColor,
@@ -121,8 +122,9 @@ function Home() {
             >
               PRODUCTS WE OFFER
             </h2>
+            <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto mb-10 rounded-full"></div>
 
-            <h5
+            {/* <h5
               className="sm:text-[18px] mt-2  text-sm sm:w-[60%] lg:w-[72%] font-medium text-color text-center mx-auto"
               style={{ fontFamily: SubTextFontFamily }}
               // as of now we consider the font as a medium
@@ -130,10 +132,10 @@ function Home() {
               At Cloudstry Tech, we deliver smart, scalable solutions tailored
               to your unique business needs. We combine innovation with
               expertise to solve real-world challenges across industries.
-            </h5>
+            </h5> */}
 
             <div className="flex flex-row flex-wrap justify-center mt-14 gap-8">
-              <div className="shadow-md rounded-lg px-5 py-4 bg-white w-[300px] ">
+              <div className="rounded-lg border-4 border-gray-100 px-5 py-4 hover-card w-[300px] ">
                 <div
                   className="rounded-full flex items-center justify-center mb-3 w-[55px] h-[55px] mx-auto text-xs font-bold text-white  "
                   style={{ background: gradientBG }}
@@ -141,21 +143,21 @@ function Home() {
                   <TbCertificate size={40} />
                 </div>
                 <div
-                  className="text-2xl text-center font-bold"
+                  className="text-[20px] text-center font-bold"
                   style={{
                     fontFamily: SubTextFontFamily,
-                    color: HeadTextColor,
+                    // color: HeadTextColor,
                   }}
                 >
-                  DIGITAL CERTIFICATION
+                  DIGITAL <br /> CERTIFICATION
                 </div>
-                <p className="text-center mt-2 text-color text-[16px] font-medium">
+                <p className="text-center mt-2   text-[16px] hover-card-text font-medium text-justify">
                   Say goodbye to paper certificates! Join millions of achievers
                   who rely on our secure, verifiable digital certificate
                   solutions to recognize and showcase success—anytime, anywhere.
                 </p>
               </div>
-              <div className="shadow-md rounded-lg px-5 py-4 bg-white w-[300px]">
+              <div className="border-4 border-gray-100 rounded-lg px-5 py-4 hover-card w-[300px]">
                 <div
                   className="rounded-full   flex items-center justify-center mb-3 w-[55px] h-[55px] mx-auto text-xs font-bold text-white"
                   style={{ background: gradientBG }}
@@ -163,22 +165,22 @@ function Home() {
                   <GiCow size={40} />
                 </div>
                 <div
-                  className="text-2xl text-center font-bold"
+                  className="text-[20px] text-center font-bold"
                   style={{
                     fontFamily: SubTextFontFamily,
-                    color: HeadTextColor,
+                    // color: HeadTextColor,
                   }}
                 >
                   CATTLE <br /> AADHAR
                 </div>
                 {/* <div className="text-2xl text-center font-bold">AADHAR</div> */}
-                <p className="text-center mt-2 text-color text-[16px] font-medium">
+                <p className="text-center mt-2 hover-card-text text-[16px] font-medium">
                   Empowering cattle owners with unique digital IDs for better
                   traceability and health tracking. Our solution ensures smarter
                   management and data-driven decision-making.
                 </p>
               </div>
-              <div className="shadow-md rounded-lg px-5 py-4 bg-white w-[300px]">
+              <div className="border-4 border-gray-100 rounded-lg px-5 py-4 hover-card w-[300px]">
                 <div
                   className="rounded-full flex items-center justify-center mb-3 w-[55px] h-[55px] mx-auto text-xs font-bold text-white  "
                   style={{ background: gradientBG }}
@@ -186,17 +188,17 @@ function Home() {
                   <TbTruckDelivery size={40} />
                 </div>
                 <div
-                  className="text-2xl text-center font-bold"
+                  className="text-[20px] text-center font-bold"
                   style={{
                     fontFamily: SubTextFontFamily,
-                    color: HeadTextColor,
+                    // color: HeadTextColor,
                   }}
                 >
                   3PL <br />
                   SOLUTION
                 </div>
                 {/* <div className="text-2xl text-center font-bold"> SOLUTION</div> */}
-                <p className="text-center mt-2 text-color text-[16px] font-medium">
+                <p className="text-center mt-2 hover-card-text text-[16px] font-medium">
                   Enhance your supply chain with intelligent demand forecasting
                   and logistics planning. Our 3PL solutions optimize inventory,
                   reduce costs, and improve delivery efficiency.
@@ -206,9 +208,9 @@ function Home() {
           </div>
 
           {/* Services section  */}
-          <div className="text-center mt-[8rem]">
+          <div className="text-center mt-[4.5rem]">
             <h2
-              className="sm:text-4xl text-3xl font-bold   sm:leading-none"
+              className="sm:text-4xl text-3xl font-bold   sm:leading-none mb-6"
               style={{
                 fontFamily: "Poppines, sans-serif",
                 color: HeadTextColor,
@@ -216,6 +218,7 @@ function Home() {
             >
               SERVICES WE OFFER
             </h2>
+            <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto mb-10 rounded-full"></div>
 
             {/* <h5
             className="sm:text-[18px] mt-2  text-sm sm:w-[60%] lg:w-[72%] font-medium text-color-900 text-center mx-auto"
@@ -228,47 +231,53 @@ function Home() {
           </h5> */}
 
             <div className="flex flex-row flex-wrap justify-center mt-12 gap-8">
-              <div className="shadow-md rounded-lg px-5 py-4 bg-white w-[300px]">
-                <div className="rounded-full flex items-center justify-center mb-3 w-[55px] h-[55px] mx-auto text-xs font-bold text-white bg-[#085d9e]">
+              <div className="border-4 border-gray-100 rounded-lg px-5 py-4 hover-card w-[300px]">
+                <div
+                  className="rounded-full flex items-center justify-center mb-3 w-[55px] h-[55px] mx-auto text-xs font-bold text-white  "
+                  style={{ background: gradientBG }}
+                >
                   <FaHandshake size={40} />
                 </div>
                 <div
-                  className="text-2xl text-center font-bold"
+                  className="text-[20px] text-center font-bold"
                   style={{
                     fontFamily: SubTextFontFamily,
-                    color: HeadTextColor,
+                    // color: HeadTextColor,
                   }}
                 >
                   IT STRATEGY CONSULTANCY
                 </div>
-                <p className="text-center mt-2 text-color text-[16px] font-medium">
+                <p className="text-center mt-2 hover-card-text text-[16px] font-medium">
                   Align your technology with business goals through expert IT
                   consulting. We craft strategies that drive innovation, growth,
                   and resilience.
                 </p>
               </div>
-              <div className="shadow-md rounded-lg px-5 py-4 bg-white w-[300px]">
-                <div className="rounded-full   flex items-center justify-center mb-3 w-[55px] h-[55px] mx-auto text-xs font-bold text-white bg-[#085d9e]">
+              <div className="border-4 border-gray-100 rounded-lg px-5 py-4 hover-card w-[300px]">
+                <div
+                  className="rounded-full flex items-center justify-center mb-3 w-[55px] h-[55px] mx-auto text-xs font-bold text-white  "
+                  style={{ background: gradientBG }}
+                >
                   <LuLaptopMinimalCheck size={40} />
                 </div>
                 <div
-                  className="text-2xl text-center font-bold"
+                  className="text-[20px] text-center font-bold"
                   style={{
                     fontFamily: SubTextFontFamily,
-                    color: HeadTextColor,
+                    // color: HeadTextColor,
                   }}
                 >
                   SOFTWARE AND STAFFING SOLUTIONS
                 </div>
                 {/* <div className="text-2xl text-center font-bold">AADHAR</div> */}
-                <p className="text-center mt-2 text-color text-[16px] font-medium">
+                <p className="text-center mt-2 hover-card-text text-[16px] font-medium">
                   We deliver custom software solutions and provide skilled
                   staffing to help businesses scale efficiently and stay
                   competitive.
                 </p>
               </div>
               <div
-                className="shadow-md rounded-lg px-5 py-4 w-[300px]"
+                className=" rounded-lg px-5 py-4 w-[300px]"
                 style={{ background: gradientBG }}
               >
                 <div
@@ -278,16 +287,15 @@ function Home() {
                   <LuLaptopMinimalCheck size={40} />
                 </div>
                 <div
-                  className="text-2xl text-center font-bold"
+                  className="text-[20px] text-center font-bold"
                   style={{ fontFamily: SubTextFontFamily, color: "white" }}
                 >
-                  SOFTWARE AND STAFFING SOLUTIONS
+                  CONTACT US FOR MORE INFORMATION
                 </div>
                 {/* <div className="text-2xl text-center font-bold">AADHAR</div> */}
-                <p className="text-center mt-2 text-white text-[16px] font-medium">
-                  We deliver custom software solutions and provide skilled
-                  staffing to help businesses scale efficiently and stay
-                  competitive.
+                <p className="text-center mt-2 text-white  text-[16px] font-medium">
+                  Enhance your business efficiency with our expert staffing and
+                  software solutions. Call now for more information!
                 </p>
               </div>
             </div>

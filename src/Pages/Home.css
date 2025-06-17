@@ -1,0 +1,22 @@
+.hover-card {
+  background: white;
+  border: 4px solid #f3f4f6;
+  border-radius: 10px;
+  color: #085d9e;
+}
+
+.hover-card-text {
+  color: #6b7280;
+  transition: none; /* Disable transition for text */
+}
+
+.hover-card:hover .hover-card-text {
+  color: white; /* Instant change (no transition) */
+}
+
+.hover-card:hover {
+  background: linear-gradient(to right, #085d9e, #00c1de);
+  color: white;
+  border: 4px solid white;
+  /* transition: background 0.5s ease-in-out, color 0.5s ease-in-out; */
+}

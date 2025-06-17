@@ -31,7 +31,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <Link to="/">
             <img
-              className="md:w-auto h-14 sm:h-[3.8rem] w-auto transition-transform hover:scale-[1.02]"
+              className="md:w-auto h-14 sm:h-[3.4rem] w-auto transition-transform hover:scale-[1.02]"
               src={logo}
               style={{ objectFit: "cover" }}
             />
@@ -49,7 +49,7 @@ const Navbar = () => {
                   color: NavbarItemColor,
                   fontFamily: HeadFontFamily1,
                 }}
-                className="text-[16px] font-medium hover:text-black focus:outline-none focus:ring-0 font flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors"
+                className="text-[14px] font-medium hover:text-black focus:outline-none focus:ring-0 font flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors"
               >
                 What we do{" "}
                 <FaChevronDown className="text-[13px] mx-1 opacity-70  h-5 transition-transform" />
@@ -131,7 +131,7 @@ const Navbar = () => {
                   color: NavbarItemColor,
                   fontFamily: HeadFontFamily1,
                 }}
-                className="text-[16px] font-medium flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-0"
+                className="text-[14px] font-medium flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-0"
               >
                 Industries
                 <FaChevronDown className="text-[13px] mx-1 opacity-70  h-5 transition-transform" />{" "}
@@ -166,7 +166,7 @@ const Navbar = () => {
                 size="sm"
                 variant="text"
                 style={{ color: NavbarItemColor, fontFamily: HeadFontFamily1 }}
-                className="text-[16px] font-medium  flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-0"
+                className="text-[14px] font-medium  flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-0"
               >
                 Resource
                 <FaChevronDown className="text-[13px] mx-1 opacity-70  h-5 transition-transform" />
@@ -202,7 +202,7 @@ const Navbar = () => {
                 size="sm"
                 variant="text"
                 style={{ color: NavbarItemColor, fontFamily: HeadFontFamily1 }}
-                className="text-[16px] font-medium px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-0"
+                className="text-[14px] font-medium px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-0"
               >
                 Articles
               </Button>
