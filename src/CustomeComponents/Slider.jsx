@@ -76,6 +76,16 @@ const CarouselSlider = () => {
       // onMouseEnter={() => swiperRef.current?.autoplay?.stop()}
       // onMouseLeave={() => swiperRef.current?.autoplay?.start()}
     >
+      <img
+        src={bgimg}
+        alt="Background"
+        className="absolute inset-0 w-full h-full object-cover -z-10"
+        style={{
+          filter: "blur(0px)",
+          transform: "scaleX(-1)",
+          opacity: 0.5,
+        }}
+      />
       <Swiper
         modules={[Autoplay, Pagination, Navigation]}
         spaceBetween={0}
@@ -97,7 +107,7 @@ const CarouselSlider = () => {
         {slides.map((item, i) => (
           <>
             <SwiperSlide key={i}>
-              <img
+              {/* <img
                 src={bgimg}
                 alt="background"
                 className="absolute inset-0 -z-10 w-full object-cover"
@@ -106,7 +116,7 @@ const CarouselSlider = () => {
                   transform: "scaleX(-1)",
                   opacity: 0.5,
                 }}
-              />
+              /> */}
               <div className="h-screen flex flex-col md:flex-row items-start md:items-start justify-start md:justify-between px-6 md:px-16 pt-10 md:pt-20 mt-24">
                 {/* margin di he 20 top se new navbar ke liye */}
                 {/* Left Text Section */}
