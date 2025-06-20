@@ -642,8 +642,11 @@ function Home() {
               <div className="absolute left-1/2 bottom-0 transform -translate-x-1/2 translate-y-[60%] flex flex-wrap justify-center gap-[2.4rem] px-4 w-full max-w-6xl mx-auto">
                 {/* Card 1 */}
                 <div className="bg-white rounded-lg shadow-lg p-5 w-[250px] flex flex-col items-center text-center">
-                  <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mb-3">
-                    <FaHandshake />
+                  <div
+                    className="w-12 h-12 rounded-full  flex items-center justify-center mb-3"
+                    style={{ background: gradientBG }}
+                  >
+                    <FaHandshake color="white" />
                   </div>
                   <h3
                     className="font-bold mb-1"
@@ -659,8 +662,11 @@ function Home() {
 
                 {/* Card 2 */}
                 <div className="bg-white rounded-lg shadow-lg p-5 w-[250px] flex flex-col items-center text-center">
-                  <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mb-3">
-                    <FaHandshake />
+                  <div
+                    className="w-12 h-12 rounded-full  flex items-center justify-center mb-3"
+                    style={{ background: gradientBG }}
+                  >
+                    <FaHandshake color="white" />
                   </div>
                   <h3
                     className="font-bold mb-1"
@@ -676,8 +682,11 @@ function Home() {
 
                 {/* Card 3 */}
                 <div className="bg-white rounded-lg shadow-lg p-5 w-[250px] flex flex-col items-center text-center">
-                  <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mb-3">
-                    <FaHandshake />
+                  <div
+                    className="w-12 h-12 rounded-full flex items-center justify-center mb-3"
+                    style={{ background: gradientBG }}
+                  >
+                    <FaHandshake color="white" />
                   </div>
                   <h3
                     className="font-bold mb-1"
@@ -693,8 +702,11 @@ function Home() {
 
                 {/* Card 4 */}
                 <div className="bg-white rounded-lg shadow-lg p-5 w-[250px] flex flex-col items-center text-center">
-                  <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mb-3">
-                    <FaHandshake />
+                  <div
+                    className="w-12 h-12 rounded-full  flex items-center justify-center mb-3"
+                    style={{ background: gradientBG }}
+                  >
+                    <FaHandshake color="white" />
                   </div>
                   <h3
                     className="font-bold mb-1"
