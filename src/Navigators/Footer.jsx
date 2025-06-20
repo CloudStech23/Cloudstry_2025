@@ -211,7 +211,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="w-full sm:w-1/2 md:w-1/5 px-3 mb-6">
+          <div className="w-full sm:w-1/2 md:w-full px-3 mb-6">
             <h5 className="text-xl font-medium mb-3">CONTACT</h5>
             <ul className="flex flex-col space-y-2">
               <li>
@@ -220,6 +220,23 @@ function Footer() {
                   className="text-gray-500 hover:text-black transition"
                 >
                   hr@cloudstrytech.com
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#"
+                  className="text-gray-500 hover:text-black transition"
+                >
+                  07316912309
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#"
+                  className="text-gray-500 hover:text-black transition"
+                >
+                  1st Floor, 33/C/S-3, Scheme No 78 - III, Near Shalimar
+                  Township, Sector F, Slice No.3, Honda Big Wing Indore 452010
                 </Link>
               </li>
             </ul>
