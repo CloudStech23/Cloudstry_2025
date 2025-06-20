@@ -54,6 +54,7 @@ const Navbar = () => {
         scrolled || menuOpen
           ? "top-0 left-0 right-0 bg-white  shadow-md "
           : "top-5 left-7 right-7 bg-white rounded-[20px] border-2 border-gray-200 "
+        // : "top-5 left-7 right-7 bg-none rounded-[20px]  "
       }`}
       // style={{ boxShadow: "rgb(0 81 143) 0px -5px 19px 0px" }}
     >

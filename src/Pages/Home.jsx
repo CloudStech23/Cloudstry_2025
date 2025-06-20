@@ -8,15 +8,22 @@ import {
   SubTextColor,
   SubTextFontFamily,
 } from "../CustomeComponents/Theme";
-import { TbBackground, TbCertificate, TbTruckDelivery } from "react-icons/tb";
+import {
+  TbBackground,
+  TbCertificate,
+  TbTruckDelivery,
+  TbWorld,
+} from "react-icons/tb";
 import { GiCargoShip, GiCow } from "react-icons/gi";
-import { FaAngleDown, FaHandshake } from "react-icons/fa";
+import { FaAngleDown, FaGoogle, FaHandshake, FaLinkedin } from "react-icons/fa";
 import { LuLaptopMinimalCheck } from "react-icons/lu";
 import Counter from "../CustomeComponents/Counter";
 import "./Home.css";
 import ClientSlider from "../CustomeComponents/ClientSlider";
 import whychooseimg from "../assets/WebsiteImages/image.png";
 import GlobalPresenseIMG from "../assets/WebsiteImages/map.png";
+import { FaPhone, FaFacebookF, FaPeopleGroup } from "react-icons/fa6";
+import { MdAutoGraph, MdEmail, MdWatchLater } from "react-icons/md";
 
 function Home() {
   const [scrolled, setScrolled] = useState(false);
@@ -114,7 +121,7 @@ function Home() {
 
       <div className="">
         <main className="pt-6 px-4 sm:px-6 lg:px-0 pb-2  mx-auto">
-          <div className="text-center mt-[2rem] py-12 px-4  bg-[#efefef]">
+          <div className="text-center mt-[2rem] py-12 px-4 bg-[#efefef]  ">
             {" "}
             {/*#efefef*/}
             <h2
@@ -269,6 +276,172 @@ function Home() {
                   staffing to help businesses scale efficiently and stay
                   competitive.
                 </p>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      {/* solutions we offer section with blue bg  */}
+      <div className="">
+        <main className="pt-6 px-4 sm:px-6 lg:px-0 pb-2  mx-auto">
+          <div className="text-center mt-[2rem] py-12 px-4">
+            {/*#efefef*/}
+            <h2
+              className="sm:text-4xl text-3xl font-bold  sm:leading-none mb-6"
+              style={{
+                fontFamily: "Poppines, sans-serif",
+                color: HeadTextColor,
+              }}
+            >
+              SOLUTIONS WE OFFER
+            </h2>
+            <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto mb-10 rounded-full"></div>
+            <div className="relative mt-14 py-10 px-4 rounded-xl overflow-hidden">
+              <div className="absolute inset-0 -z-10">
+                <img
+                  src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80"
+                  alt="Background"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-[#085d9e] bg-opacity-70"></div>
+              </div>
+              <div className="flex flex-wrap justify-center gap-6 mt-14">
+                {/* CARD START */}
+                <div className="relative w-[210px] rounded-xl bg-white shadow-md p-5 pt-10 pb-6">
+                  {/* Diagonal Banner */}
+                  <div className="absolute top-0 left-0 w-0 h-0 border-t-[72px] border-r-[90px] rounded-tl-md border-t-orange-500 border-r-transparent">
+                    <div className="absolute top-[-59px] left-[10px] text-white text-xl">
+                      <TbCertificate size={30} />
+                    </div>
+                  </div>
+
+                  {/* Card Body */}
+                  <h2
+                    className="text-xl font-bold mt-6 text-center"
+                    style={{ fontFamily: HeadFontFamily1 }}
+                  >
+                    DIGITAL <br /> CERTIFICATION
+                  </h2>
+                  <p
+                    className="text-color text-[15px] mt-2 text-center"
+                    style={{ fontFamily: SubTextFontFamily }}
+                  >
+                    Say goodbye to paper certificates! Join millions of
+                    achievers who rely on our secure, verifiable digital
+                    certificate solutions to recognize and showcase success
+                    anytime, anywhere.
+                  </p>
+                </div>
+                <div className="relative w-[210px] rounded-xl bg-white shadow-md p-5 pt-10 pb-6">
+                  {/* Diagonal Banner */}
+                  <div className="absolute top-0 left-0 w-0 h-0 border-t-[72px] border-r-[90px] rounded-tl-md border-t-blue-500 border-r-transparent">
+                    <div className="absolute top-[-59px] left-[10px] text-white text-xl">
+                      <GiCow size={30} />
+                    </div>
+                  </div>
+
+                  {/* Card Body */}
+                  <h2
+                    className="text-xl font-bold mt-6 text-center"
+                    style={{ fontFamily: HeadFontFamily1 }}
+                  >
+                    CATTLE <br /> AADHAR
+                  </h2>
+                  <p
+                    className="text-color text-[15px] mt-2 text-center"
+                    style={{ fontFamily: SubTextFontFamily }}
+                  >
+                    Empowering cattle owners with unique digital IDs for better
+                    traceability and health tracking. Our solution ensures
+                    smarter management and data-driven decision-making.
+                  </p>
+                </div>
+                <div className="relative w-[210px] rounded-xl bg-white shadow-md p-5 pt-10 pb-6">
+                  {/* Diagonal Banner */}
+                  <div className="absolute top-0 left-0 w-0 h-0 border-t-[72px] border-r-[90px] rounded-tl-md border-t-green-500 border-r-transparent">
+                    <div className="absolute top-[-59px] left-[10px] text-white text-xl">
+                      <GiCargoShip size={30} />
+                    </div>
+                  </div>
+
+                  {/* Card Body */}
+                  <h2
+                    className="text-xl font-bold mt-6 text-center"
+                    style={{
+                      fontFamily: HeadFontFamily1,
+                      // color: HeadTextColor,
+                    }}
+                  >
+                    3PL <br />
+                    SOLUTION
+                  </h2>
+                  <p
+                    className="text-color text-[15px] mt-2 text-center"
+                    style={{ fontFamily: SubTextFontFamily }}
+                  >
+                    Enhance your supply chain with intelligent demand
+                    forecasting and logistics planning. Our 3PL solutions
+                    optimize inventory, reduce costs, and improve delivery
+                    efficiency.
+                  </p>
+                </div>
+                <div className="relative w-[210px] rounded-xl bg-white shadow-md p-5 pt-10 pb-6">
+                  {/* Diagonal Banner */}
+                  <div className="absolute top-0 left-0 w-0 h-0 border-t-[72px] border-r-[90px] rounded-tl-md border-t-slate-500 border-r-transparent">
+                    <div className="absolute top-[-59px] left-[10px] text-white text-xl">
+                      <FaHandshake size={30} />
+                    </div>
+                  </div>
+
+                  {/* Card Body */}
+                  <h2
+                    className="text-xl font-bold mt-6 text-center"
+                    style={{
+                      fontFamily: HeadFontFamily1,
+                      // color: HeadTextColor,
+                    }}
+                  >
+                    IT STRATEGY <br />
+                    CONSULTANCY
+                  </h2>
+                  <p
+                    className="text-color text-[15px] mt-2 text-center"
+                    style={{ fontFamily: SubTextFontFamily }}
+                  >
+                    Align your technology with business goals through expert IT
+                    consulting. We craft strategies that drive innovation,
+                    growth, and resilience.
+                  </p>
+                </div>
+                <div className="relative w-[210px] rounded-xl bg-white shadow-md p-5 pt-10 pb-6">
+                  {/* Diagonal Banner */}
+                  <div className="absolute top-0 left-0 w-0 h-0 border-t-[72px] border-r-[90px] rounded-tl-md border-t-rose-600 border-r-transparent">
+                    <div className="absolute top-[-59px] left-[10px] text-white text-xl">
+                      <LuLaptopMinimalCheck size={30} />
+                    </div>
+                  </div>
+
+                  {/* Card Body */}
+                  <h2
+                    className="text-xl font-bold mt-6 text-center"
+                    style={{
+                      fontFamily: HeadFontFamily1,
+                      // color: HeadTextColor,
+                    }}
+                  >
+                    SOFTWARE AND <br />
+                    STAFFING SOLUTIONS
+                  </h2>
+                  <p
+                    className="text-color text-[15px] mt-2 text-center"
+                    style={{ fontFamily: SubTextFontFamily }}
+                  >
+                    We deliver custom software solutions and provide skilled
+                    staffing to help businesses scale efficiently and stay
+                    competitive.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -628,7 +801,7 @@ function Home() {
             <div className="relative">
               {/* Hero area */}
               <div
-                className="h-[25rem] max-w-7xl  mx-auto mt-[4rem] bg-gray-200 overflow-hidden "
+                className="h-[25rem] max-w-7xl  mx-auto mt-[4rem] overflow-hidden "
                 style={{ borderRadius: "20px" }}
               >
                 {/* Replace with your image if you like */}
@@ -646,7 +819,7 @@ function Home() {
                     className="w-12 h-12 rounded-full  flex items-center justify-center mb-3"
                     style={{ background: gradientBG }}
                   >
-                    <FaHandshake color="white" />
+                    <TbWorld size={25} color="white" />
                   </div>
                   <h3
                     className="font-bold mb-1"
@@ -666,7 +839,7 @@ function Home() {
                     className="w-12 h-12 rounded-full  flex items-center justify-center mb-3"
                     style={{ background: gradientBG }}
                   >
-                    <FaHandshake color="white" />
+                    <FaPeopleGroup size={25} color="white" />
                   </div>
                   <h3
                     className="font-bold mb-1"
@@ -686,7 +859,7 @@ function Home() {
                     className="w-12 h-12 rounded-full flex items-center justify-center mb-3"
                     style={{ background: gradientBG }}
                   >
-                    <FaHandshake color="white" />
+                    <MdWatchLater size={25} color="white" />
                   </div>
                   <h3
                     className="font-bold mb-1"
@@ -706,7 +879,7 @@ function Home() {
                     className="w-12 h-12 rounded-full  flex items-center justify-center mb-3"
                     style={{ background: gradientBG }}
                   >
-                    <FaHandshake color="white" />
+                    <MdAutoGraph size={25} color="white" />
                   </div>
                   <h3
                     className="font-bold mb-1"
@@ -730,24 +903,53 @@ function Home() {
           {/* Left Text Content */}
           <div className="text-white text-center md:text-left">
             <h2
-              className=" font-medium  mb-4 " //text-4xl md:text-6xl
+              className="font-medium mb-8"
               style={{
                 fontFamily: HeadFontFamily1,
                 lineHeight: "1.2em",
-                fontSize: "60px",
+                fontSize: "50px",
               }}
             >
               Ready to get started? Contact us for IT Support, Staffing, Digital
               Certificate, Cattle Adhaar, and 3PL solutions.
             </h2>
-            {/* <p className="text-lg md:text-xl text-color-200">
-              Contact us for IT Support, Staffing, Digital Certificates, Cattle
-              Aadhaar, and 3PL Solutions.
-            </p>
-            <p className="text-lg md:text-xl text-color-200">
-              Contact us for IT Support, Staffing, Digital Certificates, Cattle
-              Aadhaar, and 3PL Solutions.
-            </p> */}
+
+            {/* Contact Icons and Details */}
+            <div className="mt-20 space-y-6">
+              {/* Phone */}
+              <div className="flex items-center gap-2">
+                <FaPhone size={17} color="white" className="mt-1" />
+                <div>073169-12309</div>
+              </div>
+
+              {/* Email */}
+              <div className="flex items-center gap-2">
+                <MdEmail size={22} color="white" className="mt-1" />
+                <div>hr@cloudstrytech.com</div>
+              </div>
+
+              {/* Social Icons */}
+              <div className="flex gap-4 mt-4 ">
+                <div
+                  className="w-10 h-10 rounded-full flex items-center justify-center"
+                  style={{ background: gradientBG }}
+                >
+                  <FaLinkedin color="white" />
+                </div>
+                <div
+                  className="w-10 h-10 rounded-full flex items-center justify-center"
+                  style={{ background: gradientBG }}
+                >
+                  <FaFacebookF color="white" />
+                </div>
+                <div
+                  className="w-10 h-10 rounded-full flex items-center justify-center"
+                  style={{ background: gradientBG }}
+                >
+                  <FaGoogle color="white" />
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Right Contact Form */}
