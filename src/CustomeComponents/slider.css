@@ -14,6 +14,20 @@
 .swiper-button-prev:after .swiper-button-mid:after {
   font-size: 20px;
 }
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 4px;
+  border-radius: 0px !important; /* makes them rectangles, not circles */
+  background-color: #bbb;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  margin: 0 4px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: linear-gradient(to right, #085d9e, #00c1de); /* active line */
+  opacity: 1;
+}
 
 /* .custom-shape-divider-bottom-1749638402 {
   position: absolute;

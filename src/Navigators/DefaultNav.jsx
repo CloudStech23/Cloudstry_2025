@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
   Menu,
   MenuHandler,
@@ -19,45 +19,19 @@ import {
 import { Link } from "react-router-dom";
 import MobileNavbar from "./MobileNavbar";
 
-const Navbar = () => {
+const DefaultNav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 80;
-      if (isScrolled !== scrolled) {
-        setScrolled(isScrolled);
-      }
-    };
-
-    // Add scroll event listener when component mounts
-    window.addEventListener("scroll", handleScroll, { passive: true });
-
-    // Clean up the event listener when component unmounts
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [scrolled]); // Only re-run if scrolled state changes
-
-  function toggleHamburger() {
-    setMenuOpen(!menuOpen);
-  }
 
   return (
     // <nav
-    //   className="bg-white  fixed top-5 left-10 right-10 z-50 rounded-[30px] "
+    //   className="bg-white  fixed top-10 left-10 right-10 z-50 rounded-[20px]"
     //   style={{ boxShadow: "rgb(0 81 143) 0px -5px 19px 0px" }}
     // >
     <nav
-      className={`fixed z-50 transition-all duration-200 ease-in-out ${
-        scrolled || menuOpen
-          ? "top-0 left-0 right-0 bg-white  shadow-md "
-          : "top-5 left-7 right-7 bg-none rounded-[20px] "
-      }`}
-      // style={{ boxShadow: "rgb(0 81 143) 0px -5px 19px 0px" }}
+      className="bg-white  fixed top-0 left-0 right-0 z-50 "
+      style={{ boxShadow: "rgb(0 81 143) 0px -5px 19px 0px" }}
     >
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center">
           <Link to="/">
             <img
@@ -286,7 +260,7 @@ const Navbar = () => {
         {/* Mobile Hamburger */}
         <div className="md:hidden">
           <button
-            onClick={toggleHamburger}
+            onClick={() => setMenuOpen(!menuOpen)}
             className="p-2 rounded-lg hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-300"
           >
             {menuOpen ? "✕" : "☰"}
@@ -295,9 +269,9 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      {menuOpen && <MobileNavbar closeNavbar={() => setMenuOpen(!menuOpen)} />}
+      {menuOpen && <MobileNavbar />}
     </nav>
   );
 };
 
-export default Navbar;
+export default DefaultNav;

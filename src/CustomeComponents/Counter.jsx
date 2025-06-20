@@ -1,51 +1,19 @@
 import { useEffect, useState } from "react";
 import { FaBusinessTime, FaBoxes, FaUsers } from "react-icons/fa";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 
 const Counter = () => {
-  const [counters, setCounters] = useState({
-    clients: 0,
-    experiences: 0,
-    products: 0,
+  const { ref, inView } = useInView({
+    triggerOnce: true, // only animate once
+    threshold: 0.3, // percentage of section visible before triggering
   });
 
-  const targetValues = {
-    clients: 150,
-    experiences: 20,
-    products: 10,
-  };
-
-  useEffect(() => {
-    const duration = 3000;
-    const interval = 50;
-    const steps = duration / interval;
-    const increments = {
-      clients: targetValues.clients / steps,
-      experiences: targetValues.experiences / steps,
-      products: targetValues.products / steps,
-    };
-
-    const timer = setInterval(() => {
-      setCounters((prev) => ({
-        clients: Math.min(
-          prev.clients + increments.clients,
-          targetValues.clients
-        ),
-        experiences: Math.min(
-          prev.experiences + increments.experiences,
-          targetValues.experiences
-        ),
-        products: Math.min(
-          prev.products + increments.products,
-          targetValues.products
-        ),
-      }));
-    }, interval);
-
-    return () => clearInterval(timer);
-  }, []);
-
   return (
-    <div className="w-full py-16 mb-[2rem] flex justify-center items-center relative overflow-hidden">
+    <div
+      ref={ref}
+      className="w-full md:h-[300px] py-16  flex justify-center items-center relative overflow-hidden"
+    >
       {/* Background Image with Dark Overlay */}
       <div className="absolute inset-0">
         <img
@@ -64,8 +32,8 @@ const Counter = () => {
             {/* clients Counter */}
             <div className="flex flex-col text-white items-center p-6 rounded-lg   ">
               {/* <FaBusinessTime className="text-4xl mb-4" /> */}
-              <span className="text-6xl font-bold mb-2">
-                {Math.floor(counters.clients)}+
+              <span className="text-6xl md:text-7xl font-bold mb-2">
+                {inView && <CountUp end={150} duration={4} />}+
               </span>
               <span className="text-[18px] font-semibold text-center">
                 DELIGHTED <br /> CLIENTS
@@ -73,8 +41,8 @@ const Counter = () => {
             </div>
             <div className="flex flex-col text-white items-center p-6 rounded-lg   ">
               {/* <FaBusinessTime className="text-4xl mb-4" /> */}
-              <span className="text-6xl font-bold mb-2">
-                {Math.floor(counters.experiences)}+
+              <span className="text-6xl md:text-7xl font-bold mb-2">
+                {inView && <CountUp end={20} duration={4} />}+
               </span>
               <span className="text-[18px] font-semibold text-center">
                 YEARS OF <br /> EXPERIENCE
@@ -82,8 +50,8 @@ const Counter = () => {
             </div>
             <div className="flex flex-col text-white items-center p-6 rounded-lg   ">
               {/* <FaBusinessTime className="text-4xl mb-4" /> */}
-              <span className="text-6xl font-bold mb-2">
-                {Math.floor(counters.products)}+
+              <span className="text-6xl md:text-7xl font-bold mb-2">
+                {inView && <CountUp end={10} duration={4} />}+
               </span>
               <span className="text-[18px] font-semibold text-center">
                 PRODUCT AND <br /> SERVICES

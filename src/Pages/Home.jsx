@@ -9,11 +9,14 @@ import {
   SubTextFontFamily,
 } from "../CustomeComponents/Theme";
 import { TbBackground, TbCertificate, TbTruckDelivery } from "react-icons/tb";
-import { GiCow } from "react-icons/gi";
+import { GiCargoShip, GiCow } from "react-icons/gi";
 import { FaAngleDown, FaHandshake } from "react-icons/fa";
 import { LuLaptopMinimalCheck } from "react-icons/lu";
 import Counter from "../CustomeComponents/Counter";
 import "./Home.css";
+import ClientSlider from "../CustomeComponents/ClientSlider";
+import whychooseimg from "../assets/WebsiteImages/image.png";
+import GlobalPresenseIMG from "../assets/WebsiteImages/map.png";
 
 function Home() {
   const [scrolled, setScrolled] = useState(false);
@@ -36,13 +39,13 @@ function Home() {
   }, [scrolled]); // Only re-run if scrolled state changes
   return (
     //margin or padding from top {90px}
-    <div className="min-h-screen mt-[80px]">
+    <div className="min-h-screen ">
       <section>
         <CarouselSlider />
       </section>
 
       {/* Introduction section */}
-      <div className="bg-white py-12 px-4 sm:px-6 lg:px-8">
+      <div className="py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2
@@ -66,7 +69,7 @@ function Home() {
             <div className=" p-4 rounded-xl">
               <p
                 className="text-color text-[17.5px] mb-3 text-center"
-                // style={{ fontFamily: SubTextFontFamily }}
+                style={{ fontFamily: SubTextFontFamily }}
               >
                 At Cloudstry Technologies, we empower businesses with a diverse
                 range of innovative IT products and services designed to meet
@@ -77,7 +80,7 @@ function Home() {
               </p>
               <p
                 className="text-color mb-3 text-[17.5px] text-center"
-                // style={{ fontFamily: SubTextFontFamily }}
+                style={{ fontFamily: SubTextFontFamily }}
               >
                 Our expertise extends to 3PL (Third-Party Logistics) Solutions,
                 offering intelligent demand planning and supply chain
@@ -89,7 +92,7 @@ function Home() {
               </p>
               <p
                 className="text-color mb-3 text-[17.5px] text-center"
-                // style={{ fontFamily: SubTextFontFamily }}
+                style={{ fontFamily: SubTextFontFamily }}
               >
                 At Cloudstry Technologies, we believe in building lasting
                 partnerships by delivering reliable, future-ready solutions. Our
@@ -109,10 +112,11 @@ function Home() {
         </div>
       </div>
 
-      {/* Proudcts and services section  */}
-      <div className="bg-light">
-        <main className="pt-6 px-4 sm:px-6 lg:px-8 pb-12 max-w-7xl mx-auto">
-          <div className="text-center mt-[2rem]">
+      <div className="">
+        <main className="pt-6 px-4 sm:px-6 lg:px-0 pb-2  mx-auto">
+          <div className="text-center mt-[2rem] py-12 px-4  bg-[#efefef]">
+            {" "}
+            {/*#efefef*/}
             <h2
               className="sm:text-4xl text-3xl font-bold  sm:leading-none mb-6"
               style={{
@@ -120,10 +124,9 @@ function Home() {
                 color: HeadTextColor,
               }}
             >
-              PRODUCTS WE OFFER
+              SOLUTIONS WE OFFER
             </h2>
             <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto mb-10 rounded-full"></div>
-
             {/* <h5
               className="sm:text-[18px] mt-2  text-sm sm:w-[60%] lg:w-[72%] font-medium text-color text-center mx-auto"
               style={{ fontFamily: SubTextFontFamily }}
@@ -133,169 +136,138 @@ function Home() {
               to your unique business needs. We combine innovation with
               expertise to solve real-world challenges across industries.
             </h5> */}
-
-            <div className="flex flex-row flex-wrap justify-center mt-14 gap-8">
-              <div className="rounded-lg border-4 border-gray-100 px-5 py-4 hover-card w-[300px] ">
-                <div
-                  className="rounded-full flex items-center justify-center mb-3 w-[55px] h-[55px] mx-auto text-xs font-bold text-white  "
-                  style={{ background: gradientBG }}
-                >
-                  <TbCertificate size={40} />
+            <div className="flex flex-wrap justify-center gap-6 mt-14">
+              {/* CARD START */}
+              <div className="relative w-[210px] rounded-xl bg-white shadow-md p-5 pt-10 pb-6">
+                {/* Diagonal Banner */}
+                <div className="absolute top-0 left-0 w-0 h-0 border-t-[72px] border-r-[90px] rounded-tl-md border-t-orange-500 border-r-transparent">
+                  <div className="absolute top-[-59px] left-[10px] text-white text-xl">
+                    <TbCertificate size={30} />
+                  </div>
                 </div>
-                <div
-                  className="text-[20px] text-center font-bold"
-                  style={{
-                    fontFamily: SubTextFontFamily,
-                    // color: HeadTextColor,
-                  }}
+
+                {/* Card Body */}
+                <h2
+                  className="text-xl font-bold mt-6 text-center"
+                  style={{ fontFamily: HeadFontFamily1 }}
                 >
                   DIGITAL <br /> CERTIFICATION
-                </div>
-                <p className="text-center mt-2   text-[16px] hover-card-text font-medium text-justify">
+                </h2>
+                <p
+                  className="text-color text-[15px] mt-2 text-center"
+                  style={{ fontFamily: SubTextFontFamily }}
+                >
                   Say goodbye to paper certificates! Join millions of achievers
                   who rely on our secure, verifiable digital certificate
-                  solutions to recognize and showcase success—anytime, anywhere.
+                  solutions to recognize and showcase success anytime, anywhere.
                 </p>
               </div>
-              <div className="border-4 border-gray-100 rounded-lg px-5 py-4 hover-card w-[300px]">
-                <div
-                  className="rounded-full   flex items-center justify-center mb-3 w-[55px] h-[55px] mx-auto text-xs font-bold text-white"
-                  style={{ background: gradientBG }}
-                >
-                  <GiCow size={40} />
+              <div className="relative w-[210px] rounded-xl bg-white shadow-md p-5 pt-10 pb-6">
+                {/* Diagonal Banner */}
+                <div className="absolute top-0 left-0 w-0 h-0 border-t-[72px] border-r-[90px] rounded-tl-md border-t-blue-500 border-r-transparent">
+                  <div className="absolute top-[-59px] left-[10px] text-white text-xl">
+                    <GiCow size={30} />
+                  </div>
                 </div>
-                <div
-                  className="text-[20px] text-center font-bold"
-                  style={{
-                    fontFamily: SubTextFontFamily,
-                    // color: HeadTextColor,
-                  }}
+
+                {/* Card Body */}
+                <h2
+                  className="text-xl font-bold mt-6 text-center"
+                  style={{ fontFamily: HeadFontFamily1 }}
                 >
                   CATTLE <br /> AADHAR
-                </div>
-                {/* <div className="text-2xl text-center font-bold">AADHAR</div> */}
-                <p className="text-center mt-2 hover-card-text text-[16px] font-medium">
+                </h2>
+                <p
+                  className="text-color text-[15px] mt-2 text-center"
+                  style={{ fontFamily: SubTextFontFamily }}
+                >
                   Empowering cattle owners with unique digital IDs for better
                   traceability and health tracking. Our solution ensures smarter
                   management and data-driven decision-making.
                 </p>
               </div>
-              <div className="border-4 border-gray-100 rounded-lg px-5 py-4 hover-card w-[300px]">
-                <div
-                  className="rounded-full flex items-center justify-center mb-3 w-[55px] h-[55px] mx-auto text-xs font-bold text-white  "
-                  style={{ background: gradientBG }}
-                >
-                  <TbTruckDelivery size={40} />
+              <div className="relative w-[210px] rounded-xl bg-white shadow-md p-5 pt-10 pb-6">
+                {/* Diagonal Banner */}
+                <div className="absolute top-0 left-0 w-0 h-0 border-t-[72px] border-r-[90px] rounded-tl-md border-t-green-500 border-r-transparent">
+                  <div className="absolute top-[-59px] left-[10px] text-white text-xl">
+                    <GiCargoShip size={30} />
+                  </div>
                 </div>
-                <div
-                  className="text-[20px] text-center font-bold"
+
+                {/* Card Body */}
+                <h2
+                  className="text-xl font-bold mt-6 text-center"
                   style={{
-                    fontFamily: SubTextFontFamily,
+                    fontFamily: HeadFontFamily1,
                     // color: HeadTextColor,
                   }}
                 >
                   3PL <br />
                   SOLUTION
-                </div>
-                {/* <div className="text-2xl text-center font-bold"> SOLUTION</div> */}
-                <p className="text-center mt-2 hover-card-text text-[16px] font-medium">
+                </h2>
+                <p
+                  className="text-color text-[15px] mt-2 text-center"
+                  style={{ fontFamily: SubTextFontFamily }}
+                >
                   Enhance your supply chain with intelligent demand forecasting
                   and logistics planning. Our 3PL solutions optimize inventory,
                   reduce costs, and improve delivery efficiency.
                 </p>
               </div>
-            </div>
-          </div>
-
-          {/* Services section  */}
-          <div className="text-center mt-[4.5rem]">
-            <h2
-              className="sm:text-4xl text-3xl font-bold   sm:leading-none mb-6"
-              style={{
-                fontFamily: "Poppines, sans-serif",
-                color: HeadTextColor,
-              }}
-            >
-              SERVICES WE OFFER
-            </h2>
-            <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto mb-10 rounded-full"></div>
-
-            {/* <h5
-            className="sm:text-[18px] mt-2  text-sm sm:w-[60%] lg:w-[72%] font-medium text-color-900 text-center mx-auto"
-            style={{ fontFamily: SubTextFontFamily, color: SubTextColor }}
-            // as of now we consider the font as a medium
-          >
-            At Cloudstry Tech, we deliver smart, scalable solutions tailored to
-            your unique business needs. We combine innovation with expertise to
-            solve real-world challenges across industries.
-          </h5> */}
-
-            <div className="flex flex-row flex-wrap justify-center mt-12 gap-8">
-              <div className="border-4 border-gray-100 rounded-lg px-5 py-4 hover-card w-[300px]">
-                <div
-                  className="rounded-full flex items-center justify-center mb-3 w-[55px] h-[55px] mx-auto text-xs font-bold text-white  "
-                  style={{ background: gradientBG }}
-                >
-                  <FaHandshake size={40} />
+              <div className="relative w-[210px] rounded-xl bg-white shadow-md p-5 pt-10 pb-6">
+                {/* Diagonal Banner */}
+                <div className="absolute top-0 left-0 w-0 h-0 border-t-[72px] border-r-[90px] rounded-tl-md border-t-slate-500 border-r-transparent">
+                  <div className="absolute top-[-59px] left-[10px] text-white text-xl">
+                    <FaHandshake size={30} />
+                  </div>
                 </div>
-                <div
-                  className="text-[20px] text-center font-bold"
+
+                {/* Card Body */}
+                <h2
+                  className="text-xl font-bold mt-6 text-center"
                   style={{
-                    fontFamily: SubTextFontFamily,
+                    fontFamily: HeadFontFamily1,
                     // color: HeadTextColor,
                   }}
                 >
-                  IT STRATEGY CONSULTANCY
-                </div>
-                <p className="text-center mt-2 hover-card-text text-[16px] font-medium">
+                  IT STRATEGY <br />
+                  CONSULTANCY
+                </h2>
+                <p
+                  className="text-color text-[15px] mt-2 text-center"
+                  style={{ fontFamily: SubTextFontFamily }}
+                >
                   Align your technology with business goals through expert IT
                   consulting. We craft strategies that drive innovation, growth,
                   and resilience.
                 </p>
               </div>
-              <div className="border-4 border-gray-100 rounded-lg px-5 py-4 hover-card w-[300px]">
-                <div
-                  className="rounded-full flex items-center justify-center mb-3 w-[55px] h-[55px] mx-auto text-xs font-bold text-white  "
-                  style={{ background: gradientBG }}
-                >
-                  <LuLaptopMinimalCheck size={40} />
+              <div className="relative w-[210px] rounded-xl bg-white shadow-md p-5 pt-10 pb-6">
+                {/* Diagonal Banner */}
+                <div className="absolute top-0 left-0 w-0 h-0 border-t-[72px] border-r-[90px] rounded-tl-md border-t-rose-600 border-r-transparent">
+                  <div className="absolute top-[-59px] left-[10px] text-white text-xl">
+                    <LuLaptopMinimalCheck size={30} />
+                  </div>
                 </div>
-                <div
-                  className="text-[20px] text-center font-bold"
+
+                {/* Card Body */}
+                <h2
+                  className="text-xl font-bold mt-6 text-center"
                   style={{
-                    fontFamily: SubTextFontFamily,
+                    fontFamily: HeadFontFamily1,
                     // color: HeadTextColor,
                   }}
                 >
-                  SOFTWARE AND STAFFING SOLUTIONS
-                </div>
-                {/* <div className="text-2xl text-center font-bold">AADHAR</div> */}
-                <p className="text-center mt-2 hover-card-text text-[16px] font-medium">
+                  SOFTWARE AND <br />
+                  STAFFING SOLUTIONS
+                </h2>
+                <p
+                  className="text-color text-[15px] mt-2 text-center"
+                  style={{ fontFamily: SubTextFontFamily }}
+                >
                   We deliver custom software solutions and provide skilled
                   staffing to help businesses scale efficiently and stay
                   competitive.
-                </p>
-              </div>
-              <div
-                className=" rounded-lg px-5 py-4 w-[300px]"
-                style={{ background: gradientBG }}
-              >
-                <div
-                  className="rounded-full   flex items-center justify-center mb-3 w-[55px] h-[55px] mx-auto text-xs font-bold text-white "
-                  style={{ background: gradientBG }}
-                >
-                  <LuLaptopMinimalCheck size={40} />
-                </div>
-                <div
-                  className="text-[20px] text-center font-bold"
-                  style={{ fontFamily: SubTextFontFamily, color: "white" }}
-                >
-                  CONTACT US FOR MORE INFORMATION
-                </div>
-                {/* <div className="text-2xl text-center font-bold">AADHAR</div> */}
-                <p className="text-center mt-2 text-white  text-[16px] font-medium">
-                  Enhance your business efficiency with our expert staffing and
-                  software solutions. Call now for more information!
                 </p>
               </div>
             </div>
@@ -303,10 +275,443 @@ function Home() {
         </main>
       </div>
 
-      {/* Counter section  */}
+      {/* counter section  */}
       <section>
         <Counter />
       </section>
+
+      {/* client section */}
+      <div>
+        <ClientSlider />
+      </div>
+
+      <div>
+        <main className="pt-6 px-4 sm:px-6 lg:px-0 pb-2  mx-auto">
+          <div className="text-center mt-[2rem] py-12 px-4  ">
+            {" "}
+            {/*#efefef*/}
+            <h2
+              className="sm:text-4xl text-3xl font-bold  sm:leading-none mb-6"
+              style={{
+                fontFamily: "Poppines, sans-serif",
+                color: HeadTextColor,
+              }}
+            >
+              INDUSTRIES WE CATER TO
+            </h2>
+            <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto mb-10 rounded-full"></div>
+            <h5
+              className="sm:text-[18px] mt-2  text-sm sm:w-[60%] lg:w-[72%] font-medium text-color text-center mx-auto"
+              style={{ fontFamily: SubTextFontFamily }}
+              // as of now we consider the font as a medium
+            >
+              At Cloudstry Tech, we customize our solutions to meet the unique
+              challenges of a wide range of industries. Our expertise ensures
+              that every sector benefits from digital transformation, enhanced
+              efficiency, and seamless technology integration.
+            </h5>
+            <div className="flex flex-wrap justify-center gap-6 mt-14">
+              <div className="relative w-[210px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
+                <h2
+                  className="text-xl font-bold  text-center"
+                  style={{ fontFamily: HeadFontFamily1 }}
+                >
+                  UNIVERSITIES
+                </h2>
+                <p
+                  className="text-color text-[15px] hover-card-text mt-2 text-center"
+                  style={{ fontFamily: SubTextFontFamily }}
+                >
+                  We empower universities and higher education institutions with
+                  reliable Digital Certification solutions that simplify
+                  credential management and verification.
+                </p>
+              </div>
+              <div className="relative w-[210px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
+                <h2
+                  className="text-xl font-bold  text-center"
+                  style={{ fontFamily: HeadFontFamily1 }}
+                >
+                  ORGANIZATION
+                </h2>
+                <p
+                  className="text-color text-[15px] hover-card-text mt-2 text-center"
+                  style={{ fontFamily: SubTextFontFamily }}
+                >
+                  From startups to multinational corporations, we provide secure
+                  and reliable Digital Certification services that validate
+                  credentials and build trust.
+                </p>
+              </div>
+              <div className="relative w-[210px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
+                <h2
+                  className="text-xl font-bold  text-center"
+                  style={{ fontFamily: HeadFontFamily1 }}
+                >
+                  INSTITUTIONS
+                </h2>
+                <p
+                  className="text-color text-[15px] hover-card-text mt-2 text-center"
+                  style={{ fontFamily: SubTextFontFamily }}
+                >
+                  We support institutions with scalable technology and trusted
+                  Digital Certification solutions to ensure compliance and
+                  secure record-keeping.
+                </p>
+              </div>
+              <div className="relative w-[210px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
+                <h2
+                  className="text-xl font-bold  text-center"
+                  style={{ fontFamily: HeadFontFamily1 }}
+                >
+                  GOVERNMENT
+                </h2>
+                <p
+                  className="text-color text-[15px] hover-card-text mt-2 text-center"
+                  style={{ fontFamily: SubTextFontFamily }}
+                >
+                  We support governments with secure digital services, including
+                  Cattle Aadhaar for efficient and reliable livestock and cattle
+                  identification.
+                </p>
+              </div>
+              <div className="relative w-[210px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
+                <h2
+                  className="text-xl font-bold  text-center"
+                  style={{ fontFamily: HeadFontFamily1 }}
+                >
+                  LOGISTIC
+                </h2>
+                <p
+                  className="text-color text-[15px] hover-card-text mt-2 text-center"
+                  style={{ fontFamily: SubTextFontFamily }}
+                >
+                  We optimize logistics operations with intelligent demand
+                  management, real-time tracking, and streamlined supply chain
+                  solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <div>
+        <main className="pt-6 px-4 sm:px-6 lg:px-0 pb-2  mx-auto bg-[#efefef]">
+          <div className="text-center  py-12 px-4">
+            <h2
+              className="sm:text-4xl text-3xl font-bold  sm:leading-none mb-6"
+              style={{
+                fontFamily: "Poppines, sans-serif",
+                color: HeadTextColor,
+              }}
+            >
+              OUR HAPPY CUSTOMERS
+            </h2>
+            <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto mb-10 rounded-full"></div>
+
+            <div className="flex flex-wrap justify-center gap-4 mt-8 max-w-6xl mx-auto">
+              {[
+                {
+                  person_name: "Joshua J.",
+                  desc: "Impressive range of features sets it apart as the ultimate solution for certificate verification. Their enterprise plan, along with customizable options, caters to diverse company needs, making it an awesome choice.",
+                  designation: "Chief Learning Officer",
+                },
+                {
+                  person_name: "Joshua J.",
+                  desc: "Impressive range of features sets it apart as the ultimate solution for certificate verification. Their enterprise plan, along with customizable options, caters to diverse company needs, making it an awesome choice.",
+                  designation: "Chief Learning Officer ",
+                },
+                {
+                  person_name: "Joshua J.",
+                  desc: "Impressive range of features sets it apart as the ultimate solution for certificate verification. Their enterprise plan, along with customizable options, caters to diverse company needs, making it an awesome choice.",
+                  designation: "Chief Learning Officer",
+                },
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className="bg-white shadow-md rounded-xl py-4 px-2 max-w-[300px] mx-auto"
+                >
+                  <div className="text-gray-600 text-sm mb-4 italic relative ">
+                    {item?.desc}
+                  </div>
+
+                  <div className="flex mt-6">
+                    {/* Empty circular photo placeholder */}
+                    <div className="w-12 h-12 rounded-full bg-gray-200 mr-4"></div>
+
+                    <div className="">
+                      <div className="font-semibold text-gray-800  text-left">
+                        {item.person_name}
+                      </div>
+                      <div className="text-sm text-gray-500">
+                        {item.designation}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <div>
+        <main className="pt-6 px-4 sm:px-6 lg:px-0 pb-2  mx-auto">
+          <div className="text-center mt-[2rem] py-12 px-4   ">
+            {" "}
+            {/*#efefef*/}
+            <h2
+              className="sm:text-4xl text-3xl font-bold  sm:leading-none mb-6"
+              style={{
+                fontFamily: "Poppines, sans-serif",
+                color: HeadTextColor,
+              }}
+            >
+              WHY CHOOSE US ?
+            </h2>
+            <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto mb-10 rounded-full"></div>
+            <h5
+              className="sm:text-[18px] mt-2  text-sm sm:w-[60%] lg:w-[72%] font-medium text-color text-center mx-auto"
+              style={{ fontFamily: SubTextFontFamily }}
+              // as of now we consider the font as a medium
+            >
+              At Cloudstry Tech, we are committed to delivering innovative and
+              reliable digital solutions that drive your business forward. Our
+              client-centric approach, technical expertise, and dedication to
+              quality set us apart in the IT services landscape.
+            </h5>
+            <div className="mt-12 flex flex-col items-center justify-center">
+              {/* Desktop Layout */}
+              <div className="hidden md:grid md:grid-cols-3 mt-5 gap-4 w-full max-w-6xl">
+                {/* Left Text */}
+                <div className="flex flex-col  justify-between text-sm sm:text-base text-left px-4">
+                  <div>
+                    <h2
+                      className="text-center font-bold"
+                      style={{ textTransform: "uppercase" }}
+                    >
+                      Tailored Solutions
+                    </h2>
+                    <p
+                      className="text-center text-[15px] text-color"
+                      style={{ fontFamily: SubTextFontFamily }}
+                    >
+                      We customize our services to perfectly fit your unique
+                      business needs and challenges
+                    </p>
+                  </div>
+                  <div>
+                    <h2
+                      className="text-center font-bold"
+                      style={{ textTransform: "uppercase" }}
+                    >
+                      Experienced Team
+                    </h2>
+                    <p
+                      className="text-center text-[15px] text-color"
+                      style={{ fontFamily: SubTextFontFamily }}
+                    >
+                      We leverage the latest tools and innovations to ensure
+                      future-ready solutions
+                    </p>
+                  </div>
+                </div>
+
+                {/* Center Image */}
+                <div className="flex justify-center items-center">
+                  <img
+                    src={whychooseimg}
+                    alt="Center"
+                    className="w-full max-w-[300px] h-auto object-contain"
+                  />
+                </div>
+
+                {/* Right Text */}
+                <div className="flex flex-col  justify-between text-sm sm:text-base text-left px-4">
+                  <div>
+                    <h2
+                      className="text-center font-bold"
+                      style={{ textTransform: "uppercase" }}
+                    >
+                      Cutting-Edge Technology
+                    </h2>
+                    <p
+                      className="text-center text-[15px] text-color"
+                      style={{ fontFamily: SubTextFontFamily }}
+                    >
+                      Our skilled professionals bring years of industry
+                      experience and deep technical knowledge
+                    </p>
+                  </div>
+                  <div>
+                    <h2
+                      className="text-center font-bold"
+                      style={{ textTransform: "uppercase" }}
+                    >
+                      Reliable Support
+                    </h2>
+                    <p
+                      className="text-center text-[15px] text-color"
+                      style={{ fontFamily: SubTextFontFamily }}
+                    >
+                      From implementation to ongoing assistance, we provide
+                      dependable support to keep your operations smooth
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mobile Layout */}
+              <div className="md:hidden flex flex-col items-center text-center space-y-6 mt-8 px-4">
+                <div>
+                  <p>jsdfnakdfasjdf</p>
+                  <p>kfmasjdfajkd</p>
+                  <p>akdjfjjakdfjksaf</p>
+                </div>
+
+                <div>
+                  <p>jsdfnakdfasjdf</p>
+                  <p>kfmasjdfajkd</p>
+                  <p>akdjfjjakdfjksaf</p>
+                </div>
+
+                <img
+                  src={whychooseimg}
+                  alt="Center"
+                  className="w-full max-w-[300px] h-auto object-contain"
+                />
+
+                <div>
+                  <p>jsdfnakdfasjdf</p>
+                  <p>kfmasjdfajkd</p>
+                  <p>akdjfjjakdfjksaf</p>
+                </div>
+
+                <div>
+                  <p>jsdfnakdfasjdf</p>
+                  <p>kfmasjdfajkd</p>
+                  <p>akdjfjjakdfjksaf</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      {/* here commented code will come*/}
+      {/*commented code will end here*/}
+
+      <div>
+        <main className="pt-6 px-4 sm:px-6 lg:px-0 pb-2  mx-auto ">
+          <div className="text-center mb-[11rem]  py-12 px-4">
+            <h2
+              className="sm:text-4xl text-3xl font-bold  sm:leading-none mb-6"
+              style={{
+                fontFamily: "Poppines, sans-serif",
+                color: HeadTextColor,
+              }}
+            >
+              OUR GLOBAL PRESENCE
+            </h2>
+            <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto mb-10 rounded-full"></div>
+            <h5
+              className="sm:text-[18px] mt-2  text-sm sm:w-[60%] lg:w-[72%] font-medium text-color text-center mx-auto"
+              style={{ fontFamily: SubTextFontFamily }}
+              // as of now we consider the font as a medium
+            >
+              Cloudstry Tech proudly serves clients across multiple regions,
+              delivering consistent quality and innovation worldwide. Our global
+              footprint enables us to understand diverse market needs and offer
+              localized solutions with a global perspective.
+            </h5>
+
+            <div className="relative">
+              {/* Hero area */}
+              <div
+                className="h-[25rem] max-w-7xl  mx-auto mt-[4rem] bg-gray-200 overflow-hidden "
+                style={{ borderRadius: "20px" }}
+              >
+                {/* Replace with your image if you like */}
+                <img
+                  src={GlobalPresenseIMG}
+                  className="object-contain w-full h-full"
+                />
+              </div>
+
+              {/* Cards wrapper */}
+              <div className="absolute left-1/2 bottom-0 transform -translate-x-1/2 translate-y-[60%] flex flex-wrap justify-center gap-[2.4rem] px-4 w-full max-w-6xl mx-auto">
+                {/* Card 1 */}
+                <div className="bg-white rounded-lg shadow-lg p-5 w-[250px] flex flex-col items-center text-center">
+                  <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mb-3">
+                    <FaHandshake />
+                  </div>
+                  <h3
+                    className="font-bold mb-1"
+                    style={{ fontFamily: HeadFontFamily1 }}
+                  >
+                    Worldwide Clientele
+                  </h3>
+                  <p className="text-color text-center">
+                    We collaborate with businesses across continents, spanning
+                    various industries and sectors
+                  </p>
+                </div>
+
+                {/* Card 2 */}
+                <div className="bg-white rounded-lg shadow-lg p-5 w-[250px] flex flex-col items-center text-center">
+                  <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mb-3">
+                    <FaHandshake />
+                  </div>
+                  <h3
+                    className="font-bold mb-1"
+                    style={{ fontFamily: HeadFontFamily1 }}
+                  >
+                    Multicultural Expertise
+                  </h3>
+                  <p className="text-color text-center">
+                    Our team’s diverse background helps us tailor solutions that
+                    respect local cultures and business practices
+                  </p>
+                </div>
+
+                {/* Card 3 */}
+                <div className="bg-white rounded-lg shadow-lg p-5 w-[250px] flex flex-col items-center text-center">
+                  <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mb-3">
+                    <FaHandshake />
+                  </div>
+                  <h3
+                    className="font-bold mb-1"
+                    style={{ fontFamily: HeadFontFamily1 }}
+                  >
+                    24/7 Support
+                  </h3>
+                  <p className="text-color text-center">
+                    With offices and partners around the globe, we provide
+                    round-the-clock assistance and seamless communication
+                  </p>
+                </div>
+
+                {/* Card 4 */}
+                <div className="bg-white rounded-lg shadow-lg p-5 w-[250px] flex flex-col items-center text-center">
+                  <div className="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mb-3">
+                    <FaHandshake />
+                  </div>
+                  <h3
+                    className="font-bold mb-1"
+                    style={{ fontFamily: HeadFontFamily1 }}
+                  >
+                    Scalable Solutions
+                  </h3>
+                  <p className="text-color text-center">
+                    Whether a startup or enterprise, our solutions adapt to your
+                    needs regardless of location
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
 
       <main className="pt-10 pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#085d9e] to-[#00c1de]">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 ">

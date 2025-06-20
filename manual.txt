@@ -29,3 +29,5 @@
 
 
 //screen size resolution 362 * 863
+
+ngrok http 3000

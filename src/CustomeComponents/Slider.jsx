@@ -14,7 +14,8 @@ import { useState, useRef } from "react";
 import { BsArrowLeft, BsPause, BsPlay } from "react-icons/bs";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 // import img1 from "../assets/WebsiteImages/handsome-businessman-with-laptop-isolated-white-background.jpg";
-import bgimg from "../assets/WebsiteImages/bgimg-3.jpg";
+// import bgimg from "../assets/WebsiteImages/bgimg-4.png";
+import bgimg from "../assets/WebsiteImages/slider-banner.png";
 
 const slides = [
   {
@@ -33,15 +34,15 @@ const slides = [
   },
   {
     src: "https://badgecert.com/wp-content/uploads/2021/03/badgecert-woman.png",
-    title: "DIGITAL CERTIFICATION",
+    title: "DIGITAL CERTIFICATE",
     description:
-      "Go paperless with secure, tamper-proof digital credentials. Our digital certification solutions are trusted by universities, institutions, and global organizations to issue, verify, and manage certificates efficiently—ensuring authenticity, reducing fraud, and enhancing credibility in a fully digital environment.",
+      "Go paperless with secure, tamper-proof digital credentials. Our digital certificate solutions are trusted by universities, institutions, and global organizations to issue, verify, and manage certificates efficiently—ensuring authenticity, reducing fraud, and enhancing credibility in a fully digital environment.",
     buttonText: "Schedule a demo",
     buttonText1: "Login",
   },
   {
     src: "https://dummyimage.com/600x400/343a40/6c757d",
-    title: "CATTLE AADHAAR",
+    title: "CATTLE AADHAR",
     description:
       "Digitally tag, identify, and track livestock with precision using our Cattle Adhaar solution. We empower governments and rural bodies with smart, reliable animal identification systems—enhancing traceability, health monitoring, and livestock management through technology-driven agricultural innovation.",
     buttonText: "Learn More",
@@ -70,7 +71,11 @@ const CarouselSlider = () => {
   };
 
   return (
-    <div className="relative w-full h-[36rem]">
+    <div
+      className="relative w-full h-[42rem]"
+      // onMouseEnter={() => swiperRef.current?.autoplay?.stop()}
+      // onMouseLeave={() => swiperRef.current?.autoplay?.start()}
+    >
       <Swiper
         modules={[Autoplay, Pagination, Navigation]}
         spaceBetween={0}
@@ -79,17 +84,15 @@ const CarouselSlider = () => {
         speed={1000}
         autoplay={{
           delay: 3000,
-          disableOnInteraction: false,
+          disableOnInteraction: false, // <- very important
         }}
         navigation={{
           nextEl: ".carousel-forward",
           prevEl: ".carousel-backward",
         }}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
-        // pagination={{ clickable: true }}
-        // navigation={true}
-        className="w-full h-full"
-        style={{ height: "36rem" }}
+        pagination={{ clickable: true }}
+        className="w-full h-[42rem]"
       >
         {slides.map((item, i) => (
           <>
@@ -97,10 +100,15 @@ const CarouselSlider = () => {
               <img
                 src={bgimg}
                 alt="background"
-                className="absolute inset-0 -z-10 w-full h-full object-cover"
-                style={{ filter: "blur(1px)", transform: "scaleX(-1)" }}
+                className="absolute inset-0 -z-10 w-full object-cover"
+                style={{
+                  filter: "blur(0px)",
+                  transform: "scaleX(-1)",
+                  opacity: 0.5,
+                }}
               />
-              <div className="h-screen flex flex-col md:flex-row items-start md:items-start justify-start md:justify-between px-6 md:px-16 pt-10 md:pt-20">
+              <div className="h-screen flex flex-col md:flex-row items-start md:items-start justify-start md:justify-between px-6 md:px-16 pt-10 md:pt-20 mt-24">
+                {/* margin di he 20 top se new navbar ke liye */}
                 {/* Left Text Section */}
                 <div className="w-full md:w-1/2 space-y-4">
                   <h2
@@ -160,13 +168,21 @@ const CarouselSlider = () => {
             </SwiperSlide>
           </>
         ))}
-        <div
+        {/* <div
           className="absolute bottom-10  left-6 z-20 flex gap-4"
           style={{ zIndex: 1 }}
         >
           <div className="bg-white p-2 rounded-md shadow hover:bg-gray-200 transition-all carousel-backward">
             <IoIosArrowBack size={25} />
           </div>
+          <div className="bg-white p-2 rounded-md shadow hover:bg-gray-200 transition-all carousel-forward">
+          <IoIosArrowForward size={25} />
+          </div>
+          </div> */}
+        <div
+          className="absolute bottom-10  left-6 z-20 flex gap-4"
+          style={{ zIndex: 1 }}
+        >
           <button
             onClick={toggleAutoplay}
             className="bg-white p-2 rounded-md shadow hover:bg-gray-200 transition-all"
@@ -177,9 +193,6 @@ const CarouselSlider = () => {
               <BsPlay size={25} />
             )}
           </button>
-          <div className="bg-white p-2 rounded-md shadow hover:bg-gray-200 transition-all carousel-forward">
-            <IoIosArrowForward size={25} />
-          </div>
         </div>
       </Swiper>
     </div>
