@@ -31,8 +31,8 @@ const logos = [
 
 function ClientSlider() {
   return (
-    <main className="pt-2 px-4 sm:px-6 lg:px-0 pb-2  mx-auto">
-      <div className="text-center mt-[1rem] py-6 px-4 ">
+    <main className="pt-2 px-4 sm:px-6 lg:px-0 pb-2 mt-[4rem]  mx-auto">
+      <div className="text-center py-6 px-4 ">
         {" "}
         {/*#efefef*/}
         <h2

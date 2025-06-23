@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { BsFillCircleFill } from "react-icons/bs";
 import { FooterFontFamily, HeadTextColor } from "../CustomeComponents/Theme";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaPhone, FaVoicemail } from "react-icons/fa6";
+import { IoCall, IoLocationSharp, IoMail } from "react-icons/io5";
 
 function Footer() {
   const [maxDwidth, setMaxDwidth] = React.useState(window.innerWidth);
@@ -216,7 +218,7 @@ function Footer() {
             <h5 className="text-xl font-medium mb-3">CONTACT</h5>
             <ul className="flex flex-col space-y-2">
               {/* First li: Social Media Icons */}
-              <li className="">
+              {/* <li className="">
                 <div className="flex space-x-1">
                   <div className="w-9 h-9 rounded-full border-2 border-gray-200  flex items-center justify-center">
                     <Link
@@ -246,33 +248,42 @@ function Footer() {
                     </Link>
                   </div>
                 </div>
-              </li>
+              </li> */}
 
               {/* Contact Details */}
-              <li className="pt-2">
-                <Link
-                  href="mailto:hr@cloudstrytech.com"
-                  className="text-gray-500 hover:text-black  transition"
-                >
-                  hr@cloudstrytech.com
-                </Link>
+              <li className="pt-1">
+                <div className="flex flex-wrap gap-2">
+                  <IoMail size={25} />
+                  <Link
+                    href="mailto:hr@cloudstrytech.com"
+                    className="text-gray-500 hover:text-black  transition"
+                  >
+                    hr@cloudstrytech.com
+                  </Link>
+                </div>
               </li>
               <li className="pt-2">
-                <Link
-                  href="tel:+917316912309"
-                  className="text-gray-500 hover:text-black transition"
-                >
-                  073169-12309
-                </Link>
+                <div className="flex flex-wrap gap-2">
+                  <IoCall size={25} />
+                  <Link
+                    href="tel:+917316912309"
+                    className="text-gray-500 hover:text-black transition"
+                  >
+                    073169-12309
+                  </Link>
+                </div>
               </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-gray-500 hover:text-black transition"
-                >
-                  1st Floor, 33/C/S-3, Scheme No 78 - III, Near Shalimar
-                  Township, Sector F, Slice No.3, Honda Big Wing Indore 452010
-                </Link>
+              <li className="pt-2">
+                <div className="flex flex-wrap gap-1">
+                  <IoLocationSharp size={25} />
+                  <Link
+                    href="#"
+                    className="text-gray-500 hover:text-black w-[85%] transition"
+                  >
+                    1st Floor, 33/C/S-3, Scheme No 78 - III, Near Shalimar
+                    Township, Sector F, Slice No.3, Honda Big Wing Indore 452010
+                  </Link>
+                </div>
               </li>
             </ul>
           </div>
