@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button } from "@material-tailwind/react";
 import { BiChevronDown, BiChevronRight } from "react-icons/bi";
 import { NavbarItemColor } from "../CustomeComponents/Theme";
-import { HeadFontFamily1 } from "../CustomeComponents/Theme";
+import { HeadFontFamily } from "../CustomeComponents/Theme";
 import { Link } from "react-router-dom";
 
 function MobileNavbar({ closeNavbar }) {
@@ -31,7 +31,7 @@ function MobileNavbar({ closeNavbar }) {
               className={`flex items-center justify-between w-full p-3 font-medium text-left rounded-lg hover:bg-gray-50 transition-colors ${
                 openAccordion === "products" ? "bg-gray-50" : ""
               }`}
-              style={{ color: NavbarItemColor, fontFamily: HeadFontFamily1 }}
+              style={{ color: NavbarItemColor, fontFamily: HeadFontFamily }}
             >
               <span>Products</span>
               {openSubAccordion === "products" ? (
@@ -73,7 +73,7 @@ function MobileNavbar({ closeNavbar }) {
               className={`flex items-center justify-between w-full p-3 font-medium text-left rounded-lg hover:bg-gray-50 transition-colors ${
                 openAccordion === "services" ? "bg-gray-50" : ""
               }`}
-              style={{ color: NavbarItemColor, fontFamily: HeadFontFamily1 }}
+              style={{ color: NavbarItemColor, fontFamily: HeadFontFamily }}
             >
               <span>Services</span>
               {openSubAccordion === "services" ? (
@@ -169,7 +169,7 @@ function MobileNavbar({ closeNavbar }) {
               to={item.href}
               onClick={closeNavbar}
               className="block w-full p-3 font-medium rounded-lg hover:bg-gray-50 transition-colors"
-              style={{ color: NavbarItemColor, fontFamily: HeadFontFamily1 }}
+              style={{ color: NavbarItemColor, fontFamily: HeadFontFamily }}
             >
               {item.title}
             </Link>
@@ -180,7 +180,7 @@ function MobileNavbar({ closeNavbar }) {
                 className={`flex items-center justify-between w-full p-3 font-medium text-left rounded-lg hover:bg-gray-50 transition-colors ${
                   openAccordion === item.id ? "bg-gray-50" : ""
                 }`}
-                style={{ color: NavbarItemColor, fontFamily: HeadFontFamily1 }}
+                style={{ color: NavbarItemColor, fontFamily: HeadFontFamily }}
               >
                 <span>{item.title}</span>
                 {openAccordion === item.id ? (
@@ -206,7 +206,7 @@ function MobileNavbar({ closeNavbar }) {
         fullWidth
         size="sm"
         variant="text"
-        style={{ color: NavbarItemColor, fontFamily: HeadFontFamily1 }}
+        style={{ color: NavbarItemColor, fontFamily: HeadFontFamily }}
         className="mb-1 hover:bg-gray-50 text-md font-medium rounded-lg text-left justify-start"
       >
         Articles
@@ -217,7 +217,7 @@ function MobileNavbar({ closeNavbar }) {
         className="rounded-full w-full text-xs text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold hover:bg-gradient-to-r hover:from-white hover:to-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
         style={{
           borderRadius: "30px",
-          fontFamily: HeadFontFamily1,
+          fontFamily: HeadFontFamily,
         }}
       >
         Contact Us
@@ -228,7 +228,7 @@ function MobileNavbar({ closeNavbar }) {
         className="rounded-full mt-2 w-full text-xs text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold hover:bg-gradient-to-r hover:from-white hover:to-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
         style={{
           borderRadius: "30px",
-          fontFamily: HeadFontFamily1,
+          fontFamily: HeadFontFamily,
         }}
       >
         Schedule a demo

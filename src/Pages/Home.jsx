@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import CarouselSlider from "../CustomeComponents/Slider";
 import {
   gradientBG,
-  HeadFontFamily1,
+  HeadFontFamily,
   HeadTextColor,
   SubTextColor,
   SubTextFontFamily,
@@ -153,7 +153,7 @@ function Home() {
                   {/* Card Body */}
                   <h2
                     className="text-xl font-bold mt-6 text-center"
-                    style={{ fontFamily: HeadFontFamily1 }}
+                    style={{ fontFamily: HeadFontFamily }}
                   >
                     DIGITAL <br /> CERTIFICATION
                   </h2>
@@ -178,7 +178,7 @@ function Home() {
                   {/* Card Body */}
                   <h2
                     className="text-xl font-bold mt-6 text-center"
-                    style={{ fontFamily: HeadFontFamily1 }}
+                    style={{ fontFamily: HeadFontFamily }}
                   >
                     CATTLE <br /> AADHAR
                   </h2>
@@ -203,7 +203,7 @@ function Home() {
                   <h2
                     className="text-xl font-bold mt-6 text-center"
                     style={{
-                      fontFamily: HeadFontFamily1,
+                      fontFamily: HeadFontFamily,
                       // color: HeadTextColor,
                     }}
                   >
@@ -232,7 +232,7 @@ function Home() {
                   <h2
                     className="text-xl font-bold mt-6 text-center"
                     style={{
-                      fontFamily: HeadFontFamily1,
+                      fontFamily: HeadFontFamily,
                       // color: HeadTextColor,
                     }}
                   >
@@ -260,7 +260,7 @@ function Home() {
                   <h2
                     className="text-xl font-bold mt-6 text-center"
                     style={{
-                      fontFamily: HeadFontFamily1,
+                      fontFamily: HeadFontFamily,
                       // color: HeadTextColor,
                     }}
                   >
@@ -308,7 +308,7 @@ function Home() {
  
                 <h2
                   className="text-xl font-bold mt-6 text-center"
-                  style={{ fontFamily: HeadFontFamily1 }}
+                  style={{ fontFamily: HeadFontFamily }}
                 >
                   DIGITAL <br /> CERTIFICATION
                 </h2>
@@ -331,7 +331,7 @@ function Home() {
 
                  <h2
                   className="text-xl font-bold mt-6 text-center"
-                  style={{ fontFamily: HeadFontFamily1 }}
+                  style={{ fontFamily: HeadFontFamily }}
                 >
                   CATTLE <br /> AADHAR
                 </h2>
@@ -355,7 +355,7 @@ function Home() {
                  <h2
                   className="text-xl font-bold mt-6 text-center"
                   style={{
-                    fontFamily: HeadFontFamily1,
+                    fontFamily: HeadFontFamily,
                     // color: HeadTextColor,
                   }}
                 >
@@ -383,7 +383,7 @@ function Home() {
                 <h2
                   className="text-xl font-bold mt-6 text-center"
                   style={{
-                    fontFamily: HeadFontFamily1,
+                    fontFamily: HeadFontFamily,
                     // color: HeadTextColor,
                   }}
                 >
@@ -411,7 +411,7 @@ function Home() {
                 <h2
                   className="text-xl font-bold mt-6 text-center"
                   style={{
-                    fontFamily: HeadFontFamily1,
+                    fontFamily: HeadFontFamily,
                     // color: HeadTextColor,
                   }}
                 >
@@ -448,7 +448,7 @@ function Home() {
           <div className="text-center mt-12 py-12 px-4">
             <h2
               className="sm:text-4xl text-3xl font-bold sm:leading-none mb-6"
-              style={{ fontFamily: "Poppines, sans-serif", color: "#042c54" }}
+              style={{ fontFamily: "Poppines, sans-serif", color: "#085d9e" }}
             >
               WHY CHOOSE US ?
             </h2>
@@ -534,7 +534,7 @@ function Home() {
               <div className="relative w-[210px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
                 <h2
                   className="text-xl font-bold  text-center"
-                  style={{ fontFamily: HeadFontFamily1 }}
+                  style={{ fontFamily: HeadFontFamily }}
                 >
                   UNIVERSITIES
                 </h2>
@@ -550,7 +550,7 @@ function Home() {
               <div className="relative w-[210px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
                 <h2
                   className="text-xl font-bold  text-center"
-                  style={{ fontFamily: HeadFontFamily1 }}
+                  style={{ fontFamily: HeadFontFamily }}
                 >
                   ORGANIZATION
                 </h2>
@@ -566,7 +566,7 @@ function Home() {
               <div className="relative w-[210px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
                 <h2
                   className="text-xl font-bold  text-center"
-                  style={{ fontFamily: HeadFontFamily1 }}
+                  style={{ fontFamily: HeadFontFamily }}
                 >
                   INSTITUTIONS
                 </h2>
@@ -582,7 +582,7 @@ function Home() {
               <div className="relative w-[210px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
                 <h2
                   className="text-xl font-bold  text-center"
-                  style={{ fontFamily: HeadFontFamily1 }}
+                  style={{ fontFamily: HeadFontFamily }}
                 >
                   GOVERNMENT
                 </h2>
@@ -598,7 +598,7 @@ function Home() {
               <div className="relative w-[210px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
                 <h2
                   className="text-xl font-bold  text-center"
-                  style={{ fontFamily: HeadFontFamily1 }}
+                  style={{ fontFamily: HeadFontFamily }}
                 >
                   LOGISTIC
                 </h2>
@@ -699,7 +699,7 @@ function Home() {
               {/* Text */}
               <h2
                 className="text-white text-3xl md:text-5xl font-semibold  text-left"
-                style={{ fontFamily: HeadFontFamily1 }}
+                style={{ fontFamily: HeadFontFamily }}
               >
                 LET’S DISCUSS YOUR PROJECT TODAY
               </h2>
@@ -710,7 +710,7 @@ function Home() {
                 className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-gradient-to-r hover:from-white  hover:to-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
                 style={{
                   borderRadius: "30px",
-                  fontFamily: HeadFontFamily1,
+                  fontFamily: HeadFontFamily,
                 }}
               >
                 Contact Us
@@ -769,7 +769,7 @@ function Home() {
                   </div>
                   <h3
                     className="font-bold mb-1"
-                    style={{ fontFamily: HeadFontFamily1 }}
+                    style={{ fontFamily: HeadFontFamily }}
                   >
                     Worldwide Clientele
                   </h3>
@@ -789,7 +789,7 @@ function Home() {
                   </div>
                   <h3
                     className="font-bold mb-1"
-                    style={{ fontFamily: HeadFontFamily1 }}
+                    style={{ fontFamily: HeadFontFamily }}
                   >
                     Multicultural Expertise
                   </h3>
@@ -809,7 +809,7 @@ function Home() {
                   </div>
                   <h3
                     className="font-bold mb-1"
-                    style={{ fontFamily: HeadFontFamily1 }}
+                    style={{ fontFamily: HeadFontFamily }}
                   >
                     24/7 Support
                   </h3>
@@ -829,7 +829,7 @@ function Home() {
                   </div>
                   <h3
                     className="font-bold mb-1"
-                    style={{ fontFamily: HeadFontFamily1 }}
+                    style={{ fontFamily: HeadFontFamily }}
                   >
                     Scalable Solutions
                   </h3>
@@ -851,7 +851,7 @@ function Home() {
             <h2
               className="font-medium mb-8"
               style={{
-                fontFamily: HeadFontFamily1,
+                fontFamily: HeadFontFamily,
                 lineHeight: "1.2em",
                 fontSize: "50px",
               }}

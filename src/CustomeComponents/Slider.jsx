@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./slider.css";
 import { Button } from "@material-tailwind/react";
-import { HeadFontFamily1, HeadTextColor, NavbarItemColor } from "./Theme";
+import { HeadFontFamily, HeadTextColor, NavbarItemColor } from "./Theme";
 import buttonText from "@material-tailwind/react/theme/components/button/buttonText";
 import { FaPause, FaPlay } from "react-icons/fa";
 import { BiPlay } from "react-icons/bi";
@@ -125,7 +125,7 @@ const CarouselSlider = () => {
                     className="text-2xl md:text-[35px] font-bold"
                     style={{
                       color: NavbarItemColor,
-                      fontFamily: HeadFontFamily1,
+                      fontFamily: HeadFontFamily,
                     }}
                   >
                     {item.title}
@@ -140,7 +140,7 @@ const CarouselSlider = () => {
                       className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold    transition-all focus:outline-none focus:ring-0"
                       style={{
                         borderRadius: "30px",
-                        fontFamily: HeadFontFamily1,
+                        fontFamily: HeadFontFamily,
                       }}
                     >
                       {item.buttonText}
@@ -151,7 +151,7 @@ const CarouselSlider = () => {
                         className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-gradient-to-r hover:from-white  hover:to-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
                         style={{
                           borderRadius: "30px",
-                          fontFamily: HeadFontFamily1,
+                          fontFamily: HeadFontFamily,
                           width: "10rem",
                         }}
                       >

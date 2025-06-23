@@ -11,7 +11,7 @@ import { BiChevronRight } from "react-icons/bi";
 import logo from "../assets/cloudstry-logo-2.png";
 import {
   ButtonColor,
-  HeadFontFamily1,
+  HeadFontFamily,
   HeadTextColor,
   NavbarItemColor,
   NavbarSubItemColor,
@@ -51,7 +51,7 @@ const DefaultNav = () => {
                 variant="text"
                 style={{
                   color: NavbarItemColor,
-                  fontFamily: HeadFontFamily1,
+                  fontFamily: HeadFontFamily,
                 }}
                 className="text-[14px] font-medium hover:text-black focus:outline-none focus:ring-0 font flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors"
               >
@@ -133,7 +133,7 @@ const DefaultNav = () => {
                 variant="text"
                 style={{
                   color: NavbarItemColor,
-                  fontFamily: HeadFontFamily1,
+                  fontFamily: HeadFontFamily,
                 }}
                 className="text-[14px] font-medium flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-0"
               >
@@ -169,7 +169,7 @@ const DefaultNav = () => {
               <Button
                 size="sm"
                 variant="text"
-                style={{ color: NavbarItemColor, fontFamily: HeadFontFamily1 }}
+                style={{ color: NavbarItemColor, fontFamily: HeadFontFamily }}
                 className="text-[14px] font-medium  flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-0"
               >
                 Resource
@@ -205,7 +205,7 @@ const DefaultNav = () => {
               <Button
                 size="sm"
                 variant="text"
-                style={{ color: NavbarItemColor, fontFamily: HeadFontFamily1 }}
+                style={{ color: NavbarItemColor, fontFamily: HeadFontFamily }}
                 className="text-[14px] font-medium px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-0"
               >
                 Articles
@@ -216,7 +216,7 @@ const DefaultNav = () => {
             <Button
               size="sm"
               variant="text"
-              style={{ color: NavbarItemColor, fontFamily: HeadFontFamily1 }}
+              style={{ color: NavbarItemColor, fontFamily: HeadFontFamily }}
               className="text-lg font-medium px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-0"
             >
               Pricing
@@ -226,7 +226,7 @@ const DefaultNav = () => {
             <Button
               size="sm"
               variant="text"
-              style={{ color: NavbarItemColor, fontFamily: HeadFontFamily1 }}
+              style={{ color: NavbarItemColor, fontFamily: HeadFontFamily }}
               className="text-lg font-medium px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-0"
             >
               Contact Us
@@ -240,7 +240,7 @@ const DefaultNav = () => {
               className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-gradient-to-r hover:from-white  hover:to-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
               style={{
                 borderRadius: "30px",
-                fontFamily: HeadFontFamily1,
+                fontFamily: HeadFontFamily,
               }}
             >
               Contact Us
@@ -250,7 +250,7 @@ const DefaultNav = () => {
               size="sm"
               variant="outlined"
               className="rounded-full px-4 py-2 text-lg border-gray-300 hover:bg-gray-50 font-medium focus:outline-none focus:ring-0"
-              style={{ color: NavbarItemColor, fontFamily: HeadFontFamily1 }}
+              style={{ color: NavbarItemColor, fontFamily: HeadFontFamily }}
             >
               Login
             </Button> */}
