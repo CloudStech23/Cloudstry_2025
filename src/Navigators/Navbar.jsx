@@ -174,7 +174,7 @@ const Navbar = () => {
                 </MenuHandler>
                 <MenuList className="p-2 rounded-xl shadow-lg z-50 w-[250px] border border-gray-100 bg-white ml-1">
                   <MenuItem
-                    className="rounded-lg text-[16px] hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                    className="rounded-lg  hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
                     style={{
                       color: NavbarSubItemColor,
                       fontSize: NavbarItemSubHeadFontSize,
@@ -184,7 +184,7 @@ const Navbar = () => {
                     IT Strategy Consultancy
                   </MenuItem>
                   <MenuItem
-                    className="rounded-lg text-[16px] hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                    className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
                     style={{
                       color: NavbarSubItemColor,
                       fontSize: NavbarItemSubHeadFontSize,
@@ -208,6 +208,7 @@ const Navbar = () => {
                   color: NavbarItemColor,
                   fontFamily: HeadFontFamily,
                   fontSize: NavbarItemHeadFontSize,
+                  letterSpacing: "0.2px",
                 }}
                 className=" font-medium flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-0"
               >

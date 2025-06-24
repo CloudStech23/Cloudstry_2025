@@ -40,7 +40,7 @@ export const GrayBG = "#F3F4F6";
 export const NavbarItemHeadFontSize = "14px";
 export const NavbarItemHeadFontFamily = "Poppins, sans-serif";
 export const NavbarItemSubHeadFontFamily = "Poppins, sans-serif";
-export const NavbarItemSubHeadFontSize = "16px";
+export const NavbarItemSubHeadFontSize = "15px";
 export const NavbarIconChevronSize = "13px";
 export const NavbarItemColor = "#085d9e";
 

@@ -4,6 +4,7 @@ import CarouselSlider from "../CustomeComponents/Slider";
 import {
   gradientBG,
   HeadFontFamily,
+  HeadFontSize,
   HeadTextColor,
   SubTextColor,
   SubTextFontFamily,
@@ -29,13 +30,19 @@ import ClientSlider from "../CustomeComponents/ClientSlider";
 import whychooseimg from "../assets/WebsiteImages/standard-quality-control-concept-m (1).jpg";
 import GlobalPresenseIMG from "../assets/WebsiteImages/map.png";
 import { FaPhone, FaFacebookF, FaPeopleGroup } from "react-icons/fa6";
-import { MdAutoGraph, MdEmail, MdWatchLater } from "react-icons/md";
+import {
+  MdAutoGraph,
+  MdEmail,
+  MdManageAccounts,
+  MdWatchLater,
+} from "react-icons/md";
 import demoimg from "../assets/WebsiteImages/demoimg2.png";
 import { Button } from "@material-tailwind/react";
 import { BiSupport } from "react-icons/bi";
 import { BsPeopleFill } from "react-icons/bs";
 import { RiCodeAiFill } from "react-icons/ri";
 import { DiTerminal } from "react-icons/di";
+import SolutionsWeOffer from "./SolutionsWeOffer";
 
 function Home() {
   const [scrolled, setScrolled] = useState(false);
@@ -65,7 +72,7 @@ function Home() {
       </section>
 
       {/* Lable: Introduction */}
-      <div className="py-12 px-4 sm:px-6 lg:px-8">
+      <div className="py-12 mt-[2rem] px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6">
             <h2
@@ -77,9 +84,10 @@ function Home() {
                 textTransform: "uppercase",
               }}
             >
-              Bridging Gaps with Innovation,
+              Bridging Gaps{" "}
+              <span className="text-[#1f1446]">with Innovation,</span>
               <br />
-              Technology & Expertise
+              <span className="text-[#1f1446]">Technology & Expertise</span>
             </h2>
 
             <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto mb-10 rounded-full"></div>
@@ -129,7 +137,7 @@ function Home() {
       {/* Lable: solutions we offer 1 */}
       <div className="">
         <main className="pt-2 px-4 sm:px-6 lg:px-0 pb-2  mx-auto">
-          <div className="text-center py-2 px-4">
+          <div className="text-center py-2 ">
             {/*#efefef*/}
             <h2
               className="sm:text-4xl text-3xl font-bold  sm:leading-none mb-6"
@@ -141,150 +149,212 @@ function Home() {
               SOLUTIONS WE OFFER
             </h2>
             <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto mb-10 rounded-full"></div>
-            <div className="relative mt-14 py-10 px-4 rounded-xl overflow-hidden">
+            <div className="relative mt-14 py-10  overflow-hidden">
               <div className="absolute inset-0 -z-10">
                 <img
                   src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80"
                   alt="Background"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-[#085d9e] bg-opacity-70"></div>
+                <div className="absolute top-0 right-0 w-1/2 h-full bg-[#085d9e] opacity-70"></div>
+
+                {/* Right Half Overlay - Black */}
+                <div className="absolute top-0 left-0 w-1/2 h-full bg-black opacity-70"></div>
               </div>
-              <div className="flex flex-wrap justify-center gap-6 mt-14">
-                {/* CARD START */}
-                <div className="relative w-[210px] rounded-xl bg-white shadow-md p-5 pt-10 pb-6">
-                  {/* Diagonal Banner */}
-                  <div className="absolute top-0 left-0 w-0 h-0 border-t-[72px] border-r-[90px] rounded-tl-md border-t-orange-500 border-r-transparent">
-                    <div className="absolute top-[-59px] left-[10px] text-white text-xl">
-                      <TbCertificate size={30} />
-                    </div>
-                  </div>
-
-                  {/* Card Body */}
-                  <h2
-                    className="text-xl font-bold mt-6 text-center"
-                    style={{ fontFamily: HeadFontFamily }}
-                  >
-                    DIGITAL <br /> CERTIFICATION
-                  </h2>
-                  <p
-                    className="text-color text-[15px] mt-2 text-center"
-                    style={{ fontFamily: SubTextFontFamily }}
-                  >
-                    Say goodbye to paper certificates! Join millions of
-                    achievers who rely on our secure, verifiable digital
-                    certificate solutions to recognize and showcase success
-                    anytime, anywhere.
-                  </p>
-                </div>
-                <div className="relative w-[210px] rounded-xl bg-white shadow-md p-5 pt-10 pb-6">
-                  {/* Diagonal Banner */}
-                  <div className="absolute top-0 left-0 w-0 h-0 border-t-[72px] border-r-[90px] rounded-tl-md border-t-blue-500 border-r-transparent">
-                    <div className="absolute top-[-59px] left-[10px] text-white text-xl">
-                      <GiCow size={36} />
-                    </div>
-                  </div>
-
-                  {/* Card Body */}
-                  <h2
-                    className="text-xl font-bold mt-6 text-center"
-                    style={{ fontFamily: HeadFontFamily }}
-                  >
-                    CATTLE <br /> AADHAR
-                  </h2>
-                  <p
-                    className="text-color text-[15px] mt-2 text-center"
-                    style={{ fontFamily: SubTextFontFamily }}
-                  >
-                    Empowering cattle owners with unique digital IDs for better
-                    traceability and health tracking. Our solution ensures
-                    smarter management and data-driven decision-making.
-                  </p>
-                </div>
-                <div className="relative w-[210px] rounded-xl bg-white shadow-md p-5 pt-10 pb-6">
-                  {/* Diagonal Banner */}
-                  <div className="absolute top-0 left-0 w-0 h-0 border-t-[72px] border-r-[90px] rounded-tl-md border-t-green-500 border-r-transparent">
-                    <div className="absolute top-[-59px] left-[10px] text-white text-xl">
-                      <GiCargoShip size={30} />
-                    </div>
-                  </div>
-
-                  {/* Card Body */}
-                  <h2
-                    className="text-xl font-bold mt-6 text-center"
+              <div className="flex flex-wrap justify-center gap-14 mt-4 max-w-screen-xl mx-auto">
+                {/* services we offer */}
+                <div>
+                  <h1
+                    className=" font-bold text-center text-white mb-[2.5rem]"
                     style={{
+                      fontSize: HeadFontSize,
                       fontFamily: HeadFontFamily,
-                      // color: HeadTextColor,
                     }}
                   >
-                    3PL <br />
-                    SOLUTION
-                  </h2>
-                  <p
-                    className="text-color text-[15px] mt-2 text-center"
-                    style={{ fontFamily: SubTextFontFamily }}
-                  >
-                    Enhance your supply chain with intelligent demand
-                    forecasting and logistics planning. Our 3PL solutions
-                    optimize inventory, reduce costs, and improve delivery
-                    efficiency.
-                  </p>
-                </div>
-                <div className="relative w-[210px] rounded-xl bg-white shadow-md p-5 pt-10 pb-6">
-                  {/* Diagonal Banner */}
-                  <div className="absolute top-0 left-0 w-0 h-0 border-t-[72px] border-r-[90px] rounded-tl-md border-t-slate-500 border-r-transparent">
-                    <div className="absolute top-[-59px] left-[10px] text-white text-xl">
-                      <FaHandshake size={30} />
+                    OUR SERVICES
+                  </h1>
+                  <div className="flex gap-6  justify-center flex-wrap">
+                    <div className="relative w-[170px] rounded-xl h-[280px] bg-white shadow-md p-5 pt-10 pb-6">
+                      {/* Diagonal Banner */}
+                      <div className="absolute top-0 left-0 w-0 h-0 border-t-[72px] border-r-[90px] rounded-tl-md border-t-blue-900 border-r-transparent">
+                        <div className="absolute top-[-59px] left-[10px] text-white text-xl">
+                          <FaHandshake size={30} />
+                        </div>
+                      </div>
+
+                      {/* Card Body */}
+                      <h2
+                        className="text-[18px] font-bold mt-6 text-center"
+                        style={{
+                          fontFamily: HeadFontFamily,
+                          lineHeight: 1.2,
+                        }}
+                      >
+                        {/* IT STRATEGY <br />
+                    CONSULTANCY */}
+                        IT STRATEGY CONSULTING
+                      </h2>
+                      <p
+                        className="text-color text-[15px] mt-2 text-center"
+                        style={{ fontFamily: SubTextFontFamily }}
+                      >
+                        Enhance your supply chain with intelligent demand
+                        forecasting and logistics planning. Our 3PL solutions
+                        optimize inventory
+                      </p>
+                    </div>
+                    <div className="relative w-[170px] rounded-xl h-[280px] bg-white shadow-md p-5 pt-10 pb-6">
+                      {/* Diagonal Banner */}
+                      <div className="absolute top-0 left-0 w-0 h-0 border-t-[72px] border-r-[90px] rounded-tl-md border-t-rose-600 border-r-transparent">
+                        <div className="absolute top-[-59px] left-[10px] text-white text-xl">
+                          <LuLaptopMinimalCheck size={30} />
+                        </div>
+                      </div>
+
+                      {/* Card Body */}
+                      <h2
+                        className="text-[18px] font-bold mt-6 text-center"
+                        style={{
+                          fontFamily: HeadFontFamily,
+                          lineHeight: 1.2,
+                        }}
+                      >
+                        {/* SOFTWARE AND <br />
+                    STAFFING SOLUTIONS */}
+                        IT SOFTWARE
+                        <br />
+                        /MAINTENANCE
+                      </h2>
+                      <p
+                        className="text-color text-[15px] mt-2 text-center"
+                        style={{ fontFamily: SubTextFontFamily }}
+                      >
+                        Enhance your supply chain with intelligent demand
+                        forecasting and logistics planning. Our 3PL solutions
+                        optimize inventory
+                      </p>
+                    </div>
+                    <div className="relative w-[170px] rounded-xl h-[280px] bg-white shadow-md p-5 pt-10 pb-6">
+                      {/* Diagonal Banner */}
+                      <div className="absolute top-0 left-0 w-0 h-0 border-t-[72px] border-r-[90px] rounded-tl-md border-t-yellow-600 border-r-transparent">
+                        <div className="absolute top-[-59px] left-[10px] text-white text-xl">
+                          <MdManageAccounts size={30} />
+                        </div>
+                      </div>
+
+                      {/* Card Body */}
+                      <h2
+                        className="text-[18px] font-bold mt-6 text-center"
+                        style={{
+                          fontFamily: HeadFontFamily,
+                          lineHeight: 1.2,
+                        }}
+                      >
+                        {/* SOFTWARE AND <br />
+                    STAFFING SOLUTIONS */}
+                        MANPOWER SOLUTION
+                      </h2>
+                      <p
+                        className="text-color text-[15px] mt-2 text-center"
+                        style={{ fontFamily: SubTextFontFamily }}
+                      >
+                        Enhance your supply chain with intelligent demand
+                        forecasting and logistics planning. Our 3PL solutions
+                        optimize inventory
+                      </p>
                     </div>
                   </div>
-
-                  {/* Card Body */}
-                  <h2
-                    className="text-xl font-bold mt-6 text-center"
+                </div>
+                {/* products we offer*/}
+                <div>
+                  <h1
+                    className=" font-bold text-center text-white mb-[2.5rem]"
                     style={{
+                      fontSize: HeadFontSize,
                       fontFamily: HeadFontFamily,
-                      // color: HeadTextColor,
                     }}
                   >
-                    IT STRATEGY <br />
-                    CONSULTANCY
-                  </h2>
-                  <p
-                    className="text-color text-[15px] mt-2 text-center"
-                    style={{ fontFamily: SubTextFontFamily }}
-                  >
-                    Align your technology with business goals through expert IT
-                    consulting. We craft strategies that drive innovation,
-                    growth, and resilience.
-                  </p>
-                </div>
-                <div className="relative w-[210px] rounded-xl bg-white shadow-md p-5 pt-10 pb-6">
-                  {/* Diagonal Banner */}
-                  <div className="absolute top-0 left-0 w-0 h-0 border-t-[72px] border-r-[90px] rounded-tl-md border-t-rose-600 border-r-transparent">
-                    <div className="absolute top-[-59px] left-[10px] text-white text-xl">
-                      <LuLaptopMinimalCheck size={30} />
+                    OUR PRODUCTS
+                  </h1>
+                  <div className="flex gap-6 justify-center flex-wrap">
+                    <div className="relative w-[170px] rounded-xl h-[280px] bg-white shadow-md p-5 pt-10 pb-6">
+                      {/* Diagonal Banner */}
+                      <div className="absolute top-0 left-0 w-0 h-0 border-t-[72px] border-r-[90px] rounded-tl-md border-t-orange-500 border-r-transparent">
+                        <div className="absolute top-[-59px] left-[10px] text-white text-xl">
+                          <TbCertificate size={30} />
+                        </div>
+                      </div>
+
+                      {/* Card Body */}
+                      <h2
+                        className="text-[18px] font-bold mt-6 text-center"
+                        style={{ fontFamily: HeadFontFamily, lineHeight: 1.2 }}
+                      >
+                        DIGITAL <br /> CERTIFICATION
+                      </h2>
+                      <p
+                        className="text-color text-[15px] mt-2 text-center"
+                        style={{ fontFamily: SubTextFontFamily }}
+                      >
+                        Enhance your supply chain with intelligent demand
+                        forecasting and logistics planning. Our 3PL solutions
+                        optimize inventory
+                      </p>
+                    </div>
+                    <div className="relative w-[170px] rounded-xl h-[280px] bg-white shadow-md p-5 pt-10 pb-6">
+                      {/* Diagonal Banner */}
+                      <div className="absolute top-0 left-0 w-0 h-0 border-t-[72px] border-r-[90px] rounded-tl-md border-t-blue-500 border-r-transparent">
+                        <div className="absolute top-[-59px] left-[10px] text-white text-xl">
+                          <GiCow size={36} />
+                        </div>
+                      </div>
+
+                      {/* Card Body */}
+                      <h2
+                        className="text-[18px] font-bold mt-6 text-center"
+                        style={{ fontFamily: HeadFontFamily, lineHeight: 1.2 }}
+                      >
+                        CATTLE <br /> AADHAR
+                      </h2>
+                      <p
+                        className="text-color text-[15px] mt-2 text-center"
+                        style={{ fontFamily: SubTextFontFamily }}
+                      >
+                        Enhance your supply chain with intelligent demand
+                        forecasting and logistics planning. Our 3PL solutions
+                        optimize inventory
+                      </p>
+                    </div>
+                    <div className="relative w-[170px] rounded-xl h-[280px] bg-white shadow-md p-5 pt-10 pb-6">
+                      {/* Diagonal Banner */}
+                      <div className="absolute top-0 left-0 w-0 h-0 border-t-[72px] border-r-[90px] rounded-tl-md border-t-green-500 border-r-transparent">
+                        <div className="absolute top-[-59px] left-[10px] text-white text-xl">
+                          <GiCargoShip size={30} />
+                        </div>
+                      </div>
+
+                      {/* Card Body */}
+                      <h2
+                        className="text-[18px] font-bold mt-6 text-center"
+                        style={{
+                          fontFamily: HeadFontFamily,
+
+                          lineHeight: 1.2,
+                        }}
+                      >
+                        3PL <br />
+                        SOLUTION
+                      </h2>
+                      <p
+                        className="text-color text-[15px] mt-2 text-center"
+                        style={{ fontFamily: SubTextFontFamily }}
+                      >
+                        Enhance your supply chain with intelligent demand
+                        forecasting and logistics planning. Our 3PL solutions
+                        optimize inventory
+                      </p>
                     </div>
                   </div>
-
-                  {/* Card Body */}
-                  <h2
-                    className="text-xl font-bold mt-6 text-center"
-                    style={{
-                      fontFamily: HeadFontFamily,
-                      // color: HeadTextColor,
-                    }}
-                  >
-                    SOFTWARE AND <br />
-                    STAFFING SOLUTIONS
-                  </h2>
-                  <p
-                    className="text-color text-[15px] mt-2 text-center"
-                    style={{ fontFamily: SubTextFontFamily }}
-                  >
-                    We deliver custom software solutions and provide skilled
-                    staffing to help businesses scale efficiently and stay
-                    competitive.
-                  </p>
                 </div>
               </div>
             </div>
@@ -293,154 +363,7 @@ function Home() {
       </div>
 
       {/* Lable: solutions we offer 2 */}
-      {/* <div className="">
-        <main className="pt-6 px-4 sm:px-6 lg:px-0 pb-2  mx-auto">
-          <div className="text-center mt-[2rem] py-12 px-4 bg-[#efefef]  ">
-            
-            <h2
-              className="sm:text-4xl text-3xl font-bold  sm:leading-none mb-6"
-              style={{
-                fontFamily: "Poppines, sans-serif",
-                color: HeadTextColor,
-              }}
-            >
-              SOLUTIONS WE OFFER
-            </h2>
-            <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto mb-10 rounded-full"></div>
-           
-            <div className="flex flex-wrap justify-center gap-6 mt-14">
-               <div className="relative w-[210px] rounded-xl bg-white shadow-md p-5 pt-10 pb-6">
-                 <div className="absolute top-0 left-0 w-0 h-0 border-t-[72px] border-r-[90px] rounded-tl-md border-t-orange-500 border-r-transparent">
-                  <div className="absolute top-[-59px] left-[10px] text-white text-xl">
-                    <TbCertificate size={30} />
-                  </div>
-                </div>
- 
-                <h2
-                  className="text-xl font-bold mt-6 text-center"
-                  style={{ fontFamily: HeadFontFamily }}
-                >
-                  DIGITAL <br /> CERTIFICATION
-                </h2>
-                <p
-                  className="text-color text-[15px] mt-2 text-center"
-                  style={{ fontFamily: SubTextFontFamily }}
-                >
-                  Say goodbye to paper certificates! Join millions of achievers
-                  who rely on our secure, verifiable digital certificate
-                  solutions to recognize and showcase success anytime, anywhere.
-                </p>
-              </div>
-              <div className="relative w-[210px] rounded-xl bg-white shadow-md p-5 pt-10 pb-6">
-              
-                <div className="absolute top-0 left-0 w-0 h-0 border-t-[72px] border-r-[90px] rounded-tl-md border-t-blue-500 border-r-transparent">
-                  <div className="absolute top-[-59px] left-[10px] text-white text-xl">
-                    <GiCow size={30} />
-                  </div>
-                </div>
-
-                 <h2
-                  className="text-xl font-bold mt-6 text-center"
-                  style={{ fontFamily: HeadFontFamily }}
-                >
-                  CATTLE <br /> AADHAR
-                </h2>
-                <p
-                  className="text-color text-[15px] mt-2 text-center"
-                  style={{ fontFamily: SubTextFontFamily }}
-                >
-                  Empowering cattle owners with unique digital IDs for better
-                  traceability and health tracking. Our solution ensures smarter
-                  management and data-driven decision-making.
-                </p>
-              </div>
-              <div className="relative w-[210px] rounded-xl bg-white shadow-md p-5 pt-10 pb-6">
-               
-                <div className="absolute top-0 left-0 w-0 h-0 border-t-[72px] border-r-[90px] rounded-tl-md border-t-green-500 border-r-transparent">
-                  <div className="absolute top-[-59px] left-[10px] text-white text-xl">
-                    <GiCargoShip size={30} />
-                  </div>
-                </div>
-
-                 <h2
-                  className="text-xl font-bold mt-6 text-center"
-                  style={{
-                    fontFamily: HeadFontFamily,
-                    // color: HeadTextColor,
-                  }}
-                >
-                  3PL <br />
-                  SOLUTION
-                </h2>
-                <p
-                  className="text-color text-[15px] mt-2 text-center"
-                  style={{ fontFamily: SubTextFontFamily }}
-                >
-                  Enhance your supply chain with intelligent demand forecasting
-                  and logistics planning. Our 3PL solutions optimize inventory,
-                  reduce costs, and improve delivery efficiency.
-                </p>
-              </div>
-              <div className="relative w-[210px] rounded-xl bg-white shadow-md p-5 pt-10 pb-6">
-                
-                <div className="absolute top-0 left-0 w-0 h-0 border-t-[72px] border-r-[90px] rounded-tl-md border-t-slate-500 border-r-transparent">
-                  <div className="absolute top-[-59px] left-[10px] text-white text-xl">
-                    <FaHandshake size={30} />
-                  </div>
-                </div>
-
-            
-                <h2
-                  className="text-xl font-bold mt-6 text-center"
-                  style={{
-                    fontFamily: HeadFontFamily,
-                    // color: HeadTextColor,
-                  }}
-                >
-                  IT STRATEGY <br />
-                  CONSULTANCY
-                </h2>
-                <p
-                  className="text-color text-[15px] mt-2 text-center"
-                  style={{ fontFamily: SubTextFontFamily }}
-                >
-                  Align your technology with business goals through expert IT
-                  consulting. We craft strategies that drive innovation, growth,
-                  and resilience.
-                </p>
-              </div>
-              <div className="relative w-[210px] rounded-xl bg-white shadow-md p-5 pt-10 pb-6">
-            
-                <div className="absolute top-0 left-0 w-0 h-0 border-t-[72px] border-r-[90px] rounded-tl-md border-t-rose-600 border-r-transparent">
-                  <div className="absolute top-[-59px] left-[10px] text-white text-xl">
-                    <LuLaptopMinimalCheck size={30} />
-                  </div>
-                </div>
-
-               
-                <h2
-                  className="text-xl font-bold mt-6 text-center"
-                  style={{
-                    fontFamily: HeadFontFamily,
-                    // color: HeadTextColor,
-                  }}
-                >
-                  SOFTWARE AND <br />
-                  STAFFING SOLUTIONS
-                </h2>
-                <p
-                  className="text-color text-[15px] mt-2 text-center"
-                  style={{ fontFamily: SubTextFontFamily }}
-                >
-                  We deliver custom software solutions and provide skilled
-                  staffing to help businesses scale efficiently and stay
-                  competitive.
-                </p>
-              </div>
-            </div>
-          </div>
-        </main>
-      </div> */}
+      <SolutionsWeOffer />
 
       {/* Lable: counter */}
       {/* <section>
@@ -475,11 +398,11 @@ function Home() {
             quality set us apart in the IT services landscape.
           </h5>
 
-          <div className="mt-16 relative flex flex-col lg:flex-row w-full p-2 px-4 rounded-xl overflow-hidden">
+          <div className="mt-16 relative flex flex-col lg:flex-row w-full p-2 px-4  overflow-hidden ">
             {/* Left Section */}
             <div
-              className="w-full lg:w-1/2 bg-white flex flex-col justify-center border-2 border-[#085d9e]   gap-8 z-10 p-4 sm:p-8
-"
+              className="w-full lg:w-1/2 bg-white flex flex-col rounded-tl-md rounded-bl-md justify-center  gap-8 z-10 p-4 sm:p-8"
+              style={{ boxShadow: "#b3b3b3 0px 0px 6px 0px" }}
             >
               <div className="flex items-start gap-3">
                 <div className="min-w-[48px] min-h-[48px] flex items-center justify-center rounded-full   text-sm font-semibold shadow-md ">
@@ -682,7 +605,7 @@ function Home() {
                   className="text-xl font-bold  text-center"
                   style={{ fontFamily: HeadFontFamily }}
                 >
-                  UNIVERSITIES
+                  EDUCATION
                 </h2>
                 <p
                   className="text-color text-[15px] hover-card-text mt-2 text-center"
@@ -698,7 +621,7 @@ function Home() {
                   className="text-xl font-bold  text-center"
                   style={{ fontFamily: HeadFontFamily }}
                 >
-                  ORGANIZATION
+                  UTILITIES
                 </h2>
                 <p
                   className="text-color text-[15px] hover-card-text mt-2 text-center"
@@ -714,7 +637,7 @@ function Home() {
                   className="text-xl font-bold  text-center"
                   style={{ fontFamily: HeadFontFamily }}
                 >
-                  INSTITUTIONS
+                  GOVERNMENT
                 </h2>
                 <p
                   className="text-color text-[15px] hover-card-text mt-2 text-center"
@@ -730,7 +653,7 @@ function Home() {
                   className="text-xl font-bold  text-center"
                   style={{ fontFamily: HeadFontFamily }}
                 >
-                  GOVERNMENT
+                  LOGISTIC
                 </h2>
                 <p
                   className="text-color text-[15px] hover-card-text mt-2 text-center"
@@ -746,7 +669,7 @@ function Home() {
                   className="text-xl font-bold  text-center"
                   style={{ fontFamily: HeadFontFamily }}
                 >
-                  LOGISTIC
+                  HEALTH CARE
                 </h2>
                 <p
                   className="text-color text-[15px] hover-card-text mt-2 text-center"
@@ -783,16 +706,19 @@ function Home() {
                   person_name: "Joshua J.",
                   desc: "Impressive range of features sets it apart as the ultimate solution for certificate verification. Their enterprise plan, along with customizable options, caters to diverse company needs, making it an awesome choice.",
                   designation: "Chief Learning Officer",
+                  img: "https://www.kindpng.com/picc/m/719-7191738_round-png-image-man-transparent-png.png",
                 },
                 {
                   person_name: "Joshua J.",
                   desc: "Impressive range of features sets it apart as the ultimate solution for certificate verification. Their enterprise plan, along with customizable options, caters to diverse company needs, making it an awesome choice.",
                   designation: "Chief Learning Officer ",
+                  img: "https://www.seekpng.com/png/detail/812-8125927_meg-circle-girl.png",
                 },
                 {
                   person_name: "Joshua J.",
                   desc: "Impressive range of features sets it apart as the ultimate solution for certificate verification. Their enterprise plan, along with customizable options, caters to diverse company needs, making it an awesome choice.",
                   designation: "Chief Learning Officer",
+                  img: "https://www.kindpng.com/picc/m/719-7191738_round-png-image-man-transparent-png.png",
                 },
               ].map((item, index) => (
                 <div
@@ -805,7 +731,13 @@ function Home() {
 
                   <div className="flex mt-6">
                     {/* Empty circular photo placeholder */}
-                    <div className="w-12 h-12 rounded-full bg-gray-200 mr-4"></div>
+                    <div className="w-12 h-12 rounded-full bg-gray-200 mr-4">
+                      <img
+                        src={item.img}
+                        alt=""
+                        className="w-full h-full object-cover rounded-full"
+                      />
+                    </div>
 
                     <div className="">
                       <div className="font-semibold text-gray-800  text-left">
@@ -907,7 +839,7 @@ function Home() {
               {/* Cards wrapper */}
               <div className="absolute left-1/2 bottom-0 transform -translate-x-1/2 translate-y-[60%] flex flex-wrap justify-center gap-[2.4rem] px-4 w-full max-w-6xl mx-auto">
                 {/* Card 1 */}
-                <div className="bg-white rounded-lg shadow-lg p-5 w-[250px] flex flex-col items-center text-center">
+                <div className="bg-white rounded-lg shadow-lg p-5 w-[250px] flex flex-col items-center text-center transition-transform duration-250 hover:-translate-y-2">
                   <div
                     className="w-12 h-12 rounded-full  flex items-center justify-center mb-3"
                     style={{ background: gradientBG }}
@@ -927,7 +859,7 @@ function Home() {
                 </div>
 
                 {/* Card 2 */}
-                <div className="bg-white rounded-lg shadow-lg p-5 w-[250px] flex flex-col items-center text-center">
+                <div className="bg-white rounded-lg shadow-lg p-5 w-[250px] flex flex-col items-center text-center transition-transform duration-250 hover:-translate-y-2">
                   <div
                     className="w-12 h-12 rounded-full  flex items-center justify-center mb-3"
                     style={{ background: gradientBG }}
@@ -947,7 +879,7 @@ function Home() {
                 </div>
 
                 {/* Card 3 */}
-                <div className="bg-white rounded-lg shadow-lg p-5 w-[250px] flex flex-col items-center text-center">
+                <div className="bg-white rounded-lg shadow-lg p-5 w-[250px] flex flex-col items-center text-center transition-transform duration-250 hover:-translate-y-2">
                   <div
                     className="w-12 h-12 rounded-full flex items-center justify-center mb-3"
                     style={{ background: gradientBG }}
@@ -967,7 +899,7 @@ function Home() {
                 </div>
 
                 {/* Card 4 */}
-                <div className="bg-white rounded-lg shadow-lg p-5 w-[250px] flex flex-col items-center text-center">
+                <div className="bg-white rounded-lg shadow-lg p-5 w-[250px] flex flex-col items-center text-center transition-transform duration-250 hover:-translate-y-2">
                   <div
                     className="w-12 h-12 rounded-full  flex items-center justify-center mb-3"
                     style={{ background: gradientBG }}
