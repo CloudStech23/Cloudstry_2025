@@ -1,84 +1,225 @@
-// CarouselSlider.jsx
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectFade, Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./slider.css";
+import { Button } from "@material-tailwind/react";
+import { HeadFontFamily, NavbarItemColor } from "./Theme";
+import { useState, useRef } from "react";
+import { BsPause, BsPlay } from "react-icons/bs";
+import bgimg from "../assets/WebsiteImages/slider-banner.png";
+import badgecertimg from "../assets/WebsiteImages/badgecertimg1.jpg.png";
 
 const slides = [
   {
-    src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80",
-    title: "Explore Nature",
-    description: "Discover the beauty of nature in its rawest form.",
+    src: "https://dummyimage.com/600x400/343a40/6c757d",
+    title: "IT STRATEGY CONSULTANCY",
+    description:
+      "Unlock business growth with expert IT strategy consultancy. We design tailored technology roadmaps that align with your goals, streamline operations, and drive smarter outcomes—helping your organization adapt, innovate, and stay ahead in an ever-evolving digital landscape.",
+    buttonText: "Learn More",
   },
   {
-    src: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1920&q=80",
-    title: "Embrace Technology",
-    description: "The future is built with modern tech innovations.",
+    src: "https://dummyimage.com/600x400/343a40/6c757d",
+    title: "SOFTWARE & STAFFING SERVICES",
+    description:
+      "Boost your business with custom software solutions tailored to your needs and efficient staffing services. From powerful applications to hiring skilled professionals, we help you streamline operations, improve productivity, and scale confidently with the right technology and talent",
+    buttonText: "Learn More",
   },
   {
-    src: "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?auto=format&fit=crop&w=1920&q=80",
-    title: "Mountains of Wisdom",
-    description: "Climb towards your dreams, one peak at a time.",
+    src: { url: badgecertimg },
+    title: "DIGITAL CERTIFICATE",
+    description:
+      "Go paperless with secure, tamper-proof digital credentials. Our digital certificate solutions are trusted by universities, institutions, and global organizations to issue, verify, and manage certificates efficiently—ensuring authenticity, reducing fraud, and enhancing credibility in a fully digital environment.",
+    buttonText: "Schedule a demo",
+    buttonText1: "Login",
   },
   {
-    src: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80",
-    title: "Sky High Thoughts",
-    description: "Let your imagination fly among the clouds.",
+    src: "https://dummyimage.com/600x400/343a40/6c757d",
+    title: "CATTLE AADHAR",
+    description:
+      "Digitally tag, identify, and track livestock with precision using our Cattle Adhaar solution. We empower governments and rural bodies with smart, reliable animal identification systems—enhancing traceability, health monitoring, and livestock management through technology-driven agricultural innovation.",
+    buttonText: "Learn More",
   },
   {
-    src: "https://images.unsplash.com/photo-1604079628048-94303b8d19d9?auto=format&fit=crop&w=1920&q=80",
-    title: "Urban Dreams",
-    description: "Where architecture and dreams meet innovation.",
+    src: "https://dummyimage.com/600x400/343a40/6c757d",
+    title: "3PL SOLUTION",
+    description:
+      "Plan smarter with our demand-driven 3PL solutions designed to optimize inventory, cut logistics costs, and enhance supply chain efficiency. We empower businesses with real-time visibility, streamlined operations, and scalable logistics support tailored to today’s fast-paced market demands.",
+    buttonText: "Learn More",
   },
 ];
 
 const CarouselSlider = () => {
-  return (
-    <div className="relative w-full h-screen bg-black">
-      <Swiper
-        modules={[Autoplay, EffectFade, Pagination, Navigation]}
-        spaceBetween={0}
-        slidesPerView={1}
-        loop={true}
-        effect="cards"
-        speed={1000} // smoother transition speed
-        autoplay={{
-          delay: 4000,
-          disableOnInteraction: false,
-        }}
-        pagination={{ clickable: true }}
-        navigation={true}
-        className="w-full h-full"
-      >
-        {slides.map((item, i) => (
-          <SwiperSlide key={i}>
-            <div className="relative w-full h-screen">
-              {/* Image */}
-              <img
-                src={item.src}
-                alt={`Slide ${i + 1}`}
-                className="w-full h-full object-cover opacity-60 transition-opacity duration-1000"
-                loading="lazy"
-              />
+  const [isPlaying, setIsPlaying] = useState(true);
+  const swiperRef = useRef(null);
 
-              {/* Overlay Text */}
-              <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-4 text-white text-center">
-                <h2 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">
-                  {item.title}
-                </h2>
-                <p className="text-lg md:text-2xl max-w-2xl drop-shadow-md">
-                  {item.description}
-                </p>
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
+  const toggleAutoplay = () => {
+    if (!swiperRef.current) return;
+    if (isPlaying) {
+      swiperRef.current.autoplay.stop();
+    } else {
+      swiperRef.current.autoplay.start();
+    }
+    setIsPlaying(!isPlaying);
+  };
+
+  return (
+    <React.Fragment>
+      {/* <div className="bg-[#805d9e] flex items-center justify-center mb-2">
+        hello uday
+      </div> */}
+      <div
+        className="relative w-full h-[43rem] "
+        // onMouseEnter={() => swiperRef.current?.autoplay?.stop()}
+        // onMouseLeave={() => swiperRef.current?.autoplay?.start()}
+      >
+        <img
+          src={bgimg}
+          alt="Background"
+          className="absolute inset-0 w-full h-full object-cover -z-10"
+          style={{
+            filter: "blur(0px)",
+            transform: "scaleX(-1)",
+            opacity: 0.5,
+          }}
+        />
+        <div className="absolute inset-0 w-full h-[43rem]  opcacity-70  -z-10"></div>
+        <Swiper
+          modules={[Autoplay, Pagination, Navigation]}
+          spaceBetween={0}
+          slidesPerView={1}
+          loop={true}
+          speed={1000}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false, // <- very important
+          }}
+          navigation={{
+            nextEl: ".carousel-forward",
+            prevEl: ".carousel-backward",
+          }}
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
+          pagination={{ clickable: true }}
+          className="w-full h-[43rem]"
+        >
+          {slides.map((item, i) => (
+            <>
+              <SwiperSlide key={i}>
+                {/* <img
+                src={bgimg}
+                alt="background"
+                className="absolute inset-0 -z-10 w-full object-cover"
+                style={{
+                  filter: "blur(0px)",
+                  transform: "scaleX(-1)",
+                  opacity: 0.5,
+                }}
+              /> */}
+                <div className="h-screen flex flex-col md:flex-row items-start md:items-start justify-start md:justify-between px-6 md:px-16 pt-10 md:pt-20 mt-24">
+                  {/* margin di he 20 top se new navbar ke liye */}
+                  {/* Left Text Section */}
+                  <div className="w-full md:w-1/2 space-y-4">
+                    <h2
+                      className="text-2xl md:text-[35px] font-bold"
+                      style={{
+                        color: NavbarItemColor,
+                        fontFamily: HeadFontFamily,
+                      }}
+                    >
+                      {item.title}
+                    </h2>
+                    <p className="text-color text-md md:text-[17.5px]">
+                      {item.description}
+                    </p>
+                    {/* <p className="text-gray-700 text-1xl">{item.description}</p> */}
+                    <div className="flex gap-4 pt-[2.8rem]">
+                      <Button
+                        size="md"
+                        className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold    transition-all focus:outline-none focus:ring-0"
+                        style={{
+                          borderRadius: "30px",
+                          fontFamily: HeadFontFamily,
+                        }}
+                      >
+                        {item.buttonText}
+                      </Button>
+                      {item.buttonText1 && (
+                        <Button
+                          size="md"
+                          className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-gradient-to-r hover:from-white  hover:to-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
+                          style={{
+                            borderRadius: "30px",
+                            fontFamily: HeadFontFamily,
+                            width: "10rem",
+                          }}
+                        >
+                          {item.buttonText1}
+                        </Button>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Right Image Section */}
+                  <div className="w-full md:w-1/2 flex justify-center  md:mt-0">
+                    <div className="  rounded-md ">
+                      <img
+                        src={badgecertimg}
+                        alt={`Slide ${i + 1}`}
+                        className="w-full  h-[400px] object-cover rounded-sm"
+                        style={{
+                          zIndex: 0,
+                        }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </>
+          ))}
+          {/* <div
+          className="absolute bottom-10  left-6 z-20 flex gap-4"
+          style={{ zIndex: 1 }}
+        >
+          <div className="bg-white p-2 rounded-md shadow hover:bg-gray-200 transition-all carousel-backward">
+            <IoIosArrowBack size={25} />
+          </div>
+          <div className="bg-white p-2 rounded-md shadow hover:bg-gray-200 transition-all carousel-forward">
+          <IoIosArrowForward size={25} />
+          </div>
+          </div> */}
+          <div
+            className="absolute bottom-10  left-6 z-20 flex gap-4"
+            style={{ zIndex: 1 }}
+          >
+            <button
+              onClick={toggleAutoplay}
+              className="bg-white p-2 rounded-md shadow hover:bg-gray-200 transition-all"
+            >
+              {isPlaying ? (
+                <BsPause size={25} color="black" />
+              ) : (
+                <BsPlay size={25} />
+              )}
+            </button>
+          </div>
+        </Swiper>
+        {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100">
+        <g fill="#e5e7eb">
+          <path
+            d="M0 0v100c166.7 0 166.7-66 333.3-66S500 77 666.7 77 833.3 28 1000 28V0H0Z"
+            opacity=".5"
+          ></path>
+          <path
+            d="M0 0v100c166.7 0 166.7-66 333.3-66S500 70 666.7 70 833.3 16 1000 16V0H0Z"
+            opacity=".5"
+          ></path>
+          <path d="M0 0v100c166.7 0 166.7-66 333.3-66S500 63 666.7 63 833.3 4 1000 4V0H0Z"></path>
+        </g>
+      </svg> */}
+      </div>
+    </React.Fragment>
   );
 };
 

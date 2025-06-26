@@ -1,0 +1,33 @@
+//SEO tags and content 
+<Helmet>
+  <title>Leading the Way in Business Tech Innovation | CloudstryTech</title>
+  <meta name="description" content="CloudstryTech delivers cutting-edge IT services and digital products to accelerate your business transformation." />
+  <meta name="keywords" content="CloudstryTech, IT solutions, business tech, cloud services, software development" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.cloudstrytech.com/" />
+
+  {/* Open Graph */}
+  <meta property="og:title" content="Leading the Way in Business Tech Innovation | CloudstryTech" />
+  <meta property="og:description" content="CloudstryTech delivers cutting-edge IT services and digital products to accelerate your business transformation." />
+  <meta property="og:url" content="https://www.cloudstrytech.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.cloudstrytech.com/assets/og-image.jpg" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Leading the Way in Business Tech Innovation | CloudstryTech" />
+  <meta name="twitter:description" content="CloudstryTech delivers cutting-edge IT services and digital products to accelerate your business transformation." />
+  <meta name="twitter:image" content="https://www.cloudstrytech.com/assets/og-image.jpg" />
+
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+</Helmet>
+
+
+//
+
+
+
+//screen size resolution 362 * 863
+
+ngrok http 3000

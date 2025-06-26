@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Menu,
   MenuHandler,
@@ -8,216 +8,366 @@ import {
 } from "@material-tailwind/react";
 import { FaChevronDown } from "react-icons/fa";
 import { BiChevronRight } from "react-icons/bi";
-import logo from "../assets/Cloudstry2-removebg-preview.png";
+import logo from "../assets/cloudstry-logo-2.png";
+import {
+  ButtonColor,
+  HeadFontFamily,
+  HeadTextColor,
+  NavbarIconChevronSize,
+  NavbarItemColor,
+  NavbarItemHeadFontSize,
+  NavbarItemSubHeadFontFamily,
+  NavbarItemSubHeadFontSize,
+  NavbarSubItemColor,
+} from "../CustomeComponents/Theme";
+import { Link } from "react-router-dom";
+import MobileNavbar from "./MobileNavbar";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 80;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
+
+    // Add scroll event listener when component mounts
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    // Clean up the event listener when component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrolled]); // Only re-run if scrolled state changes
+
+  function toggleHamburger() {
+    setMenuOpen(!menuOpen);
+  }
 
   return (
-    <nav className="bg-white  fixed top-0 shadow-md left-0 right-0 z-50">
-      <div className="container mx-auto px-8 py-3 flex items-center justify-between">
-        {/* Logo with hover effect */}
+    // <nav
+    //   className="bg-white  fixed top-5 left-10 right-10 z-50 rounded-[30px] "
+    //   style={{ boxShadow: "rgb(0 81 143) 0px -5px 19px 0px" }}
+    // >
+    <nav
+      className={`fixed z-50 transition-all duration-200 ease-in-out ${
+        scrolled || menuOpen
+          ? "top-0 left-0 right-0 bg-white  shadow-md "
+          : "top-5 left-7 right-7 bg-white rounded-[20px] border-2 border-gray-200 "
+        // : "top-5 left-7 right-7 bg-none rounded-[20px]  "
+      }`}
+      // style={{ boxShadow: "rgb(0 81 143) 0px -5px 19px 0px" }}
+    >
+      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center">
-          <img
- 
-            className="h-[40px] sm:h-20 w-auto transition-transform hover:scale-[1.02]
-            
- 
-            src={logo}
-            alt="Logo"
-          />
+          <Link to="/">
+            <img
+              className="md:w-auto h-14 sm:h-[3.4rem] w-auto transition-transform hover:scale-[1.02]"
+              src={logo}
+              style={{ objectFit: "cover" }}
+            />
+          </Link>
         </div>
 
-        {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-2 lg:gap-3">
-          <div className="flex flex-col">
-            <div className="flex flex-row items-center mb-3 gap-2">
-              <div className="flex items-center gap-4  ">
-                <Button
-                  size="sm"
-                  className="rounded-full bg-gradient-to-r text-sm from-blue-500 to-indigo-400 text-white font-semibold hover:shadow-md transition-all"
-                >
-                  Schedule a demo
-                </Button>
-                <Button
-                  size="sm"
-                  variant="outlined"
-                  className="rounded-full text-sm border-gray-300 text-gray-700 hover:bg-gray-50 font-medium"
-                >
-                  Login
-                </Button>
-                <div className="text-sm text-gray-700 mx-2 font-medium ">
-                  +91-1234567890
-                </div>
-                <div className="text-sm text-gray-700 mx-2 font-medium ">
-                  hrsupport@Cloudstry.com
-                </div>
-              </div>
-            </div>
-            <div className="flex-row flex items-center gap-4">
-              <Menu allowHover>
-                <MenuHandler>
-                  <Button
-                    size="sm"
-                    variant="text"
-                    className="text-gray-700 hover:text-black text-sm font-medium flex items-center gap-1 py-2 rounded-full border border-zinc-800 bg-white hover:bg-slate-50 transition-colors px-3"
-                  >
-                    What we do{" "}
-                    <FaChevronDown className="text-xs opacity-70 mt-1 mx-1 transition-transform" />
-                  </Button>
-                </MenuHandler>
-                <MenuList className="p-2 rounded-xl shadow-lg z-50 w-40 mt-2 border border-gray-100 bg-white">
-                  {/* <MenuItem className="rounded-lg hover:bg-gray-50 px-3 py-2 text-gray-700 flex items-center justify-between">
-                
-              </MenuItem>
-              <MenuItem className="rounded-lg hover:bg-gray-50 px-3 py-2 text-gray-700 flex items-center justify-between">
-                Service 2
-              </MenuItem> */}
-
-                  {/* Products dropdown - fixed alignment */}
-                  <Menu allowHover placement="right-start" offset={10}>
-                    <MenuHandler>
-                      <MenuItem className="rounded-lg hover:bg-gray-50 gap-1 px-3 py-2 text-gray-700 flex items-center justify-between w-full">
-                        <span>Products</span>
-                        <BiChevronRight className="text-lg opacity-70 mr-2 transition-transform" />
-                      </MenuItem>
-                    </MenuHandler>
-                    <MenuList className="p-2 rounded-xl shadow-lg z-50 w-48 border border-gray-100 bg-white ml-1">
-                      <MenuItem className="rounded-lg hover:bg-gray-50 px-3 py-2 text-gray-700">
-                        Digital Certificate
-                      </MenuItem>
-                      <MenuItem className="rounded-lg hover:bg-gray-50 px-3 py-2 text-gray-700">
-                        Cattle Aadhar
-                      </MenuItem>
-                      <MenuItem className="rounded-lg hover:bg-gray-50 px-3 py-2 text-gray-700">
-                        3PL Solut
-                      </MenuItem>
-                    </MenuList>
-                  </Menu>
-                  <Menu allowHover placement="right-start" offset={10}>
-                    <MenuHandler>
-                      <MenuItem className="rounded-lg hover:bg-gray-50 gap-1 px-3 py-2 text-gray-700 flex items-center justify-between w-full">
-                        <span>Services</span>
-                        <BiChevronRight className="text-lg opacity-70 mr-2 transition-transform" />
-                      </MenuItem>
-                    </MenuHandler>
-                    <MenuList className="p-2 rounded-xl shadow-lg z-50 w-[250px]  border border-gray-100 bg-white ml-1">
-                      <MenuItem className="rounded-lg hover:bg-gray-50 px-3 py-2 text-gray-700">
-                        IT Strategy Consultancy
-                      </MenuItem>
-                      <MenuItem className="rounded-lg hover:bg-gray-50 px-3 py-2 text-gray-700">
-                        Software Services/Staffing Solution
-                      </MenuItem>
-                    </MenuList>
-                  </Menu>
-
-                  {/* <MenuItem className="rounded-lg hover:bg-gray-50 px-3 py-2 text-gray-700 flex items-center justify-between">
-                Service 3
-              </MenuItem> */}
-                </MenuList>
-              </Menu>
-              <Menu allowHover>
-                <MenuHandler>
-                  <Button
-                    size="sm"
-                    variant="text"
-                    className="text-gray-700 hover:text-black text-md font-medium flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors"
-                  >
-                    Industries
-                    <FaChevronDown className="text-xs opacity-70 transition-transform" />
-                  </Button>
-                </MenuHandler>
-                <MenuList className="p-2 rounded-xl shadow-lg z-50 w-40 mt-2 border border-gray-100 bg-white">
-                  <MenuItem className="rounded-lg hover:bg-gray-50 px-3 py-2 text-gray-700 flex items-center justify-between">
-                    Education
-                  </MenuItem>
-                  <MenuItem className="rounded-lg hover:bg-gray-50 px-3 py-2 text-gray-700 flex items-center justify-between">
-                    Government
-                  </MenuItem>
-                  <MenuItem className="rounded-lg hover:bg-gray-50 px-3 py-2 text-gray-700 flex items-center justify-between">
-                    Logistic
-                  </MenuItem>
-                </MenuList>
-              </Menu>
-              <Menu allowHover>
-                <MenuHandler>
-                  <Button
-                    size="sm"
-                    variant="text"
-                    className="text-gray-700 hover:text-black text-md font-medium flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors"
-                  >
-                    Resource
-                    <FaChevronDown className="text-xs opacity-70 transition-transform" />
-                  </Button>
-                </MenuHandler>
-                <MenuList className="p-2 rounded-xl shadow-lg z-50 w-40 mt-2 border border-gray-100 bg-white">
-                  <MenuItem className="rounded-lg hover:bg-gray-50 px-3 py-2 text-gray-700 flex items-center justify-between">
-                    Podcasts
-                  </MenuItem>
-                  <MenuItem className="rounded-lg hover:bg-gray-50 px-3 py-2 text-gray-700 flex items-center justify-between">
-                    Demo Videos
-                  </MenuItem>
-
-                  <MenuItem className="rounded-lg hover:bg-gray-50 px-3 py-2 text-gray-700 flex items-center justify-between">
-                    Testimonials
-                  </MenuItem>
-                </MenuList>
-              </Menu>
-              <Menu>
-                <Button
-                  // key={label}
-                  size="sm"
-                  variant="text"
-                  className="text-gray-700 hover:text-black text-md font-medium px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors"
-                >
-                  Articles
-                </Button>
-              </Menu>
-              <Menu>
-                <Button
-                  // key={label}
-                  size="sm"
-                  variant="text"
-                  className="text-gray-700 hover:text-black text-md font-medium px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors"
-                >
-                  Pricing
-                </Button>
-              </Menu>
-              <Menu>
-                <Button
-                  // key={label}
-                  size="sm"
-                  variant="text"
-                  className="text-gray-700 hover:text-black text-md font-medium px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors"
-                >
-                  Contact Us
-                </Button>
-              </Menu>
-            </div>
-          </div>
-          {/* Dropdown: What we do */}
-
-          {/* Other navigation items */}
-          {/* {["Industries", "Resources", "Articles", "Pricing", "Contact Us"].map(
-            (label) => (
+        <div className="hidden md:flex items-center gap-2 lg:gap-2">
+          {/* What we do */}
+          <Menu allowHover>
+            <MenuHandler>
               <Button
-                key={label}
                 size="sm"
                 variant="text"
-                className="text-gray-700 hover:text-black font-medium px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors"
+                style={{
+                  color: NavbarItemColor,
+                  fontFamily: HeadFontFamily,
+                  fontSize: NavbarItemHeadFontSize,
+                }}
+                className="font-medium hover:text-black focus:outline-none focus:ring-0 font flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors"
               >
-                {label}
+                What we do{" "}
+                <FaChevronDown className="text-[13px] mx-1 opacity-70  h-5 transition-transform" />
               </Button>
-            )
-          )} */}
+            </MenuHandler>
+            <MenuList className="px-2 rounded-xl shadow-lg z-50 w-40 mt-2 border border-gray-100 bg-white">
+              <Menu allowHover placement="right-start" offset={10}>
+                <MenuHandler>
+                  <MenuItem className="rounded-lg  focus:outline-none focus:ring-0 hover:bg-gray-50 gap-1 px-3 py-2 flex items-center justify-between w-full">
+                    <span
+                      style={{
+                        color: NavbarSubItemColor,
+                        fontSize: NavbarItemSubHeadFontSize,
+                        fontFamily: NavbarItemSubHeadFontFamily,
+                      }}
+                    >
+                      Products
+                    </span>
+                    <BiChevronRight
+                      className="opacity-70 mr-2 transition-transform"
+                      style={{
+                        color: NavbarSubItemColor,
+                        fontSize: NavbarIconChevronSize,
+                        fontFamily: NavbarItemSubHeadFontFamily,
+                      }}
+                    />
+                  </MenuItem>
+                </MenuHandler>
+                <MenuList className="p-2 rounded-xl shadow-lg z-50 w-48 border border-gray-100 bg-white ml-1">
+                  <MenuItem
+                    className="rounded-lg  focus:outline-none focus:ring-0 hover:bg-gray-50 px-3 py-2"
+                    style={{
+                      color: NavbarSubItemColor,
+                      fontSize: NavbarItemSubHeadFontSize,
+                      fontFamily: NavbarItemSubHeadFontFamily,
+                    }}
+                  >
+                    Digital Certificate
+                  </MenuItem>
+                  <MenuItem
+                    className="rounded-lg  focus:outline-none focus:ring-0 hover:bg-gray-50 px-3 py-2"
+                    style={{
+                      color: NavbarSubItemColor,
+                      fontSize: NavbarItemSubHeadFontSize,
+                      fontFamily: NavbarItemSubHeadFontFamily,
+                    }}
+                  >
+                    Cattle Aadhar
+                  </MenuItem>
+                  <MenuItem
+                    className="rounded-lg focus:outline-none focus:ring-0 hover:bg-gray-50 px-3 py-2"
+                    style={{
+                      color: NavbarSubItemColor,
+                      fontSize: NavbarItemSubHeadFontSize,
+                      fontFamily: NavbarItemSubHeadFontFamily,
+                    }}
+                  >
+                    3PL Solutions
+                  </MenuItem>
+                </MenuList>
+              </Menu>
+              <Menu allowHover placement="right-start" offset={10}>
+                <MenuHandler>
+                  <MenuItem
+                    className="rounded-lg hover:bg-gray-50 text-[16px] gap-1 focus:outline-none focus:ring-0 px-3 py-2 flex items-center justify-between w-full"
+                    style={{ color: NavbarItemColor }}
+                  >
+                    <span
+                      style={{
+                        color: NavbarSubItemColor,
+                        fontSize: NavbarItemSubHeadFontSize,
+                        fontFamily: NavbarItemSubHeadFontFamily,
+                      }}
+                    >
+                      Services
+                    </span>
+                    <BiChevronRight
+                      className=" opacity-70 mr-2 transition-transform"
+                      style={{
+                        color: NavbarSubItemColor,
+                        fontSize: NavbarIconChevronSize,
+                        fontFamily: NavbarItemSubHeadFontFamily,
+                      }}
+                    />
+                  </MenuItem>
+                </MenuHandler>
+                <MenuList className="p-2 rounded-xl shadow-lg z-50 w-[250px] border border-gray-100 bg-white ml-1">
+                  <MenuItem
+                    className="rounded-lg  hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                    style={{
+                      color: NavbarSubItemColor,
+                      fontSize: NavbarItemSubHeadFontSize,
+                      fontFamily: NavbarItemSubHeadFontFamily,
+                    }}
+                  >
+                    IT Strategy Consultancy
+                  </MenuItem>
+                  <MenuItem
+                    className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                    style={{
+                      color: NavbarSubItemColor,
+                      fontSize: NavbarItemSubHeadFontSize,
+                      fontFamily: NavbarItemSubHeadFontFamily,
+                    }}
+                  >
+                    Software Services/Staffing Solution
+                  </MenuItem>
+                </MenuList>
+              </Menu>
+            </MenuList>
+          </Menu>
+
+          {/* Industries */}
+          <Menu allowHover>
+            <MenuHandler>
+              <Button
+                size="sm"
+                variant="text"
+                style={{
+                  color: NavbarItemColor,
+                  fontFamily: HeadFontFamily,
+                  fontSize: NavbarItemHeadFontSize,
+                  letterSpacing: "0.2px",
+                }}
+                className=" font-medium flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-0"
+              >
+                Industries
+                <FaChevronDown className="text-[13px] mx-1 opacity-70  h-5 transition-transform" />{" "}
+              </Button>
+            </MenuHandler>
+            <MenuList className="p-2 rounded-xl shadow-lg z-50 w-40 mt-2 border border-gray-100 bg-white">
+              <MenuItem
+                className="rounded-lg hover:bg-gray-50 text-[16px] px-3 py-2 focus:outline-none focus:ring-0"
+                style={{
+                  color: NavbarSubItemColor,
+                  fontSize: NavbarItemSubHeadFontSize,
+                  fontFamily: NavbarItemSubHeadFontFamily,
+                }}
+              >
+                Education
+              </MenuItem>
+              <MenuItem
+                className="rounded-lg  hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                style={{
+                  color: NavbarSubItemColor,
+                  fontSize: NavbarItemSubHeadFontSize,
+                  fontFamily: NavbarItemSubHeadFontFamily,
+                }}
+              >
+                Government
+              </MenuItem>
+              <MenuItem
+                className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                style={{
+                  color: NavbarSubItemColor,
+                  fontSize: NavbarItemSubHeadFontSize,
+                  fontFamily: NavbarItemSubHeadFontFamily,
+                }}
+              >
+                Logistic
+              </MenuItem>
+            </MenuList>
+          </Menu>
+
+          {/* Resources */}
+          <Menu allowHover>
+            <MenuHandler>
+              <Button
+                size="sm"
+                variant="text"
+                style={{
+                  color: NavbarItemColor,
+                  fontFamily: HeadFontFamily,
+                  fontSize: NavbarItemHeadFontSize,
+                }}
+                className=" font-medium  flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-0"
+              >
+                Resource
+                <FaChevronDown className="text-[13px] mx-1 opacity-70  h-5 transition-transform" />
+              </Button>
+            </MenuHandler>
+            <MenuList className="p-2 rounded-xl shadow-lg z-50 w-40 mt-2 border border-gray-100 bg-white">
+              <MenuItem
+                className="rounded-lg text-[16px] hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                style={{
+                  color: NavbarSubItemColor,
+                  fontSize: NavbarItemSubHeadFontSize,
+                  fontFamily: NavbarItemSubHeadFontFamily,
+                }}
+              >
+                Podcasts
+              </MenuItem>
+              <MenuItem
+                className="rounded-lg text-[16px] hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                style={{
+                  color: NavbarSubItemColor,
+                  fontSize: NavbarItemSubHeadFontSize,
+                  fontFamily: NavbarItemSubHeadFontFamily,
+                }}
+              >
+                Demo Videos
+              </MenuItem>
+              <MenuItem
+                className="rounded-lg text-[16px] hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                style={{
+                  color: NavbarSubItemColor,
+                  fontSize: NavbarItemSubHeadFontSize,
+                  fontFamily: NavbarItemSubHeadFontFamily,
+                }}
+              >
+                Testimonials
+              </MenuItem>
+            </MenuList>
+          </Menu>
+
+          {/* Articles, Pricing, Contact */}
+
+          <Menu>
+            <Link to="">
+              <Button
+                size="sm"
+                variant="text"
+                style={{
+                  color: NavbarItemColor,
+                  fontFamily: HeadFontFamily,
+                  fontSize: NavbarItemHeadFontSize,
+                }}
+                className="text-[14px] font-medium px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-0"
+              >
+                Articles
+              </Button>
+            </Link>
+          </Menu>
+          {/* <Menu>
+            <Button
+              size="sm"
+              variant="text"
+              style={{ color: NavbarItemColor, fontFamily: HeadFontFamily }}
+              className="text-lg font-medium px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-0"
+            >
+              Pricing
+            </Button>
+          </Menu> */}
+          {/* <Menu>
+            <Button
+              size="sm"
+              variant="text"
+              style={{ color: NavbarItemColor, fontFamily: HeadFontFamily }}
+              className="text-lg font-medium px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-0"
+            >
+              Contact Us
+            </Button>
+          </Menu> */}
 
           {/* CTA Buttons */}
+          <div className="flex items-center gap-2 ml-2">
+            <Button
+              size="md"
+              className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-gradient-to-r hover:from-white  hover:to-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
+              style={{
+                borderRadius: "30px",
+                fontFamily: HeadFontFamily,
+              }}
+            >
+              Contact Us
+            </Button>
+
+            {/* <Button
+              size="sm"
+              variant="outlined"
+              className="rounded-full px-4 py-2 text-lg border-gray-300 hover:bg-gray-50 font-medium focus:outline-none focus:ring-0"
+              style={{ color: NavbarItemColor, fontFamily: HeadFontFamily }}
+            >
+              Login
+            </Button> */}
+          </div>
         </div>
 
-        {/* Mobile Menu Button - Modernized */}
+        {/* Mobile Hamburger */}
         <div className="md:hidden">
           <button
-            onClick={() => setMenuOpen(!menuOpen)}
+            onClick={toggleHamburger}
             className="p-2 rounded-lg hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-300"
           >
             {menuOpen ? "✕" : "☰"}
@@ -226,45 +376,11 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="md:hidden bg-white shadow-lg px-4 pb-4 pt-2">
-          {[
-            "What we do",
-            "Industries",
-            "Resources",
-            "Articles",
-            "Pricing",
-            "Contact Us",
-          ].map((label) => (
-            <Button
-              key={label}
-              fullWidth
-              size="sm"
-              variant="text"
-              className="mb-2 text-gray-700 hover:bg-gray-50 rounded-lg text-left justify-start"
-            >
-              {label}
-            </Button>
-          ))}
-          <Button
-            fullWidth
-            size="sm"
-            className="mb-2 bg-gradient-to-r from-pink-500 to-red-400 text-white rounded-full"
-          >
-            Schedule a demo
-          </Button>
-          <Button
-            fullWidth
-            size="sm"
-            variant="outlined"
-            className="border-gray-300 text-gray-700 hover:bg-gray-50 rounded-full"
-          >
-            Login
-          </Button>
-        </div>
-      )}
+      {menuOpen && <MobileNavbar closeNavbar={() => setMenuOpen(!menuOpen)} />}
     </nav>
   );
 };
 
 export default Navbar;
+
+//
