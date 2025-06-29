@@ -30,4 +30,13 @@
 
 //screen size resolution 362 * 863
 
-ngrok http 3000
+//ngrok http 3000
+
+
+//google analytics code setup and tutorial
+https://chatgpt.com/share/685cc5a5-ef4c-800f-a173-4c42c2df1881
+
+
+//Helmate tag content and material for better SEO setupa and guide
+https://chatgpt.com/share/685ccb51-6d44-800f-bf34-c69c823460a3
+

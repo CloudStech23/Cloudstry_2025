@@ -2,8 +2,8 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Navigators/Navbar";
-import Home from "./Pages/Home";
-import { Article } from "./Pages/Ariticle";
+import Home from "./Pages/HomePage/Home";
+import { Article } from "./Pages/ArticlePage/Ariticle";
 import Footer from "./Navigators/Footer";
 
 function App() {
