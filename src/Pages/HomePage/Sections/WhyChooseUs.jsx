@@ -7,7 +7,7 @@ import {
   SubTextFontFamily,
 } from "../../../CustomeComponents/Theme";
 
-import whychooseimg from "../../../assets/WebsiteImages/why_choose_us.jpg";
+import whychooseimg from "../../../assets/Images/HomePage/why_choose_us.jpg";
 import { BsPeopleFill } from "react-icons/bs";
 import { DiTerminal } from "react-icons/di";
 import { BiSupport } from "react-icons/bi";

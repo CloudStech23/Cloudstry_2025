@@ -5,7 +5,7 @@ import {
   gradientBG,
   HeadFontFamily,
 } from "../../../CustomeComponents/Theme";
-import GlobalPresenseIMG from "../../../assets/WebsiteImages/map.jpg";
+import GlobalPresenseIMG from "../../../assets/Images/HomePage/map.jpg";
 import { TbWorld } from "react-icons/tb";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { MdAutoGraph, MdWatchLater } from "react-icons/md";

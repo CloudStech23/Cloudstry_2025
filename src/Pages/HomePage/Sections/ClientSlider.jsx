@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { HeadTextColor } from "../../../CustomeComponents/Theme";
 import "../../../CSS/slider.css";
-import clientBg from "../../../assets/WebsiteImages/client_bg.png";
+import clientBg from "../../../assets/Images/HomePage/client_bg.png";
 
 const logos = [
   {

@@ -4,18 +4,18 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "../CSS/slider.css";
+import "../../../CSS/slider.css";
 import { Button } from "@material-tailwind/react";
-import { HeadFontFamily } from "./Theme";
+import { HeadFontFamily } from "../../../CustomeComponents/Theme";
 import { BsPause, BsPlay } from "react-icons/bs";
 
 // Image Imports
-import cattlebg from "../assets/WebsiteImages/CattleBg.png";
-import DigiCertbg from "../assets/WebsiteImages/DigiCertBg.png";
-import ItStrategyConsultancyBg from "../assets/WebsiteImages/ITStrategyConsultancyBg.png";
-import ItSoftwareMaintBg from "../assets/WebsiteImages/IT_Software_Maintenance.png";
-import bgimg from "../assets/WebsiteImages/slider-banner.png";
-import svgImg from "../assets/WebsiteImages/svg_img.svg";
+import cattlebg from "../../../assets/Images/HomePage/CattleBg.png";
+import DigiCertbg from "../../../assets/Images/HomePage/DigiCertBg.png";
+import ItStrategyConsultancyBg from "../../../assets/Images/HomePage/ITStrategyConsultancyBg.png";
+import ItSoftwareMaintBg from "../../../assets/Images/HomePage/IT_Software_Maintenance.png";
+import bgimg from "../../../assets/Images/HomePage/slider-banner.png";
+import svgImg from "../../../assets/Images/HomePage/svg_img.svg";
 
 const slides = [
   {

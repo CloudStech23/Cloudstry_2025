@@ -1,5 +1,5 @@
 import React from "react";
-import FooterBg from "../../../assets/WebsiteImages/Footer_bg.jpg";
+import FooterBg from "../../../assets/CommonIMG/White_Background.jpg";
 import { HeadTextColor } from "../../../CustomeComponents/Theme";
 import { SubTextFontFamily } from "../../../CustomeComponents/Theme";
 

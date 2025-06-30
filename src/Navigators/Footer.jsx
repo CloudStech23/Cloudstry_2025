@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import logo from "../assets/cloudstry-logo-2.png";
 import { FooterFontFamily } from "../CustomeComponents/Theme";
-import FooterBg from "../assets/WebsiteImages/Footer_bg.jpg";
+import FooterBg from "../assets/CommonIMG/White_Background.jpg";
 
 function Footer() {
   const [maxDwidth, setMaxDwidth] = React.useState(window.innerWidth);

@@ -1,4 +1,4 @@
-import CarouselSlider from "../../CustomeComponents/Slider";
+import CarouselSlider from "./Sections/Slider";
 import "../../CSS/Home.css";
 import ClientSlider from "./Sections/ClientSlider";
 import SolutionsWeOffer from "./Sections/SolutionsWeOffer";
