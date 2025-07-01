@@ -113,7 +113,7 @@ const SolutionsWeOffer = () => {
 
   return (
     <div className="">
-      <main className="pt-2 px-4 sm:px-6 lg:px-0   mx-auto ">
+      <main className="pt-4 px-4 sm:px-6 lg:px-0   mx-auto ">
         <div className="text-center">
           {/* <h2
             className="sm:text-4xl text-3xl font-bold sm:leading-none mb-3"
@@ -145,7 +145,7 @@ const SolutionsWeOffer = () => {
             </button>
           </div>
 
-          <div className="relative mt-4 py-16 px-4 overflow-hidden rounded-tr-[80px] min-h-[500px]">
+          <div className="relative mt-6 py-16 px-4 overflow-hidden rounded-tr-[80px] sm:min-h-[400px] min-h-[400px]">
             {/* Background */}
             <div className="absolute inset-0 z-0">
               <img
@@ -164,7 +164,7 @@ const SolutionsWeOffer = () => {
                   return (
                     <motion.div
                       key={i}
-                      className="absolute w-[400px] h-[300px] bg-white rounded-xl shadow-md p-5 pt-10 pb-6 cursor-pointer"
+                      className="absolute w-[300px] h-[300px] sm:w-[400px] sm:h-[300px] bg-white rounded-xl shadow-md p-5 pt-10 pb-6 cursor-pointer"
                       variants={variants}
                       initial="center"
                       animate={pos}
@@ -192,7 +192,7 @@ const SolutionsWeOffer = () => {
                         {item.title}
                       </h2>
                       <p
-                        className="text-color text-[15px] mt-2 text-center"
+                        className="text-color text-[13px] sm:text-[15px] mt-2 text-center"
                         style={{ fontFamily: SubTextFontFamily }}
                       >
                         {item.text}
@@ -210,7 +210,7 @@ const SolutionsWeOffer = () => {
                   return (
                     <motion.div
                       key={i}
-                      className="absolute w-[400px] h-[300px] bg-white rounded-xl shadow-md p-5 pt-10 pb-6 cursor-pointer"
+                      className="absolute w-[300px] h-[300px] sm:w-[400px] sm:h-[300px] bg-white rounded-xl shadow-md p-5 pt-10 pb-6 cursor-pointer"
                       variants={variants}
                       initial="center"
                       animate={pos}
@@ -236,7 +236,7 @@ const SolutionsWeOffer = () => {
                         {item.title}
                       </h2>
                       <p
-                        className="text-color text-[15px] mt-2 text-center"
+                        className="text-color text-[13px] sm:text-[15px] mt-2 text-center"
                         style={{ fontFamily: SubTextFontFamily }}
                       >
                         {item.text}

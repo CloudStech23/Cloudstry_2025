@@ -24,7 +24,7 @@ function IndustriesWeCater() {
           {" "}
           {/*#efefef*/}
           <h2
-            className="sm:text-4xl text-3xl font-bold  sm:leading-none mb-6"
+            className="sm:text-4xl text-2xl font-bold  sm:leading-none mb-6"
             style={{
               fontFamily: "Poppines, sans-serif",
               color: HeadTextColor,
@@ -34,18 +34,18 @@ function IndustriesWeCater() {
           </h2>
           <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto mb-10 rounded-full"></div>
           <h5
-            className="sm:text-[16.5px] mt-2  text-sm sm:w-[60%] lg:w-[72%] font-medium text-color text-center mx-auto"
+            className="sm:text-[16.5px] text-[14px] mt-2 text-justify  sm:w-[60%] lg:w-[72%] font-medium text-color sm:text-center mx-auto"
             style={{ fontFamily: SubTextFontFamily }}
             // as of now we consider the font as a medium
           >
             At Cloudstry Tech, we customize our solutions to meet the unique
             challenges of a wide range of industries. Our expertise ensures that
             every sector benefits from digital transformation, enhanced
-            efficiency, and seamless technology integration.
+            efficiency, and seamless integration.
           </h5>
           <div className="flex flex-wrap justify-center gap-6 mt-14">
             {/* <img src={educationimg} alt="" className="object-contain " /> */}
-            <div className="relative w-[210px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
+            <div className="relative sm:w-[210px] w-[230px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
               <h2
                 className="text-xl font-bold  text-center"
                 style={{ fontFamily: HeadFontFamily }}
@@ -61,7 +61,7 @@ function IndustriesWeCater() {
                 credential management and verification.
               </p>
             </div>
-            <div className="relative w-[210px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
+            <div className="relative sm:w-[210px] w-[230px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
               <h2
                 className="text-xl font-bold  text-center"
                 style={{ fontFamily: HeadFontFamily }}
@@ -77,7 +77,7 @@ function IndustriesWeCater() {
                 credentials and build trust.
               </p>
             </div>
-            <div className="relative w-[210px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
+            <div className="relative sm:w-[210px] w-[230px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
               <h2
                 className="text-xl font-bold  text-center"
                 style={{ fontFamily: HeadFontFamily }}
@@ -93,7 +93,7 @@ function IndustriesWeCater() {
                 record-keeping.
               </p>
             </div>
-            <div className="relative w-[210px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
+            <div className="relative sm:w-[210px] w-[230px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
               <h2
                 className="text-xl font-bold  text-center"
                 style={{ fontFamily: HeadFontFamily }}
@@ -109,7 +109,7 @@ function IndustriesWeCater() {
                 identification.
               </p>
             </div>
-            <div className="relative w-[210px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
+            <div className="relative sm:w-[210px] w-[230px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
               <h2
                 className="text-xl font-bold  text-center"
                 style={{ fontFamily: HeadFontFamily }}

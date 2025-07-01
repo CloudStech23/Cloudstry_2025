@@ -15,11 +15,11 @@ function Footer() {
   return (
     <div className="relative w-full overflow-x-hidden mx-auto px-4 sm:px-6 lg:px-0 bg-gray-100">
       {/* Background Image */}
-      <div className="absolute top-0 left-0 w-full h-full opacity-70 overflow-hidden -z-0">
+      <div className="absolute sm:top-0 sm:left-0  w-full h-full opacity-70 overflow-hidden -z-0">
         <img
           src={FooterBg}
           alt="Background"
-          className="w-full h-full object-cover"
+          className="sm:w-full sm:h-full object-contain sm:object-cover  "
           style={{ objectPosition: "top" }}
         />
       </div>

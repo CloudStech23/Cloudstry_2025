@@ -7,7 +7,7 @@ function OurCustomers() {
       <main className=" px-4 sm:px-6 lg:px-0 pb-2  mx-auto bg-[#efefef] rounded-tr-[80px]">
         <div className="text-center  py-12 px-4">
           <h2
-            className="sm:text-4xl text-3xl font-bold  sm:leading-none mb-6"
+            className="sm:text-4xl text-2xl font-bold  sm:leading-none mb-6"
             style={{
               fontFamily: "Poppines, sans-serif",
               color: HeadTextColor,

@@ -66,7 +66,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <Link to="/">
             <img
-              className="md:w-auto h-14 sm:h-[3.4rem] w-auto transition-transform hover:scale-[1.02]"
+              className="md:w-auto lg:h-14 h-10 w-auto transition-transform hover:scale-[1.02]"
               src={logo}
               style={{ objectFit: "cover" }}
             />

@@ -100,10 +100,11 @@ const CarouselSlider = () => {
             {/* Dynamic background image */}
             <img
               src={item.src}
-              alt={`Background ${i + 1}`}
-              className="absolute inset-0 sm:w-full w-1/8 h-full object-cover -z-10"
-              style={{ filter: "blur(0px)", objectFit: "cover" }}
+              alt={item.title}
+              className="absolute inset-0 w-[100%] h-[36rem] sm:h-[24rem] md:h-[34rem] lg:h-full sm:object-contain lg:object-cover -z-10"
+              style={{ filter: "blur(0px)" }}
             />
+
             <div className="absolute inset-0 w-full h-[34rem] bg-black/30 -z-10"></div>
 
             <div className="flex flex-col md:flex-row items-start md:items-start justify-start md:justify-between px-6 md:px-16 pt-10 md:pt-20 mt-24">

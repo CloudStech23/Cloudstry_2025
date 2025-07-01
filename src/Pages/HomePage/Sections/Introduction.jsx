@@ -5,18 +5,19 @@ import { SubTextFontFamily } from "../../../CustomeComponents/Theme";
 
 function Introduction() {
   return (
-    <div
-      className="relative w-full py-12  px-4 sm:px-6 lg:px-8 z-10 bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url(${IntroBG})` }}
-    >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-white opacity-50 z-0"></div>
+    <div className="relative w-full py-12 px-4 sm:px-6 lg:px-8 z-10">
+      {/* Background Image */}
+      <img
+        src={IntroBG}
+        alt="Introduction Background"
+        className="absolute inset-0 w-full h-[25rem] sm:h-[35rem] object-cover z-0 opacity-50"
+      />
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="text-center mb-6">
           <h2
-            className="sm:text-4xl text-3xl font-bold mb-6"
+            className="sm:text-4xl text-2xl font-bold mb-6"
             style={{
               fontFamily: "Poppines, sans-serif",
               color: HeadTextColor,
@@ -36,7 +37,7 @@ function Introduction() {
         <div className="max-w-6xl mx-auto">
           <div className="p-4 rounded-xl">
             <p
-              className="text-color text-[16.5px] mb-3 text-center"
+              className="text-color mb-3 sm:text-[16.5px] text-[15px] text-justify  sm:text-center"
               style={{ fontFamily: SubTextFontFamily }}
             >
               At Cloudstry Technologies, we empower businesses with a diverse
@@ -47,7 +48,7 @@ function Introduction() {
               transformation across sectors.
             </p>
             <p
-              className="text-color mb-3 text-[16.5px] text-center"
+              className="text-color mb-3 sm:text-[16.5px] text-[15px] text-justify  sm:text-center"
               style={{ fontFamily: SubTextFontFamily }}
             >
               Our expertise extends to 3PL (Third-Party Logistics) Solutions,
@@ -59,7 +60,7 @@ function Introduction() {
               technology partner.
             </p>
             <p
-              className="text-color mb-3 text-[16.5px] text-center"
+              className="text-color mb-3 sm:text-[16.5px] text-[15px] text-justify  sm:text-center"
               style={{ fontFamily: SubTextFontFamily }}
             >
               At Cloudstry Technologies, we believe in building lasting

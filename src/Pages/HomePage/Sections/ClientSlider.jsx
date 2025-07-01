@@ -45,7 +45,7 @@ function ClientSlider() {
       {/* Content */}
       <div className="text-center py-6 px-4 relative z-10">
         <h2
-          className="sm:text-4xl text-3xl font-bold sm:leading-none mb-6"
+          className="sm:text-4xl text-2xl font-medium sm:leading-none mb-6"
           style={{
             fontFamily: "Poppins, sans-serif",
             color: HeadTextColor,
@@ -70,7 +70,7 @@ function ClientSlider() {
                   <img
                     src={logo.src}
                     alt={logo.name}
-                    className="w-full h-20 object-contain mb-2"
+                    className="w-full sm:h-20   object-contain mb-2"
                   />
                 </div>
               </SwiperSlide>

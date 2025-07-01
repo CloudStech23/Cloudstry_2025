@@ -20,15 +20,14 @@ function WhyChooseUs() {
         <img
           src={bgimg}
           alt="Background"
-          className="w-full h-full object-contain"
+          className="sm:w-[100%] sm:h-[100%] sm:object-contain"
           style={{ objectPosition: "top" }}
         />
         {/* Optional Overlay */}
-        <div className="absolute inset-0  opacity-60"></div>
       </div>
       <div className=" mx-auto text-center  mx-auto px-4 sm:px-6 lg:px-8">
         <h2
-          className="sm:text-4xl text-3xl font-bold sm:leading-none mb-6 "
+          className="sm:text-4xl text-2xl font-bold sm:leading-none mb-6 "
           style={{ fontFamily: "Poppines, sans-serif", color: "#085d9e" }}
         >
           WHY <span className="text-[#1f1446] ">CHOOSE US ?</span>
@@ -37,7 +36,7 @@ function WhyChooseUs() {
         <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto mb-10 rounded-full" />
 
         <h5
-          className="sm:text-[16.5px] mt-2  text-sm sm:w-[60%] lg:w-[75%] font-medium text-color text-center mx-auto"
+          className="sm:text-[16.5px] mt-2 text-justify  text-sm sm:w-[60%] lg:w-[75%] font-medium text-color sm:text-center mx-auto"
           style={{ fontFamily: SubTextFontFamily }}
           // as of now we consider the font as a medium
         >
@@ -72,7 +71,7 @@ function WhyChooseUs() {
                   >
                     Tailored Solutions
                   </h4>
-                  <p className="text-gray-600 text-left w-[70%] text-[14px]">
+                  <p className="text-gray-600 text-left w-full sm:w-[70%] text-[14px]">
                     We customize our services to perfectly fit your unique
                     business needs and challenges
                   </p>
@@ -89,7 +88,7 @@ function WhyChooseUs() {
                   >
                     Experienced Team
                   </h4>
-                  <p className="text-gray-600 text-left w-[70%] text-[14px]">
+                  <p className="text-gray-600 text-left w-full sm:w-[70%] text-[14px]">
                     Our skilled professionals bring years of industry experience
                     and deep technical knowledge
                   </p>
@@ -106,7 +105,7 @@ function WhyChooseUs() {
                   >
                     Cutting-Edge Technology
                   </h4>
-                  <p className="text-gray-600 text-left w-[70%] text-[14px]">
+                  <p className="text-gray-600 text-left w-full sm:w-[70%] text-[14px]">
                     We leverage the latest tools and innovations to ensure
                     future-ready solutions
                   </p>
@@ -123,7 +122,7 @@ function WhyChooseUs() {
                   >
                     Reliable Support
                   </h4>
-                  <p className="text-gray-600 text-left w-[70%] text-[14px]">
+                  <p className="text-gray-600 text-left w-full sm:w-[70%] text-[14px]">
                     From implementation to ongoing assistance, we provide
                     dependable support to keep your operations smooth.
                   </p>
@@ -135,8 +134,8 @@ function WhyChooseUs() {
             <div className="w-full lg:w-1/2 bg-gradient-to-br from-[#085d9e] to-[#00c1de] relative flex items-center justify-center min-h-[450px] ">
               {/* Overlapping Image */}
               <div
-                className="absolute top-1/2 transform -translate-y-1/2 w-[650px] max-w-full z-20"
-                style={{ left: -25 }}
+                className="absolute top-1/2 left-0 p-2 sm:p-0 sm:left-[-25px] transform -translate-y-1/2 w-[650px] max-w-full z-20"
+                // style={{ left: -25 }}
               >
                 <img
                   src={whychooseimg}

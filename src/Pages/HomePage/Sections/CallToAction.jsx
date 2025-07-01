@@ -32,7 +32,7 @@ function CallToAction() {
             {/* Button */}
             <Button
               size="md"
-              className="absolute rounded-full text-[14px] top-[4.5rem] md:top-0 md:right-[8rem] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-gradient-to-r hover:from-white  hover:to-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
+              className="sm:absolute relative rounded-full text-[14px] top-[2rem] md:top-0 md:right-[8rem] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-gradient-to-r hover:from-white  hover:to-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
               style={{
                 borderRadius: "30px",
                 fontFamily: HeadFontFamily,

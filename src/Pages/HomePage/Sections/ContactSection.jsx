@@ -17,11 +17,11 @@ function ContactSection() {
         {/* Left Text Content */}
         <div className="text-white text-center md:text-left">
           <h2
-            className="font-medium mb-8"
+            className="font-medium mb-8 sm:text-[45px] sm:text-center text-left text-[22px] "
             style={{
               fontFamily: HeadFontFamily,
               lineHeight: "1.2em",
-              fontSize: "45px",
+
               letterSpacing: "-1px",
             }}
           >
@@ -30,21 +30,23 @@ function ContactSection() {
           </h2>
 
           {/* Contact Icons and Details */}
-          <div className="mt-20 space-y-2">
+          <div className="sm:mt-20 mt-10 space-y-2">
             {/* Phone */}
             <div className="flex items-center gap-2">
               <FaPhone size={22} color="white" className="mt-0" />
-              <div className="text-[20px]">073169-12309</div>
+              <div className="sm:text-[20px] text-[15px]">073169-12309</div>
             </div>
 
             {/* Email */}
             <div className="flex items-center gap-2">
               <MdEmail size={27} color="white" className="mt-1" />
-              <div className="text-[20px]">hr@cloudstrytech.com</div>
+              <div className="sm:text-[20px] text-[15px]">
+                hr@cloudstrytech.com
+              </div>
             </div>
             <div className="flex items-center gap-2 ">
               <FaMapLocationDot size={42} color="white" className="" />
-              <div className="text-[20px]">
+              <div className="sm:text-[20px] text-[13px] text-left">
                 1st Floor, 33/C/S-3, Scheme No 78 - III, Near Shalimar Township,
                 Sector F, Slice No.3, Honda Big Wing Indore 452010
               </div>
