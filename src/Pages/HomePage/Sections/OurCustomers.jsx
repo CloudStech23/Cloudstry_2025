@@ -3,8 +3,8 @@ import { HeadTextColor } from "../../../CustomeComponents/Theme";
 
 function OurCustomers() {
   return (
-    <div>
-      <main className="pt-6 px-4 sm:px-6 lg:px-0 pb-2  mx-auto bg-[#efefef] rounded-tr-[80px]">
+    <div className="mt-5">
+      <main className=" px-4 sm:px-6 lg:px-0 pb-2  mx-auto bg-[#efefef] rounded-tr-[80px]">
         <div className="text-center  py-12 px-4">
           <h2
             className="sm:text-4xl text-3xl font-bold  sm:leading-none mb-6"

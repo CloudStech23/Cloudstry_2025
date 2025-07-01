@@ -5,7 +5,7 @@ import {
   gradientBG,
   HeadFontFamily,
 } from "../../../CustomeComponents/Theme";
-import GlobalPresenseIMG from "../../../assets/Images/HomePage/map.jpg";
+import GlobalPresenseIMG from "../../../assets/Images/HomePage/Map.svg";
 import { TbWorld } from "react-icons/tb";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { MdAutoGraph, MdWatchLater } from "react-icons/md";
@@ -13,8 +13,8 @@ import { MdAutoGraph, MdWatchLater } from "react-icons/md";
 function GlobalPresene() {
   return (
     <div>
-      <main className="pt-6 px-4 sm:px-6 lg:px-0 pb-2  mx-auto ">
-        <div className="text-center mb-[11rem]  py-12 px-4">
+      <main className=" px-4 sm:px-6 lg:px-0 pb-2  py-12   mx-auto ">
+        <div className="text-center mb-[11rem] px-4">
           <h2
             className="sm:text-4xl text-3xl font-bold  sm:leading-none mb-6"
             style={{

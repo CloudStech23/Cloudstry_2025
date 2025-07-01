@@ -4,12 +4,23 @@ import {
   HeadTextColor,
   SubTextFontFamily,
 } from "../../../CustomeComponents/Theme";
+import bgimg from "../../../assets/Images/HomePage/industries_bg.svg";
 
 function IndustriesWeCater() {
   return (
     <div>
-      <main className=" px-4 sm:px-6 lg:px-0 pb-2 mt-[5rem] mx-auto">
-        <div className="text-center mt-[2rem] py-12 px-4  ">
+      <main className="relative px-4 sm:px-6 lg:px-0 py-12 pb-2 mx-auto">
+        <div className="absolute inset-0 -z-10">
+          <img
+            src={bgimg}
+            alt="Background"
+            className="w-full h-full object-cover"
+            style={{ objectPosition: "top" }}
+          />
+          {/* Optional Overlay */}
+          <div className="absolute inset-0  opacity-60"></div>
+        </div>
+        <div className="text-center  px-4  ">
           {" "}
           {/*#efefef*/}
           <h2

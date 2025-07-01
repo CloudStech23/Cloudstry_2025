@@ -11,16 +11,27 @@ import whychooseimg from "../../../assets/Images/HomePage/why_choose_us.jpg";
 import { BsPeopleFill } from "react-icons/bs";
 import { DiTerminal } from "react-icons/di";
 import { BiSupport } from "react-icons/bi";
-
+import bgimg from "../../../assets/Images/HomePage/whychoose_bg.svg";
 function WhyChooseUs() {
   return (
-    <div className="pt-6 px-4 sm:px-6 lg:px-0 pb-2 mt-[4rem] mx-auto">
+    <div className="relative py-12 px-4 sm:px-6 lg:px-0 pb-6 mt-[0rem] mx-auto w-full">
+      {/* ✅ Background Image */}
+      <div className="absolute inset-0 -z-10">
+        <img
+          src={bgimg}
+          alt="Background"
+          className="w-full h-full object-contain"
+          style={{ objectPosition: "top" }}
+        />
+        {/* Optional Overlay */}
+        <div className="absolute inset-0  opacity-60"></div>
+      </div>
       <div className=" mx-auto text-center  mx-auto px-4 sm:px-6 lg:px-8">
         <h2
-          className="sm:text-4xl text-3xl font-bold sm:leading-none mb-6"
+          className="sm:text-4xl text-3xl font-bold sm:leading-none mb-6 "
           style={{ fontFamily: "Poppines, sans-serif", color: "#085d9e" }}
         >
-          WHY <span className="text-[#1f1446]">CHOOSE US ?</span>
+          WHY <span className="text-[#1f1446] ">CHOOSE US ?</span>
         </h2>
 
         <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto mb-10 rounded-full" />

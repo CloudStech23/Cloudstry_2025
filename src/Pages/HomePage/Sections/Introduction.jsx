@@ -1,5 +1,5 @@
 import React from "react";
-import FooterBg from "../../../assets/CommonIMG/White_Background.jpg";
+import IntroBG from "../../../assets/Images/HomePage/Introduction_Bg.svg";
 import { HeadTextColor } from "../../../CustomeComponents/Theme";
 import { SubTextFontFamily } from "../../../CustomeComponents/Theme";
 
@@ -7,7 +7,7 @@ function Introduction() {
   return (
     <div
       className="relative w-full py-12  px-4 sm:px-6 lg:px-8 z-10 bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url(${FooterBg})` }}
+      style={{ backgroundImage: `url(${IntroBG})` }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-white opacity-50 z-0"></div>

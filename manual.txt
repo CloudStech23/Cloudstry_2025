@@ -40,3 +40,10 @@ https://chatgpt.com/share/685cc5a5-ef4c-800f-a173-4c42c2df1881
 //Helmate tag content and material for better SEO setupa and guide
 https://chatgpt.com/share/685ccb51-6d44-800f-bf34-c69c823460a3
 
+
+//Tailwind size screen 
+sm : 640px (mobile)
+md : 768px (tablet)
+lg : 1024px (laptop)
+xl : 1280px (desktop)
+

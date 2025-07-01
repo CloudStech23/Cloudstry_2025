@@ -32,7 +32,7 @@ const logos = [
 
 function ClientSlider() {
   return (
-    <main className="relative pt-2 px-4 sm:px-6 lg:px-0 pb-2 mt-[4rem] mx-auto overflow-hidden rounded-tr-[80px]">
+    <main className="relative pt-2 px-4 sm:px-6 lg:px-0  mt-[1.5rem] mx-auto overflow-hidden rounded-tr-[80px]">
       {/* Background Image with low opacity */}
       <div className="absolute inset-0 -z-10">
         <img
