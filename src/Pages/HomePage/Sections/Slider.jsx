@@ -21,28 +21,29 @@ const slides = [
   {
     src: ItStrategyConsultancyBg,
     title: "IT STRATEGY AND ARCHITECTURE CONSULTING",
-    description: "Unlock business growth with expert IT strategy consultancy.",
+    description:
+      "Expert guidance to align your IT investments with business goals, driving smarter decisions and sustainable growth.",
     buttonText: "Learn More",
   },
   {
     src: ItSoftwareMaintBg,
     title: "IT SOFTWARE AND MAINTENANCE",
     description:
-      "Boost your business with custom software solutions tailored to your needs and efficient staffing services. From powerful applications to hiring skilled professionals, we help you streamline operations, improve productivity, and scale confidently with the right technology and talent",
+      "built software and ongoing support tailored to your unique business needs for seamless performance and growth.",
     buttonText: "Learn More",
   },
   {
-    src: svgImg,
+    src: bgimg,
     title: "MANPOWER SOLUTION",
     description:
-      "Boost your business with custom software solutions tailored to your needs and efficient staffing services. From powerful applications to hiring skilled professionals, we help you streamline operations, improve productivity, and scale confidently with the right technology and talent",
+      "Delivering skilled IT talent on demand to power your projects with speed, expertise, and flexibility.",
     buttonText: "Learn More",
   },
   {
     src: DigiCertbg,
     title: "DIGITAL CERTIFICATE",
     description:
-      "Go paperless with secure, tamper-proof digital credentials. Our digital certificate solutions are trusted by universities, institutions, and global organizations to issue, verify, and manage certificates efficiently—ensuring authenticity, reducing fraud, and enhancing credibility in a fully digital environment.",
+      "SaaS platform, record digital Badge, and Certificates  on blockchain.",
     buttonText: "Schedule a demo",
     buttonText1: "Login",
   },
@@ -50,14 +51,14 @@ const slides = [
     src: cattlebg,
     title: "CATTLE AADHAR",
     description:
-      "Digitally tag, identify, and track livestock with precision using our Cattle Adhaar solution. We empower governments and rural bodies with smart, reliable animal identification systems—enhancing traceability, health monitoring, and livestock management through technology-driven agricultural innovation.",
+      "A digital identity platform for Cattle powered with AI/ML, supporting traceability, health records, and subsidy management.",
     buttonText: "Learn More",
   },
   {
     src: bgimg,
-    title: "3PL SOLUTION",
+    title: "Logistic Solutions",
     description:
-      "Plan smarter with our demand-driven 3PL solutions designed to optimize inventory, cut logistics costs, and enhance supply chain efficiency. We empower businesses with real-time visibility, streamlined operations, and scalable logistics support tailored to today’s fast-paced market demands.",
+      "3PL Solutions powered with AI/ML to Streamlining planning, forecasting, and fulfilment in supply chain.",
     buttonText: "Learn More",
   },
 ];

@@ -17,7 +17,7 @@ function ContactSection() {
         {/* Left Text Content */}
         <div className="text-white text-center md:text-left">
           <h2
-            className="font-medium mb-8 sm:text-[45px] sm:text-center text-left text-[22px] "
+            className="font-medium mb-8 sm:text-[45px] text-left text-[22px] "
             style={{
               fontFamily: HeadFontFamily,
               lineHeight: "1.2em",

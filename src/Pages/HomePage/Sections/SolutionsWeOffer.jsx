@@ -17,19 +17,19 @@ const ServicesData = [
     title: "IT STRATEGY AND ARCHITECTURE CONSULTING",
     icon: <FaHandshake size={30} />,
     color: "blue-600",
-    text: `We develop custom software solutions designed to fit your specific requirements and business processes. From development to deployment and ongoing maintenance, our services ensure smooth performance, enhanced productivity, and long-term reliability—keeping your systems secure, scalable, and aligned with evolving goals.`,
+    text: `Align your technology with business goals through expert IT consulting. We design strategic architectures and roadmaps that enable innovation, operational agility, and long-term growth - helping your organization stay competitive, scalable, and ready for the evolving demands of the digital world.`,
   },
   {
     title: "IT SOFTWARE AND MAINTENANCE",
     icon: <LuLaptopMinimalCheck size={30} />,
     color: "rose-600",
-    text: `We develop custom software solutions designed to fit your specific requirements and business processes. From development to deployment and ongoing maintenance, our services ensure smooth performance, enhanced productivity, and long-term reliability—keeping your systems secure, scalable, and aligned with evolving goals.`,
+    text: `We develop custom software solutions designed to fit your specific requirements and business processes. From development to deployment and ongoing maintenance, our services ensure smooth performance, enhanced productivity, and long-term reliability - keeping your systems secure, scalable, and aligned with evolving goals`,
   },
   {
     title: "MANPOWER SOLUTION",
     icon: <MdManageAccounts size={30} />,
     color: "yellow-600",
-    text: `We develop custom software solutions designed to fit your specific requirements and business processes. From development to deployment and ongoing maintenance, our services ensure smooth performance, enhanced productivity, and long-term reliability—keeping your systems secure, scalable, and aligned with evolving goals.`,
+    text: `We provide qualified IT professionals tailored to your project requirements - whether for short-term tasks or long-term roles. Our flexible staffing solutions ensure you have the right talent at the right time, accelerating delivery, reducing hiring costs, and enhancing overall productivity.`,
   },
 ];
 const ProductData = [
@@ -37,19 +37,19 @@ const ProductData = [
     title: "DIGITAL CERTIFICATE",
     icon: <FaHandshake size={30} />,
     color: "green-600",
-    text: `We develop custom software solutions designed to fit your specific requirements and business processes. From development to deployment and ongoing maintenance, our services ensure smooth performance, enhanced productivity, and long-term reliability—keeping your systems secure, scalable, and aligned with evolving goals.`,
+    text: `Say goodbye to paper certificates! Join leading institutions and millions of professionals embracing Cloudtry Tech - your trusted partner in secure digital badging and credentialing. Enhance credibility, simplify verification, and empower earners to showcase achievements with confidence in today’s fast-paced digital world`,
   },
   {
     title: "CATTLE AADHAR",
     icon: <LuLaptopMinimalCheck size={30} />,
     color: "purple-600",
-    text: `We develop custom software solutions designed to fit your specific requirements and business processes. From development to deployment and ongoing maintenance, our services ensure smooth performance, enhanced productivity, and long-term reliability—keeping your systems secure, scalable, and aligned with evolving goals.`,
+    text: `Enhance the welfare and sustainability of indigenous cattle through a digital platform that ensures unique identification, end-to-end lifecycle tracking, healthcare monitoring, effective policy enforcement, and transparent subsidy utilization—maximizing benefits for rural farmers and strengthening the agricultural ecosystem.`,
   },
   {
-    title: "3PL SOLUTION",
+    title: "3PL (Logistics)",
     icon: <MdManageAccounts size={30} />,
     color: "red-600",
-    text: `We develop custom software solutions designed to fit your specific requirements and business processes. From development to deployment and ongoing maintenance, our services ensure smooth performance, enhanced productivity, and long-term reliability—keeping your systems secure, scalable, and aligned with evolving goals.`,
+    text: `Our demand management solutions optimize supply chain efficiency through accurate forecasting, smart resource planning, and real-time inventory visibility. We help logistics providers meet customer demands with precision—reducing waste, improving fulfilment rates, and driving operational excellence across the entire value chain.`,
   },
 ];
 

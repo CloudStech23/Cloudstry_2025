@@ -40,10 +40,10 @@ function WhyChooseUs() {
           style={{ fontFamily: SubTextFontFamily }}
           // as of now we consider the font as a medium
         >
-          At Cloudstry Tech, we are committed to delivering innovative and
-          reliable digital solutions that drive your business forward. Our
-          client-centric approach, technical expertise, and dedication to
-          quality set us apart in the IT services landscape.
+          At Cloudstry Tech, we blend innovation with expertise to deliver
+          reliable, future-ready IT and digital solutions. Our commitment to
+          quality, customization, and client success sets us apart in a dynamic,
+          technology-driven world.
         </h5>
 
         <div className="relative w-full h-full ">

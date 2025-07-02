@@ -26,13 +26,14 @@ function GlobalPresene() {
           <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto mb-10 rounded-full" />
 
           <h5
-            className="text-[13.8px] sm:text-[16.5px] text-justify sm:text-center sm:w-[80%] lg:w-[72%] mx-auto font-medium text-color"
+            className="text-[13.8px] sm:text-[16.5px] text-justify sm:text-center sm:w-[80%] lg:w-[77%] mx-auto font-medium text-color"
             style={{ fontFamily: SubTextFontFamily }}
           >
-            Cloudstry Tech proudly serves clients across multiple regions,
-            delivering consistent quality and innovation worldwide. Our global
-            footprint enables us to understand diverse market needs and offer
-            localized solutions with a global perspective.
+            With a growing footprint across continents, Cloudstry Tech delivers
+            Digital Certification, Cattle Aadhaar, 3PL, Software, and IT
+            Services to diverse industries worldwide. Our global presence
+            enables us to tailor innovative, scalable solutions that meet local
+            needs while driving universal digital transformation
           </h5>
 
           {/* Image with overlay cards */}
@@ -55,22 +56,22 @@ function GlobalPresene() {
                 {[
                   {
                     title: "Worldwide Clientele",
-                    desc: "We collaborate with businesses across continents, spanning various industries and sectors",
+                    desc: "Serving diverse industries across continents with tailored IT solutions.",
                     icon: <TbWorld size={25} color="white" />,
                   },
                   {
                     title: "Multicultural Expertise",
-                    desc: "Our team’s diverse background helps us tailor solutions that respect local cultures and business practices",
+                    desc: "Delivering culturally aligned strategies through a globally diverse team.",
                     icon: <FaPeopleGroup size={25} color="white" />,
                   },
                   {
                     title: "24/7 Support",
-                    desc: "With offices and partners around the globe, we provide round-the-clock assistance and seamless communication",
+                    desc: "Round-the-clock assistance enabled by our international support network.",
                     icon: <MdWatchLater size={25} color="white" />,
                   },
                   {
                     title: "Scalable Solutions",
-                    desc: "Whether a startup or enterprise, our solutions adapt to your needs regardless of location",
+                    desc: "Flexible solutions that grow with your business—anywhere in the world.",
                     icon: <MdAutoGraph size={25} color="white" />,
                   },
                 ].map((card, i) => (

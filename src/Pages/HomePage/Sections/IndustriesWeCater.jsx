@@ -38,10 +38,11 @@ function IndustriesWeCater() {
             style={{ fontFamily: SubTextFontFamily }}
             // as of now we consider the font as a medium
           >
-            At Cloudstry Tech, we customize our solutions to meet the unique
-            challenges of a wide range of industries. Our expertise ensures that
-            every sector benefits from digital transformation, enhanced
-            efficiency, and seamless integration.
+            At Cloudstry Tech, we tailor our solutions to meet the distinct
+            challenges of each industry. With deep expertise, we drive smarter
+            decisions, faster processes, and more efficient operations -
+            enabling true digital transformation and seamless technology
+            integration across every sector.
           </h5>
           <div className="flex flex-wrap justify-center gap-6 mt-14">
             {/* <img src={educationimg} alt="" className="object-contain " /> */}
@@ -56,9 +57,9 @@ function IndustriesWeCater() {
                 className="text-color text-[15px] hover-card-text mt-2 text-center"
                 style={{ fontFamily: SubTextFontFamily }}
               >
-                We empower universities and higher education institutions with
-                reliable Digital Certification solutions that simplify
-                credential management and verification.
+                We empower educational institutions with secure digital
+                certification platforms that simplify credential issuance,
+                improve verification, and support lifelong learning.
               </p>
             </div>
             <div className="relative sm:w-[210px] w-[230px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
@@ -72,9 +73,9 @@ function IndustriesWeCater() {
                 className="text-color text-[15px] hover-card-text mt-2 text-center"
                 style={{ fontFamily: SubTextFontFamily }}
               >
-                From startups to multinational corporations, we provide secure
-                and reliable Digital Certification services that validate
-                credentials and build trust.
+                Our IT solutions enhance operational visibility, automate
+                workflows, and enable smarter resource planning for reliable and
+                cost-effective utility services.
               </p>
             </div>
             <div className="relative sm:w-[210px] w-[230px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
@@ -88,9 +89,9 @@ function IndustriesWeCater() {
                 className="text-color text-[15px] hover-card-text mt-2 text-center"
                 style={{ fontFamily: SubTextFontFamily }}
               >
-                We support institutions with scalable technology and trusted
-                Digital Certification solutions to ensure compliance and secure
-                record-keeping.
+                We support governance with platforms like Cattle Aadhaar,
+                driving transparency, traceability, and efficient delivery of
+                subsidies and welfare schemes.
               </p>
             </div>
             <div className="relative sm:w-[210px] w-[230px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
@@ -104,9 +105,9 @@ function IndustriesWeCater() {
                 className="text-color text-[15px] hover-card-text mt-2 text-center"
                 style={{ fontFamily: SubTextFontFamily }}
               >
-                We support governments with secure digital services, including
-                Cattle Aadhaar for efficient and reliable livestock and cattle
-                identification.
+                Our demand management and 3PL solutions optimize inventory,
+                forecasting, and fulfilment -boosting agility and reducing
+                operational costs in supply chains
               </p>
             </div>
             <div className="relative sm:w-[210px] w-[230px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
@@ -120,9 +121,9 @@ function IndustriesWeCater() {
                 className="text-color text-[15px] hover-card-text mt-2 text-center"
                 style={{ fontFamily: SubTextFontFamily }}
               >
-                We optimize logistics operations with intelligent demand
-                management, real-time tracking, and streamlined supply chain
-                solutions.
+                We streamline healthcare IT with customized software, data
+                integration, and secure infrastructure to improve patient care
+                and administrative efficiency.
               </p>
             </div>
           </div>
