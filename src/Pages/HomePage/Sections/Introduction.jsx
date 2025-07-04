@@ -1,5 +1,5 @@
 import React from "react";
-import IntroBG from "../../../assets/Images/HomePage/Introduction_Bg.svg";
+import IntroBG from "../../../assets/Images/HomePage/Introduction_Bg-2.svg";
 import { HeadTextColor } from "../../../CustomeComponents/Theme";
 import { SubTextFontFamily } from "../../../CustomeComponents/Theme";
 
@@ -10,11 +10,11 @@ function Introduction() {
       <img
         src={IntroBG}
         alt="Introduction Background"
-        className="absolute inset-0 w-full h-[25rem] sm:h-[35rem] object-cover z-0 opacity-50"
+        className="absolute inset-0 w-full h-[25rem] sm:h-[30rem] object-cover z-0 opacity-90"
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto">
+      <div className="relative z-10 mx-auto">
         <div className="text-center mb-6">
           <h2
             className="sm:text-4xl text-2xl font-bold mb-6"
@@ -40,26 +40,31 @@ function Introduction() {
               className="text-color mb-3 sm:text-[16.5px] text-[15px] text-justify  sm:text-center"
               style={{ fontFamily: SubTextFontFamily }}
             >
-              At Cloudstry Technologies, we empower businesses with a diverse
-              range of innovative IT products and services designed to meet
-              modern challenges. From secure Digital Certification solutions for
-              academic institutions and organizations, to smart Cattle Aadhaar
-              systems for livestock identification, we help drive digital
-              transformation across sectors.
+              At Cloudstry Technologies, we blend creative innovation,
+              cutting-edge technology, and deep industry expertise to develop
+              intelligent, future-ready solutions. Our mission is to build smart
+              digital systems that not only connect people and processes but
+              also simplify complex challenges, enhance operational efficiency,
+              and drive meaningful digital transformation. By aligning modern
+              tools with real-world needs, we empower organizations to solve
+              problems, make informed decisions, and stay ahead in today’s
+              dynamic digital landscape.
             </p>
             <p
               className="text-color mb-3 sm:text-[16.5px] text-[15px] text-justify  sm:text-center"
               style={{ fontFamily: SubTextFontFamily }}
             >
-              Our expertise extends to 3PL (Third-Party Logistics) Solutions,
-              offering intelligent demand planning and supply chain
-              optimization, as well as IT consulting, software development, and
-              staffing services that are tailored to fit your unique business
-              needs. Whether you're looking to streamline operations, enhance
-              data security, or scale efficiently, Cloudstry is your trusted
-              technology partner.
+              Our diverse portfolio includes AI/ML-powered platforms such as
+              Cattle Aadhaar for livestock traceability and 3PL Logistics
+              Solutions that optimize supply chain forecasting and fulfillment.
+              We also provide secure digital certification systems for
+              verifiable badges and credentials, custom software development, IT
+              strategy consulting, and on-demand staffing services. Every
+              solution we offer is designed to scale with your business and
+              deliver measurable impact — helping you grow, adapt, and lead with
+              confidence in a fast-evolving world.
             </p>
-            <p
+            {/* <p
               className="text-color mb-3 sm:text-[16.5px] text-[15px] text-justify  sm:text-center"
               style={{ fontFamily: SubTextFontFamily }}
             >
@@ -69,7 +74,7 @@ function Introduction() {
               that every product and service we offer not only meets industry
               standards but also exceeds expectations. Let us help you stay
               ahead in a fast-evolving digital world.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

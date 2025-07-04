@@ -7,26 +7,33 @@ import { HeadTextColor } from "../../../CustomeComponents/Theme";
 import "../../../CSS/slider.css";
 import clientBg from "../../../assets/Images/HomePage/client_bg.png";
 
+//Logo images
+import agent511 from "../../../assets/Images/HomePage/Agent511_logo.png";
+import cloud3tech from "../../../assets/Images/HomePage/cloud3tech_logo.png";
+import msgbroadcast from "../../../assets/Images/HomePage/messageBroadcast_logo.png";
+import rhc from "../../../assets/Images/HomePage/rhc_logo.png";
+import invest54 from "../../../assets/Images/HomePage/54investment_logo.png";
+
 const logos = [
   {
-    name: "Google",
-    src: "https://t3.ftcdn.net/jpg/03/99/98/60/360_F_399986042_9iSLYUNyDv8npaKP31xsIpDVFjfqGLDF.jpg",
+    name: "Agent511",
+    src: agent511,
   },
   {
-    name: "AWS",
-    src: "https://images.seeklogo.com/logo-png/31/2/amazon-web-services-aws-logo-png_seeklogo-319188.png",
+    name: "Cloud3Tech",
+    src: cloud3tech,
   },
   {
-    name: "Microsoft",
-    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAmTEJMOE6GWQywRs_97ULcKX22TYZPv765epac40QWIF0_jSxxG1IGiMCb7M4dJMo5g&usqp=CAU",
+    name: "Messsage Broadcast",
+    src: msgbroadcast,
   },
   {
-    name: "Adobe",
-    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQduXJREqBe_A7tkWoD48jL35xRpT_WaxP_tQ&s",
+    name: "Rapidhealthconnect",
+    src: rhc,
   },
   {
-    name: "Oracle",
-    src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnxm3DtAMJ9Ogzh-BBij9Mlv9YEnlFVJe-pIqxq_ybhg-QOM-rKgasyZBJRKdI0eIKR_w&usqp=CAU",
+    name: "54Investment",
+    src: invest54,
   },
 ];
 
@@ -70,7 +77,7 @@ function ClientSlider() {
                   <img
                     src={logo.src}
                     alt={logo.name}
-                    className="w-full sm:h-20   object-contain mb-2"
+                    className="w-full sm:h-[3.3rem]   object-contain mb-2"
                   />
                 </div>
               </SwiperSlide>

@@ -115,16 +115,61 @@ const Navbar = () => {
                   </MenuItem>
                 </MenuHandler>
                 <MenuList className="p-2 rounded-xl shadow-lg z-50 w-48 border border-gray-100 bg-white ml-1">
-                  <MenuItem
-                    className="rounded-lg  focus:outline-none focus:ring-0 hover:bg-gray-50 px-3 py-2"
-                    style={{
-                      color: NavbarSubItemColor,
-                      fontSize: NavbarItemSubHeadFontSize,
-                      fontFamily: NavbarItemSubHeadFontFamily,
-                    }}
-                  >
-                    Digital Certificate
-                  </MenuItem>
+                  <Menu allowHover placement="right-start" offset={10}>
+                    <MenuHandler>
+                      <MenuItem
+                        className="rounded-lg hover:bg-gray-50 px-3 py-2 gap-1 focus:outline-none focus:ring-0 flex items-center justify-between w-full"
+                        style={{
+                          color: NavbarSubItemColor,
+                          fontSize: NavbarItemSubHeadFontSize,
+                          fontFamily: NavbarItemSubHeadFontFamily,
+                        }}
+                      >
+                        Digital Certificate
+                        <BiChevronRight
+                          className="opacity-70 mr-2 transition-transform"
+                          style={{
+                            color: NavbarSubItemColor,
+                            fontSize: NavbarIconChevronSize,
+                            fontFamily: NavbarItemSubHeadFontFamily,
+                          }}
+                        />
+                      </MenuItem>
+                    </MenuHandler>
+                    <MenuList className="p-2 rounded-xl shadow-lg z-50 w-52 border border-gray-100 bg-white ml-1">
+                      <MenuItem
+                        className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                        style={{
+                          color: NavbarSubItemColor,
+                          fontSize: NavbarItemSubHeadFontSize,
+                          fontFamily: NavbarItemSubHeadFontFamily,
+                        }}
+                      >
+                        Universities
+                      </MenuItem>
+                      <MenuItem
+                        className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                        style={{
+                          color: NavbarSubItemColor,
+                          fontSize: NavbarItemSubHeadFontSize,
+                          fontFamily: NavbarItemSubHeadFontFamily,
+                        }}
+                      >
+                        Organizations
+                      </MenuItem>
+                      <MenuItem
+                        className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                        style={{
+                          color: NavbarSubItemColor,
+                          fontSize: NavbarItemSubHeadFontSize,
+                          fontFamily: NavbarItemSubHeadFontFamily,
+                        }}
+                      >
+                        Institutions
+                      </MenuItem>
+                    </MenuList>
+                  </Menu>
+
                   <MenuItem
                     className="rounded-lg  focus:outline-none focus:ring-0 hover:bg-gray-50 px-3 py-2"
                     style={{
@@ -181,7 +226,7 @@ const Navbar = () => {
                       fontFamily: NavbarItemSubHeadFontFamily,
                     }}
                   >
-                    IT Strategy Consultancy
+                    IT Strategy and Architecture Consulting
                   </MenuItem>
                   <MenuItem
                     className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
@@ -191,7 +236,17 @@ const Navbar = () => {
                       fontFamily: NavbarItemSubHeadFontFamily,
                     }}
                   >
-                    Software Services/Staffing Solution
+                    IT Software and Maintenance
+                  </MenuItem>
+                  <MenuItem
+                    className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                    style={{
+                      color: NavbarSubItemColor,
+                      fontSize: NavbarItemSubHeadFontSize,
+                      fontFamily: NavbarItemSubHeadFontFamily,
+                    }}
+                  >
+                    Manpower Solution
                   </MenuItem>
                 </MenuList>
               </Menu>
@@ -235,6 +290,16 @@ const Navbar = () => {
                   fontFamily: NavbarItemSubHeadFontFamily,
                 }}
               >
+                Utilities
+              </MenuItem>
+              <MenuItem
+                className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                style={{
+                  color: NavbarSubItemColor,
+                  fontSize: NavbarItemSubHeadFontSize,
+                  fontFamily: NavbarItemSubHeadFontFamily,
+                }}
+              >
                 Government
               </MenuItem>
               <MenuItem
@@ -246,6 +311,16 @@ const Navbar = () => {
                 }}
               >
                 Logistic
+              </MenuItem>
+              <MenuItem
+                className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                style={{
+                  color: NavbarSubItemColor,
+                  fontSize: NavbarItemSubHeadFontSize,
+                  fontFamily: NavbarItemSubHeadFontFamily,
+                }}
+              >
+                Health Care
               </MenuItem>
             </MenuList>
           </Menu>

@@ -29,11 +29,11 @@ const slides = [
     src: ItSoftwareMaintBg,
     title: "IT SOFTWARE AND MAINTENANCE",
     description:
-      "built software and ongoing support tailored to your unique business needs for seamless performance and growth.",
+      "Custom-built software and ongoing support tailored to your unique business needs for seamless performance and growth.",
     buttonText: "Learn More",
   },
   {
-    src: bgimg,
+    src: svgImg,
     title: "MANPOWER SOLUTION",
     description:
       "Delivering skilled IT talent on demand to power your projects with speed, expertise, and flexibility.",
@@ -58,7 +58,7 @@ const slides = [
     src: bgimg,
     title: "Logistic Solutions",
     description:
-      "3PL Solutions powered with AI/ML to Streamlining planning, forecasting, and fulfilment in supply chain.",
+      "3PL Solutions powered with AI/ML to streamlining planning, forecasting, and fulfilment in supply chain.",
     buttonText: "Learn More",
   },
 ];
@@ -111,7 +111,7 @@ const CarouselSlider = () => {
             <div className="flex flex-col md:flex-row items-start md:items-start justify-start md:justify-between px-6 md:px-16 pt-10 md:pt-20 mt-24">
               <div className="w-full space-y-4">
                 <h2
-                  className="text-2xl md:text-[50px]  w-[80%] font-bold text-white"
+                  className="text-2xl md:text-[50px]  w-[95%] font-bold text-white"
                   style={{ fontFamily: HeadFontFamily, lineHeight: "1.2" }}
                 >
                   {item.title}

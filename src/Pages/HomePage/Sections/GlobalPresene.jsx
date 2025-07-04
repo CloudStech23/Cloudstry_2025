@@ -33,7 +33,7 @@ function GlobalPresene() {
             Digital Certification, Cattle Aadhaar, 3PL, Software, and IT
             Services to diverse industries worldwide. Our global presence
             enables us to tailor innovative, scalable solutions that meet local
-            needs while driving universal digital transformation
+            needs while driving universal digital transformation.
           </h5>
 
           {/* Image with overlay cards */}
