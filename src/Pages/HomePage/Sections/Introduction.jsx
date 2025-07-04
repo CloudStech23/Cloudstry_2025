@@ -2,6 +2,7 @@ import React from "react";
 import IntroBG from "../../../assets/Images/HomePage/Introduction_Bg-2.svg";
 import { HeadTextColor } from "../../../CustomeComponents/Theme";
 import { SubTextFontFamily } from "../../../CustomeComponents/Theme";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 function Introduction() {
   return (
@@ -10,13 +11,13 @@ function Introduction() {
       <img
         src={IntroBG}
         alt="Introduction Background"
-        className="absolute inset-0 w-full h-[25rem] sm:h-[30rem] object-cover z-0 opacity-90"
+        className="absolute inset-0 w-full h-[25rem] sm:h-[33rem] object-cover z-0 opacity-90"
       />
 
       {/* Content */}
       <div className="relative z-10 mx-auto">
         <div className="text-center mb-6">
-          <h2
+          <h1
             className="sm:text-4xl text-2xl font-bold mb-6"
             style={{
               fontFamily: "Poppines, sans-serif",
@@ -29,7 +30,7 @@ function Introduction() {
             <span className="text-[#1f1446]">with Innovation,</span>
             <br />
             <span className="text-[#1f1446]">Technology & Expertise</span>
-          </h2>
+          </h1>
 
           <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto mb-10 rounded-full"></div>
         </div>
@@ -40,29 +41,59 @@ function Introduction() {
               className="text-color mb-3 sm:text-[16.5px] text-[15px] text-justify  sm:text-center"
               style={{ fontFamily: SubTextFontFamily }}
             >
-              At Cloudstry Technologies, we blend creative innovation,
-              cutting-edge technology, and deep industry expertise to develop
-              intelligent, future-ready solutions. Our mission is to build smart
-              digital systems that not only connect people and processes but
-              also simplify complex challenges, enhance operational efficiency,
-              and drive meaningful digital transformation. By aligning modern
-              tools with real-world needs, we empower organizations to solve
-              problems, make informed decisions, and stay ahead in today’s
-              dynamic digital landscape.
+              At Cloudstry Technologies, we bring together creative ideas, smart
+              technology, and strong industry knowledge to build digital
+              solutions that are ready for the future. Our goal is to make
+              complex processes easier, help systems and people work better
+              together, and solve real problems in a practical way. Whether it’s
+              improving how decisions are made, automating tasks, or helping
+              businesses grow — we focus on using the right tools like AI,
+              machine learning, and blockchain to meet modern needs. We support
+              organizations in staying flexible, efficient, and ahead in today’s
+              fast-changing digital world.
             </p>
+            <p className="text-color mb-3 sm:text-[16.5px] text-[15px] text-justify  sm:text-center">
+              <strong>What Makes Us Different:</strong>
+            </p>
+
             <p
-              className="text-color mb-3 sm:text-[16.5px] text-[15px] text-justify  sm:text-center"
+              className="text-color mb-1 sm:text-[16.5px]  text-[15px] text-justify  sm:text-center cursor-pointer"
               style={{ fontFamily: SubTextFontFamily }}
             >
-              Our diverse portfolio includes AI/ML-powered platforms such as
-              Cattle Aadhaar for livestock traceability and 3PL Logistics
-              Solutions that optimize supply chain forecasting and fulfillment.
-              We also provide secure digital certification systems for
-              verifiable badges and credentials, custom software development, IT
-              strategy consulting, and on-demand staffing services. Every
-              solution we offer is designed to scale with your business and
-              deliver measurable impact — helping you grow, adapt, and lead with
-              confidence in a fast-evolving world.
+              <li>
+                <strong>Ready for the Future:</strong> We help you grow and
+                succeed in a digital-first world.
+              </li>
+            </p>
+
+            <p
+              className="text-color mb-1 sm:text-[16.5px]  text-[15px] text-justify  sm:text-center cursor-pointer"
+              style={{ fontFamily: SubTextFontFamily }}
+            >
+              <li>
+                <strong>Real Results: </strong>Everything we build is designed
+                to give clear, useful outcomes.
+              </li>
+            </p>
+
+            <p
+              className="text-color mb-1 sm:text-[16.5px]  text-[15px] text-justify  sm:text-center cursor-pointer"
+              style={{ fontFamily: SubTextFontFamily }}
+            >
+              <li>
+                <strong>Creative Thinking:</strong> We use fresh ideas and smart
+                tools to solve everyday problems.
+              </li>
+            </p>
+
+            <p
+              className="text-color mb-1 sm:text-[16.5px]  text-[15px] text-justify  sm:text-center cursor-pointer"
+              style={{ fontFamily: SubTextFontFamily }}
+            >
+              <li>
+                <strong>Smarter Workflows:</strong> Our solutions help you save
+                time, reduce effort, and work more smoothly.
+              </li>
             </p>
             {/* <p
               className="text-color mb-3 sm:text-[16.5px] text-[15px] text-justify  sm:text-center"

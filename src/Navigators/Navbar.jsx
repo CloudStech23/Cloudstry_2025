@@ -69,6 +69,7 @@ const Navbar = () => {
               className="md:w-auto lg:h-14 h-10 w-auto transition-transform hover:scale-[1.02]"
               src={logo}
               style={{ objectFit: "cover" }}
+              alt="Cloudstry Tech"
             />
           </Link>
         </div>
@@ -273,16 +274,6 @@ const Navbar = () => {
             </MenuHandler>
             <MenuList className="p-2 rounded-xl shadow-lg z-50 w-40 mt-2 border border-gray-100 bg-white">
               <MenuItem
-                className="rounded-lg hover:bg-gray-50 text-[16px] px-3 py-2 focus:outline-none focus:ring-0"
-                style={{
-                  color: NavbarSubItemColor,
-                  fontSize: NavbarItemSubHeadFontSize,
-                  fontFamily: NavbarItemSubHeadFontFamily,
-                }}
-              >
-                Education
-              </MenuItem>
-              <MenuItem
                 className="rounded-lg  hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
                 style={{
                   color: NavbarSubItemColor,
@@ -300,17 +291,17 @@ const Navbar = () => {
                   fontFamily: NavbarItemSubHeadFontFamily,
                 }}
               >
-                Government
+                Logistic
               </MenuItem>
               <MenuItem
-                className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                className="rounded-lg hover:bg-gray-50 text-[16px] px-3 py-2 focus:outline-none focus:ring-0"
                 style={{
                   color: NavbarSubItemColor,
                   fontSize: NavbarItemSubHeadFontSize,
                   fontFamily: NavbarItemSubHeadFontFamily,
                 }}
               >
-                Logistic
+                Education
               </MenuItem>
               <MenuItem
                 className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
@@ -321,6 +312,16 @@ const Navbar = () => {
                 }}
               >
                 Health Care
+              </MenuItem>
+              <MenuItem
+                className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                style={{
+                  color: NavbarSubItemColor,
+                  fontSize: NavbarItemSubHeadFontSize,
+                  fontFamily: NavbarItemSubHeadFontFamily,
+                }}
+              >
+                Government
               </MenuItem>
             </MenuList>
           </Menu>

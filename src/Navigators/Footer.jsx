@@ -33,7 +33,7 @@ function Footer() {
         <div className="w-full flex justify-left px-6 mb-8">
           <img
             src={logo}
-            alt="Cloudstry Logo"
+            alt="Cloudstry Tech"
             className="w-40 sm:w-48 md:w-56"
           />
         </div>

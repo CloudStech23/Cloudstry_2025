@@ -153,7 +153,7 @@ const SolutionsWeOffer = () => {
                 alt="Background"
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-[#1f1446] opacity-70"></div>
+              <div className="absolute inset-0 bg-[#005ea5] opacity-70"></div>
             </div>
 
             {/* Carousel Cards */}

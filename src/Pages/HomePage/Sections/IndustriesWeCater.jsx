@@ -23,7 +23,7 @@ function IndustriesWeCater() {
         <div className="text-center  px-4  ">
           {" "}
           {/*#efefef*/}
-          <h2
+          <h3
             className="sm:text-4xl text-2xl font-bold  sm:leading-none mb-6"
             style={{
               fontFamily: "Poppines, sans-serif",
@@ -31,7 +31,7 @@ function IndustriesWeCater() {
             }}
           >
             INDUSTRIES <span className="text-[#1f1446]">WE CATER TO</span>
-          </h2>
+          </h3>
           <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto mb-10 rounded-full"></div>
           <h5
             className="sm:text-[16.5px] text-[14px] mt-2 text-justify  sm:w-[60%] lg:w-[72%] font-medium text-color sm:text-center mx-auto"
@@ -47,12 +47,12 @@ function IndustriesWeCater() {
           <div className="flex flex-wrap justify-center gap-6 mt-14">
             {/* <img src={educationimg} alt="" className="object-contain " /> */}
             <div className="relative sm:w-[210px] w-[230px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
-              <h2
+              <h4
                 className="text-xl font-bold  text-center"
                 style={{ fontFamily: HeadFontFamily }}
               >
                 EDUCATION
-              </h2>
+              </h4>
               <p
                 className="text-color text-[15px] hover-card-text mt-2 text-center"
                 style={{ fontFamily: SubTextFontFamily }}
@@ -63,12 +63,12 @@ function IndustriesWeCater() {
               </p>
             </div>
             <div className="relative sm:w-[210px] w-[230px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
-              <h2
+              <h4
                 className="text-xl font-bold  text-center"
                 style={{ fontFamily: HeadFontFamily }}
               >
                 UTILITIES
-              </h2>
+              </h4>
               <p
                 className="text-color text-[15px] hover-card-text mt-2 text-center"
                 style={{ fontFamily: SubTextFontFamily }}
@@ -79,12 +79,12 @@ function IndustriesWeCater() {
               </p>
             </div>
             <div className="relative sm:w-[210px] w-[230px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
-              <h2
+              <h4
                 className="text-xl font-bold  text-center"
                 style={{ fontFamily: HeadFontFamily }}
               >
                 GOVERNMENT
-              </h2>
+              </h4>
               <p
                 className="text-color text-[15px] hover-card-text mt-2 text-center"
                 style={{ fontFamily: SubTextFontFamily }}
@@ -95,12 +95,12 @@ function IndustriesWeCater() {
               </p>
             </div>
             <div className="relative sm:w-[210px] w-[230px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
-              <h2
+              <h4
                 className="text-xl font-bold  text-center"
                 style={{ fontFamily: HeadFontFamily }}
               >
                 LOGISTIC
-              </h2>
+              </h4>
               <p
                 className="text-color text-[15px] hover-card-text mt-2 text-center"
                 style={{ fontFamily: SubTextFontFamily }}
@@ -111,12 +111,12 @@ function IndustriesWeCater() {
               </p>
             </div>
             <div className="relative sm:w-[210px] w-[230px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">
-              <h2
+              <h4
                 className="text-xl font-bold  text-center"
                 style={{ fontFamily: HeadFontFamily }}
               >
                 HEALTH CARE
-              </h2>
+              </h4>
               <p
                 className="text-color text-[15px] hover-card-text mt-2 text-center"
                 style={{ fontFamily: SubTextFontFamily }}

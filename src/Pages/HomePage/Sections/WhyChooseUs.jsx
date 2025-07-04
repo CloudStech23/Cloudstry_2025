@@ -26,16 +26,16 @@ function WhyChooseUs() {
         {/* Optional Overlay */}
       </div>
       <div className=" mx-auto text-center  mx-auto px-4 sm:px-6 lg:px-8">
-        <h2
+        <h3
           className="sm:text-4xl text-2xl font-bold sm:leading-none mb-6 "
           style={{ fontFamily: "Poppines, sans-serif", color: "#085d9e" }}
         >
           WHY <span className="text-[#1f1446] ">CHOOSE US ?</span>
-        </h2>
+        </h3>
 
         <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto mb-10 rounded-full" />
 
-        <h5
+        <h4
           className="sm:text-[16.5px] mt-2 text-justify  text-sm sm:w-[60%] lg:w-[75%] font-medium text-color sm:text-center mx-auto"
           style={{ fontFamily: SubTextFontFamily }}
           // as of now we consider the font as a medium
@@ -44,7 +44,7 @@ function WhyChooseUs() {
           reliable, future-ready IT and digital solutions. Our commitment to
           quality, customization, and client success sets us apart in a dynamic,
           technology-driven world.
-        </h5>
+        </h4>
 
         <div className="relative w-full h-full ">
           {/* Top-Left Border */}
@@ -139,7 +139,7 @@ function WhyChooseUs() {
               >
                 <img
                   src={whychooseimg}
-                  alt="Why Choose Us"
+                  alt="Why Choose Cloudstry Tech"
                   className=" shadow-lg  object-cover w-full h-[22rem]"
                 />
               </div>

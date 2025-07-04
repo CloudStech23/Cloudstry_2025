@@ -6,7 +6,7 @@ function OurCustomers() {
     <div className="mt-5">
       <main className=" px-4 sm:px-6 lg:px-0 pb-2  mx-auto bg-[#efefef] rounded-tr-[80px]">
         <div className="text-center  py-12 px-4">
-          <h2
+          <h3
             className="sm:text-4xl text-2xl font-bold  sm:leading-none mb-6"
             style={{
               fontFamily: "Poppines, sans-serif",
@@ -14,7 +14,7 @@ function OurCustomers() {
             }}
           >
             <span className="text-[#1f1446]">OUR HAPPY</span> CUSTOMERS
-          </h2>
+          </h3>
           <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto mb-10 rounded-full"></div>
 
           <div className="flex flex-wrap justify-center gap-4 mt-8 max-w-6xl mx-auto">

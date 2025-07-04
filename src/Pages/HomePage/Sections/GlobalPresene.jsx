@@ -16,12 +16,12 @@ function GlobalPresene() {
     <div className="w-full bg-white">
       <main className="px-4 sm:px-6 lg:px-0 py-12 mx-auto">
         <div className="text-center px-4 mb-12">
-          <h2
+          <h3
             className="text-2xl sm:text-4xl font-bold mb-6"
             style={{ fontFamily: "Poppines, sans-serif", color: HeadTextColor }}
           >
             OUR GLOBAL <span className="text-[#1f1446]">PRESENCE</span>
-          </h2>
+          </h3>
 
           <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto mb-10 rounded-full" />
 
@@ -45,7 +45,7 @@ function GlobalPresene() {
               <img
                 src={GlobalPresenseIMG}
                 className="w-full h-[20rem] sm:h-[25rem] object-cover "
-                alt="Global Presence Map"
+                alt="Our Global Presence"
                 style={{ objectPosition: "center" }}
               />
             </div>
