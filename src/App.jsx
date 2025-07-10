@@ -5,6 +5,7 @@ import Navbar from "./Navigators/Navbar";
 import Home from "./Pages/HomePage/Home";
 import { Article } from "./Pages/ArticlePage/Ariticle";
 import Footer from "./Navigators/Footer";
+import DigCert from "./Pages/DigitalCertPage/DigCert";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/article" element={<Article />} />
+          <Route path="/digital-certificate" element={<DigCert />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -48,7 +48,7 @@ function MobileNavbar({ closeNavbar }) {
             >
               <div className="pl-4 py-2">
                 <p className="text-gray-600 mb-2">
-                  <Link to="/article" onClick={closeNavbar}>
+                  <Link to="/digital-certificate" onClick={closeNavbar}>
                     Digital Certificate
                   </Link>
                 </p>

@@ -118,24 +118,26 @@ const Navbar = () => {
                 <MenuList className="p-2 rounded-xl shadow-lg z-50 w-48 border border-gray-100 bg-white ml-1">
                   <Menu allowHover placement="right-start" offset={10}>
                     <MenuHandler>
-                      <MenuItem
-                        className="rounded-lg hover:bg-gray-50 px-3 py-2 gap-1 focus:outline-none focus:ring-0 flex items-center justify-between w-full"
-                        style={{
-                          color: NavbarSubItemColor,
-                          fontSize: NavbarItemSubHeadFontSize,
-                          fontFamily: NavbarItemSubHeadFontFamily,
-                        }}
-                      >
-                        Digital Certificate
-                        <BiChevronRight
-                          className="opacity-70 mr-2 transition-transform"
+                      <Link to="/digital-certificate">
+                        <MenuItem
+                          className="rounded-lg hover:bg-gray-50 px-3 py-2 gap-1 focus:outline-none focus:ring-0 flex items-center justify-between w-full"
                           style={{
                             color: NavbarSubItemColor,
-                            fontSize: NavbarIconChevronSize,
+                            fontSize: NavbarItemSubHeadFontSize,
                             fontFamily: NavbarItemSubHeadFontFamily,
                           }}
-                        />
-                      </MenuItem>
+                        >
+                          Digital Certificate
+                          <BiChevronRight
+                            className="opacity-70 mr-2 transition-transform"
+                            style={{
+                              color: NavbarSubItemColor,
+                              fontSize: NavbarIconChevronSize,
+                              fontFamily: NavbarItemSubHeadFontFamily,
+                            }}
+                          />
+                        </MenuItem>
+                      </Link>
                     </MenuHandler>
                     <MenuList className="p-2 rounded-xl shadow-lg z-50 w-52 border border-gray-100 bg-white ml-1">
                       <MenuItem
