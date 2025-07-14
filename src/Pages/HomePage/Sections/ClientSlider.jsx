@@ -68,8 +68,21 @@ function ClientSlider() {
             autoplay={{ delay: 3000, disableOnInteraction: false }}
             loop={true}
             spaceBetween={40}
-            slidesPerView={4}
-            className="max-w-7xl mx-auto px-2"
+            className="sm:max-w-7xl w-full mx-auto px-2"
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+              },
+              480: {
+                slidesPerView: 3,
+              },
+              768: {
+                slidesPerView: 3,
+              },
+              1024: {
+                slidesPerView: 4,
+              },
+            }}
           >
             {logos.map((logo, i) => (
               <SwiperSlide key={i}>
@@ -77,7 +90,7 @@ function ClientSlider() {
                   <img
                     src={logo.src}
                     alt={logo.name}
-                    className="w-full sm:h-[3.3rem]   object-contain mb-2"
+                    className="sm:w-full sm:h-[3.3rem] h-[5rem]  object-contain sm:object-contain mb-2"
                   />
                 </div>
               </SwiperSlide>

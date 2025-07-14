@@ -34,14 +34,14 @@ function HowItWorks() {
             className="md:w-1/2 w-full flex justify-center relative bg-no-repeat bg-center bg-contain"
             style={{
               backgroundImage: `url(${BgImage})`, // 👈 Replace with your real path
-              backgroundSize: "590px", // or "cover" or "contain"
+              backgroundSize: "500px", // or "cover" or "contain"
               minHeight: "450px",
             }}
           >
             <img
               src="https://badgecert.com/wp-content/uploads/2020/07/Macbook.png"
               alt="Dashboard preview"
-              className="w-full max-w-[500px] object-contain h-auto z-10 relative"
+              className="w-full max-w-[450px] object-contain h-auto z-10 relative"
             />
           </div>
 
@@ -117,7 +117,7 @@ function HowItWorks() {
           </div>
         </div>
         {/* Image + Content Section */}
-        <div className="flex flex-col-reverse md:flex-row items-center gap-12 px-4 pt-[6rem]">
+        <div className="flex flex-col-reverse md:flex-row items-center gap-12 px-4 pt-[3rem]">
           {/* Left Text Block */}
           <div className="md:w-1/2 w-full">
             <h2 className="text-3xl text-[#085d9e] font-semibold mb-4">
@@ -179,14 +179,14 @@ function HowItWorks() {
             className="md:w-1/2 w-full flex justify-center relative bg-no-repeat bg-center bg-contain"
             style={{
               backgroundImage: `url(${BgImage})`, // 👈 Replace with your real path
-              backgroundSize: "590px", // or "cover" or "contain"
+              backgroundSize: "500px", // or "cover" or "contain"
               minHeight: "450px",
             }}
           >
             <img
               src="https://badgecert.com/wp-content/uploads/2020/07/desktop-mob.png"
               alt="Dashboard preview"
-              className="w-full max-w-[480px] object-contain h-auto z-10 relative"
+              className="w-full max-w-[450px] object-contain h-auto z-10 relative"
             />
           </div>
         </div>

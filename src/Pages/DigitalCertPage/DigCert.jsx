@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import Header from "./Sections/Header";
 import Introduction from "./Sections/Introduction";
 import Counter from "./Sections/Counter";
@@ -7,8 +7,13 @@ import Industries from "./Sections/Industries";
 import HowItWorks from "./Sections/HowItWorks";
 import ClientSlider from "../HomePage/Sections/ClientSlider";
 import WhyChooseUs from "./Sections/WhyChooseUs";
+import ContactSection from "./Sections/ContactSection";
 
 function DigCert() {
+  useLayoutEffect(() => {
+    // Scroll to top just before the component is painted
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="min-h-screen">
       <section>
@@ -30,10 +35,13 @@ function DigCert() {
         <HowItWorks />
       </section>
       <section>
+        <WhyChooseUs />
+      </section>
+      <section>
         <ClientSlider />
       </section>
       <section>
-        <WhyChooseUs />
+        <ContactSection />
       </section>
     </div>
   );

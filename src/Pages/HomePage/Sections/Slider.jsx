@@ -76,7 +76,7 @@ const CarouselSlider = () => {
   };
 
   return (
-    <div className="relative w-full h-[34rem]">
+    <div className="relative w-full h-[26rem] sm:h-[34rem]">
       {/* Swiper starts here */}
       <Swiper
         modules={[Autoplay, Pagination, Navigation]}
@@ -94,19 +94,21 @@ const CarouselSlider = () => {
         }}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         pagination={{ clickable: true }}
-        className="w-full h-[34rem]"
+        className="w-full sm:h-[34rem] h-[26rem]"
       >
         {slides.map((item, i) => (
           <SwiperSlide key={i}>
             {/* Dynamic background image */}
-            <img
-              src={item.src}
-              alt={item.title}
-              className="absolute inset-0 w-[100%] h-[36rem] sm:h-[24rem] md:h-[34rem] lg:h-full sm:object-contain lg:object-cover -z-10"
-              style={{ filter: "blur(0px)" }}
-            />
+            <div className="">
+              <img
+                src={item.src}
+                alt={item.title}
+                className="absolute inset-0 w-[100%] h-[26rem] sm:h-[24rem] md:h-[34rem] lg:h-full object-cover sm:object-cover lg:object-cover -z-10"
+                style={{ filter: "blur(0px)", objectPosition: "81% center" }}
+              />
+            </div>
 
-            <div className="absolute inset-0 w-full h-[34rem] bg-black/30 -z-10"></div>
+            <div className="absolute inset-0 w-full h-[34rem] sm:bg-transparent bg-black/40 -z-10"></div>
 
             <div className="flex flex-col md:flex-row items-start md:items-start justify-start md:justify-between px-6 md:px-16 pt-10 md:pt-20 mt-24">
               <div className="w-full space-y-4">
@@ -119,7 +121,7 @@ const CarouselSlider = () => {
                 <p className="text-white md:w-[70%] text-md md:text-[17.5px]">
                   {item.description}
                 </p>
-                <div className="flex gap-4 pt-[2rem]">
+                <div className="flex gap-4 sm:pt-[2rem] pt-[0.5rem]">
                   <Button
                     size="md"
                     className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold"
@@ -133,11 +135,10 @@ const CarouselSlider = () => {
                   {item.buttonText1 && (
                     <Button
                       size="md"
-                      className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold hover:bg-white hover:text-[#1273be]"
+                      className="rounded-full text-[14px] sm:w-[10rem] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold hover:bg-white hover:text-[#1273be]"
                       style={{
                         borderRadius: "30px",
                         fontFamily: HeadFontFamily,
-                        width: "10rem",
                       }}
                     >
                       {item.buttonText1}

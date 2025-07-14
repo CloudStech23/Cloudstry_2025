@@ -12,7 +12,7 @@ const Counter = () => {
   return (
     <div
       ref={ref}
-      className="w-full md:h-[300px] py-16  flex justify-center items-center relative overflow-hidden"
+      className="w-full md:h-[300px] py-16  flex justify-center items-center relative overflow-hidden rounded-tr-[80px] "
     >
       {/* Background Image with Dark Overlay */}
       <div className="absolute inset-0">
@@ -38,7 +38,7 @@ const Counter = () => {
               <span className="text-6xl md:text-6xl font-bold mb-2">
                 Millions
               </span>
-              <span className="text-[25px] font-semibold text-center">
+              <span className="text-[25px] font-semibold text-center mt-[-12px]">
                 of earners
               </span>
             </div>
@@ -50,7 +50,7 @@ const Counter = () => {
               <span className="text-6xl md:text-7xl font-bold mb-2">
                 {inView && <CountUp end={100} duration={4} />}+
               </span>
-              <span className="text-[25px] font-semibold text-center mt-[-8px]">
+              <span className="text-[25px] font-semibold text-center mt-[-12px]">
                 Countries
               </span>
             </div>
