@@ -38,7 +38,7 @@ function WhyChooseUs() {
       >
         {/* Overlapping Text Box */}
         <div className="w-full lg:w-full flex flex-col items-end pr-6">
-          <div className=" w-full sm:w-[40%] pt-4 pl-6 sm:p-6">
+          <div className=" w-full sm:w-[40%] pt-4 pl-6 sm:p-4">
             <div className="flex flex-row-reverse items-start gap-3">
               <div className="min-w-[48px] min-h-[48px] flex items-center justify-center rounded-full shadow-md">
                 <BsShieldLock size={25} color="#fff" />
@@ -57,7 +57,7 @@ function WhyChooseUs() {
               </div>
             </div>
           </div>
-          <div className=" w-full sm:w-[40%] pt-4 pl-6 sm:p-6">
+          <div className=" w-full sm:w-[40%] pt-4 pl-6 sm:p-4">
             <div className="flex flex-row-reverse items-start gap-3">
               <div className="min-w-[48px] min-h-[48px] flex items-center justify-center rounded-full shadow-md">
                 <CgScreen size={25} color="#fff" />
@@ -76,7 +76,7 @@ function WhyChooseUs() {
               </div>
             </div>
           </div>
-          <div className=" w-full sm:w-[40%] pt-4 pl-6 sm:p-6">
+          <div className=" w-full sm:w-[40%] pt-4 pl-6 sm:p-4">
             <div className="flex flex-row-reverse items-start gap-3">
               <div className="min-w-[48px] min-h-[48px] flex items-center justify-center rounded-full shadow-md">
                 <IoEarth size={25} color="#fff" />
@@ -95,7 +95,7 @@ function WhyChooseUs() {
               </div>
             </div>
           </div>
-          <div className=" w-full sm:w-[40%] pt-4 pl-6 sm:p-6">
+          <div className=" w-full sm:w-[40%] pt-4 pl-6 sm:p-4">
             <div className="flex flex-row-reverse items-start gap-3">
               <div className="min-w-[48px] min-h-[48px] flex items-center justify-center rounded-full shadow-md">
                 <GoGraph size={25} color="#fff" />
