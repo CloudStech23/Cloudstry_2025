@@ -1,5 +1,5 @@
 import React from "react";
-import IntroBG from "../../../assets/Images/HomePage/Introduction_Bg-2.svg";
+import IntroBG from "../../../assets/Images/HomePage/introduction_bg-3.svg";
 import { HeadTextColor } from "../../../CustomeComponents/Theme";
 import { SubTextFontFamily } from "../../../CustomeComponents/Theme";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";

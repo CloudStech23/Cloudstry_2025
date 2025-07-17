@@ -50,11 +50,11 @@ function Introduction() {
       </div>
 
       {/* Full Width Image */}
-      <div className="w-full mb-[-4rem] mt-6">
+      <div className="w-full flex justify-center mt-6 mb-[-4rem]">
         <img
           src={IntroIMG}
           alt="Descriptive Alt"
-          className="w-full max-h-[30rem] object-cover "
+          className="w-full max-w-[72rem] h-auto object-contain"
         />
       </div>
 

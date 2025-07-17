@@ -11,7 +11,7 @@ import whychooseimg from "../../../assets/Images/HomePage/why_choose_us.jpg";
 import { BsPeopleFill } from "react-icons/bs";
 import { DiTerminal } from "react-icons/di";
 import { BiSupport } from "react-icons/bi";
-import bgimg from "../../../assets/Images/HomePage/whychoose_bg.svg";
+import bgimg from "../../../assets/Images/HomePage/why_choose_us.svg";
 function WhyChooseUs() {
   return (
     <div className="relative py-12 px-4 sm:px-6 lg:px-0 pb-6 mt-[0rem] mx-auto w-full">
@@ -25,7 +25,7 @@ function WhyChooseUs() {
         />
         {/* Optional Overlay */}
       </div>
-      <div className=" mx-auto text-center  mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" mx-auto text-center px-4 sm:px-6 lg:px-8">
         <h3
           className="sm:text-4xl text-2xl font-bold sm:leading-none mb-6 "
           style={{ fontFamily: "Poppines, sans-serif", color: "#085d9e" }}

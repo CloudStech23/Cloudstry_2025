@@ -20,12 +20,15 @@ import {
   NavbarItemSubHeadFontSize,
   NavbarSubItemColor,
 } from "../CustomeComponents/Theme";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import MobileNavbar from "./MobileNavbar";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const location = useLocation();
+  const DigitalPage = location.pathname === "/digital-certificate";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -419,19 +422,30 @@ const Navbar = () => {
           </Menu> */}
 
           {/* CTA Buttons */}
-          <div className="flex items-center gap-2 ml-2">
-            <Button
-              size="md"
-              className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-gradient-to-r hover:from-white  hover:to-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
-              style={{
-                borderRadius: "30px",
-                fontFamily: HeadFontFamily,
-              }}
-            >
-              Contact Us
-            </Button>
+          {DigitalPage ? (
+            <div className="flex items-center gap-2 ml-2">
+              <Button
+                size="md"
+                className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-gradient-to-r hover:from-white  hover:to-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
+                style={{
+                  borderRadius: "30px",
+                  fontFamily: HeadFontFamily,
+                }}
+              >
+                Request a Demo
+              </Button>
+              <Button
+                size="md"
+                className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-gradient-to-r hover:from-white  hover:to-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
+                style={{
+                  borderRadius: "30px",
+                  fontFamily: HeadFontFamily,
+                }}
+              >
+               Login
+              </Button>
 
-            {/* <Button
+              {/* <Button
               size="sm"
               variant="outlined"
               className="rounded-full px-4 py-2 text-lg border-gray-300 hover:bg-gray-50 font-medium focus:outline-none focus:ring-0"
@@ -439,7 +453,30 @@ const Navbar = () => {
             >
               Login
             </Button> */}
-          </div>
+            </div>
+          ) : (
+            <div className="flex items-center gap-2 ml-2">
+              <Button
+                size="md"
+                className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-gradient-to-r hover:from-white  hover:to-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
+                style={{
+                  borderRadius: "30px",
+                  fontFamily: HeadFontFamily,
+                }}
+              >
+                Contact Us
+              </Button>
+
+              {/* <Button
+              size="sm"
+              variant="outlined"
+              className="rounded-full px-4 py-2 text-lg border-gray-300 hover:bg-gray-50 font-medium focus:outline-none focus:ring-0"
+              style={{ color: NavbarItemColor, fontFamily: HeadFontFamily }}
+            >
+              Login
+            </Button> */}
+            </div>
+          )}
         </div>
 
         {/* Mobile Hamburger */}

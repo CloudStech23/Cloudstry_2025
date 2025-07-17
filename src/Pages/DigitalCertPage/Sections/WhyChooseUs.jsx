@@ -67,7 +67,7 @@ function WhyChooseUs() {
                   className="text-[20px] font-semibold text-white"
                   style={{ fontFamily: HeadFontFamily }}
                 >
-                  THassle-Free Experience
+                  Hassle-Free Experience
                 </h4>
                 <p className="text-white text-[14px] sm:text-[16.5px]">
                   Our platform is simple to use—no technical skills needed to
