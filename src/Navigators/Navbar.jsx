@@ -143,6 +143,7 @@ const Navbar = () => {
                       </Link>
                     </MenuHandler>
                     <MenuList className="p-2 rounded-xl shadow-lg z-50 w-52 border border-gray-100 bg-white ml-1">
+                      <Link to="/digital-certificate/universities">
                       <MenuItem
                         className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
                         style={{
@@ -153,6 +154,7 @@ const Navbar = () => {
                       >
                         Universities
                       </MenuItem>
+                      </Link>
                       <MenuItem
                         className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
                         style={{

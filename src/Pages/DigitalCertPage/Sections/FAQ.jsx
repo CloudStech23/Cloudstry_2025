@@ -4,37 +4,37 @@ import { FiPlus, FiMinus } from "react-icons/fi";
 
 const faqsLeft = [
   {
-    question: "What does Cloudstry Tech do?",
+    question: "What are digital credentials and how do they work?",
     answer:
-      "Cloudstry Tech empowers your business with IT Products including Digital Certification, Cattle Aadhaar, 3PL Solutions, and expert IT services and staffing solutions.",
+      "Digital credentials are secure, verifiable records of a person's achievements, such as degrees, certifications, or skills. Delivered through a digital credentials platform, these records can be easily shared and validated online, offering a more efficient alternative to traditional paper-based certificates.",
   },
   {
-    question: "How can your manpower solutions help my business?",
+    question: "How do digital badges differ from traditional certificates?",
     answer:
-      "We provide skilled professionals across various domains to help you scale your workforce quickly and efficiently—saving time, cost, and effort in hiring.",
+      "Digital badges are a form of digital credentials that include metadata about the achievement, issuer, and verification method. Unlike traditional certificates, digital badge credentials are interactive, tamper-proof, and can be instantly verified and shared on platforms like LinkedIn, resumes, and email signatures.",
   },
   {
-    question: "Do you offer custom software and IT maintenance services?",
+    question: "Is your digital credential management software secure?",
     answer:
-      "Yes. From application development to ongoing software support, we offer tailor-made IT solutions that are scalable, secure, and aligned with your business goals.",
+      "Yes, our digital credential management software uses advanced encryption and blockchain-backed technology to ensure all issued badges and certificates are tamper-proof and 100% verifiable. Your digital certificate solutions remain safe and accessible only to authorized users.",
   },
 ];
 
 const faqsRight = [
   {
-    question: "What is your IT Strategy and Architecture Consulting service?",
+    question: "Who can use Cloudstry’s digital certificate solutions?",
     answer:
-      "We help businesses align their technology roadmap with their long-term vision by designing robust IT architectures, optimizing digital infrastructure, and improving tech-driven decision-making.",
+      "Our platform is ideal for universities, training institutions, corporates, and certification bodies looking to issue verified digital credentials efficiently. Whether you're offering digital badge certification for academic, professional, or skill-based training, Cloudstry is designed for your needs.",
   },
   {
-    question: "What is the Digital Certificate Platform and who can use it?",
+    question: "Can recipients share their digital badges and credentials?",
     answer:
-      "Our digital certification platform allows institutions, universities, and organizations to issue tamper-proof digital badges and certificates that are easily shareable and verifiable.",
+      "Absolutely. Recipients can easily share their digital badges and verified digital credentials on social media, email, online portfolios, and employer databases. This boosts visibility and enhances credibility in both academic and professional networks.",
   },
   {
-    question: "What are Cattle Aadhaar and Logistic Solutions?",
+    question: "What are the benefits of using a digital credentials platform?",
     answer:
-      "Cattle Aadhaar is an AI/ML-powered traceability platform for livestock, while our Logistics Solution optimizes 3PL operations using intelligent forecasting and real-time supply chain tracking.",
+      "A digital credentials platform streamlines the entire credentialing process—helping you issue, manage, and track digital certificate solutions with ease. It reduces administrative workload, ensures data security, enables real-time analytics, and enhances the reach and authenticity of your credentials.",
   },
 ];
 
@@ -70,7 +70,7 @@ function FAQ() {
   };
 
   return (
-    <div className="relative w-full py-12 mt-[4rem] px-4 sm:px-6 lg:px-8 z-10 bg-white">
+    <div className="relative w-full py-12 mt-[1rem] px-4 sm:px-6 lg:px-8 z-10 bg-white">
       <div className="max-w-6xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-16 px-6">

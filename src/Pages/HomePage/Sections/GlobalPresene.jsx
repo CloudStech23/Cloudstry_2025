@@ -15,7 +15,7 @@ function GlobalPresene() {
   return (
     <div className="w-full bg-white">
       <main className="px-4 sm:px-6 lg:px-0 py-12 mx-auto">
-        <div className="text-center px-4 mb-12">
+        <div className="text-center px-4 mb-4">
           <h3
             className="text-2xl sm:text-4xl font-bold mb-6"
             style={{ fontFamily: "Poppines, sans-serif", color: HeadTextColor }}

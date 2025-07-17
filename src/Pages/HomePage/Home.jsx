@@ -9,6 +9,7 @@ import WhyChooseUs from "./Sections/WhyChooseUs";
 import CallToAction from "./Sections/CallToAction";
 import GlobalPresene from "./Sections/GlobalPresene";
 import ContactSection from "./Sections/ContactSection";
+import FAQ from "./Sections/FAQ";
 
 function Home() {
   return (
@@ -62,6 +63,11 @@ function Home() {
       {/* Lable: our global presense */}
       <section>
         <GlobalPresene />
+      </section>
+
+      {/* Lable: FAQs */}
+      <section>
+        <FAQ />
       </section>
 
       {/* Lable: contact form */}

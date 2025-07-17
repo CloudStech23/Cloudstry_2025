@@ -12,7 +12,7 @@ import { MdEmail } from "react-icons/md";
 
 function ContactSection() {
   return (
-    <main className="pt-10 pb-16 px-4 mt-[4rem] sm:px-6 lg:px-8 bg-gradient-to-r from-[#085d9e] to-[#00c1de] rounded-tr-[80px] ">
+    <main className="pt-10 pb-16 px-4 mt-[2rem] sm:px-6 lg:px-8 bg-gradient-to-r from-[#085d9e] to-[#00c1de] rounded-tr-[80px] ">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 ">
         {/* Left Text Content */}
         <div className="text-white text-center md:text-left">

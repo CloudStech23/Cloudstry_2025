@@ -8,6 +8,8 @@ import HowItWorks from "./Sections/HowItWorks";
 import ClientSlider from "../HomePage/Sections/ClientSlider";
 import WhyChooseUs from "./Sections/WhyChooseUs";
 import ContactSection from "./Sections/ContactSection";
+import FAQ from "./Sections/FAQ";
+import PlatfromFeature from "./Sections/PlatfromFeature";
 
 function DigCert() {
   useLayoutEffect(() => {
@@ -40,6 +42,12 @@ function DigCert() {
       {/* <section>
         <ClientSlider />
       </section> */}
+      <section>
+        <PlatfromFeature />
+      </section>
+      <section>
+        <FAQ />
+      </section>
       <section>
         <ContactSection />
       </section>
