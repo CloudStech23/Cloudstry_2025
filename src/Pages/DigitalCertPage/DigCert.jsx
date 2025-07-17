@@ -37,9 +37,9 @@ function DigCert() {
       <section>
         <WhyChooseUs />
       </section>
-      <section>
+      {/* <section>
         <ClientSlider />
-      </section>
+      </section> */}
       <section>
         <ContactSection />
       </section>
