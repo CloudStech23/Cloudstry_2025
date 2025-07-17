@@ -25,7 +25,7 @@ function WhyChooseUs() {
         />
         {/* Optional Overlay */}
       </div>
-      <div className=" mx-auto text-center  mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" mx-auto text-center  px-4 sm:px-6 lg:px-8">
         <h3
           className="sm:text-4xl text-2xl font-bold sm:leading-none mb-6 "
           style={{ fontFamily: "Poppines, sans-serif", color: "#085d9e" }}

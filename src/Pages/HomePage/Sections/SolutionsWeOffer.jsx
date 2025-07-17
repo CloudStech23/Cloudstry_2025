@@ -115,17 +115,6 @@ const SolutionsWeOffer = () => {
     <div className="">
       <main className="pt-4 px-4 sm:px-6 lg:px-0   mx-auto ">
         <div className="text-center">
-          {/* <h2
-            className="sm:text-4xl text-3xl font-bold sm:leading-none mb-3"
-            style={{
-              fontFamily: "Poppines, sans-serif",
-              color: HeadTextColor,
-            }}
-          >
-            SOLUTIONS WE OFFER
-          </h2>
-          <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto mb-10 rounded-full"></div> */}
-
           <div className="flex justify-left  gap-4 mb-2">
             <button
               onClick={() => toggleSection("services")}
