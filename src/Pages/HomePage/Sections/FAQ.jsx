@@ -84,7 +84,7 @@ function FAQ() {
               textTransform: "uppercase",
             }}
           >
-            <span className="text-[#1f1446]"> FREQUENTLY ASKED </span> QUESTIONS
+            <span className="text-[#1f1446]"> FREQUENTLY </span> ASKED QUESTIONS
           </h1>
           <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto rounded-full"></div>
         </div>

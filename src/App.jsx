@@ -7,6 +7,8 @@ import { Article } from "./Pages/ArticlePage/Ariticle";
 import Footer from "./Navigators/Footer";
 import DigCert from "./Pages/DigitalCertPage/DigCert";
 import Unversities from "./Pages/DigitalCertPage/Sub-Pages/Unversities";
+import Organization from "./Pages/DigitalCertPage/Sub-Pages/Organization";
+import Institute from "./Pages/DigitalCertPage/Sub-Pages/Institute";
 
 function App() {
   return (
@@ -20,6 +22,14 @@ function App() {
           <Route
             path="/digital-certificate/universities"
             element={<Unversities />}
+          />
+          <Route
+            path="/digital-certificate/organizations"
+            element={<Organization />}
+          />
+          <Route
+            path="/digital-certificate/institutes"
+            element={<Institute />}
           />
         </Routes>
         <Footer />

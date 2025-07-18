@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DigCertHeaderBg from "../../../assets/Images/DigCertPage/university_header_bg.svg";
+import DigCertHeaderBg from "../../../assets/Images/DigCertPage/university_header_bg3.svg";
 import {
   HeadFontFamily,
   HeadTextColor,
@@ -15,10 +15,7 @@ import {
   FaUserTie,
   FaLightbulb,
 } from "react-icons/fa";
-import { FaMapLocationDot } from "react-icons/fa6";
-import { MdEmail } from "react-icons/md";
-import { FaCheck } from "react-icons/fa";
-import { MdSchool } from "react-icons/md";
+
 import ContactSection from "../Sections/ContactSection";
 
 const AccordionItem = ({ question, answer, isOpen, onClick }) => {
@@ -180,6 +177,18 @@ function Unversities() {
               Empowering Universities with Secure, Verifiable Digital Badges and
               Micro-Credentials
             </p>
+            <div className="flex gap-4 pt-[2rem]">
+              <Button
+                size="md"
+                className="rounded-full  text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-to-r hover:from-white hover:shadow-md  hover:to-white hover:text-[#1273be] hover:border-[#085d9e] transition-all duration-300 "
+                style={{
+                  borderRadius: "30px",
+                  fontFamily: HeadFontFamily,
+                }}
+              >
+                Contact us
+              </Button>
+            </div>
           </div>
         </div>
       </div>
@@ -197,9 +206,9 @@ function Unversities() {
               lineHeight: 1.2,
             }}
           >
-            Digital Badges - SOFTWARE TO ISSUE,{" "}
+            Digital Badges - A Smarter Way for {" "}
             <span className="text-[#1f1446]">
-              MANAGE & SHARE DIGITAL BADGES & CERTIFICATES
+              Universities to Recognize Achievements in Higher Education
             </span>
           </h1>
           <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto rounded-full"></div>
@@ -251,28 +260,42 @@ function Unversities() {
           >
             Digital Certificates –{" "}
             <span className="text-[#1f1446] font-semibold">
-              Use Cases and Benefits for University
+              Use Cases and Benefits for Universities
+              
             </span>
           </h1>
           <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto rounded-full"></div>
         </div>
 
         {/* Content */}
-        <div className=" py-8 ">
+        <div className="py-8">
+          {/* Pill Element */}
+          <div className="flex justify-start ml-[4.5rem]">
+            <div
+              className="rounded-full px-4 py-2 text-sm font-medium text-white shadow-md uppercase"
+              style={{
+                background: gradientBG,
+                fontFamily: HeadFontFamily,
+              }}
+            >
+              {/* Your Pill Text */}
+              {/* Digital Certificate Use Cases */}
+              use cases for universities
+            </div>
+          </div>
+
+          {/* Usecases & Benefits Section */}
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-14">
             {/* Left: Use Cases */}
-            <div className="space-y-9 mt-[2rem]">
+            <div className="space-y-9 mt-[1.7rem]">
               {usecases.map((item, idx) => (
                 <div key={idx} className="flex items-start gap-3">
-                  {/* Bullet circle */}
                   <div
                     className="rounded-full p-2.5 flex-shrink-0 text-white"
                     style={{ background: gradientBG }}
                   >
                     {item.icon}
                   </div>
-
-                  {/* Text block */}
                   <div>
                     <p
                       className="text-[18px] font-semibold text-gray-900"
@@ -296,9 +319,8 @@ function Unversities() {
               {benefits.map((item, idx) => (
                 <div key={idx} className="flex items-start gap-4">
                   <span>
-                    <i className="fa fa-check-circle text-[white] mt-2 text-[18px] "></i>
-                    <i className="bi bi-check-circle-fill    me-2"></i>
-                  </span>{" "}
+                    <i className="fa fa-check-circle text-white mt-2 text-[18px]" />
+                  </span>
                   <div>
                     <h4
                       className="text-[18px] font-semibold text-white"
@@ -344,17 +366,17 @@ function Unversities() {
           <div className="gap-4 flex flex-row items-center ">
             <Button
               size="md"
-              className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold hover:bg-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
+              className="rounded-full  text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-to-r hover:from-white hover:shadow-md  hover:to-white hover:text-[#1273be] hover:border-[#085d9e] transition-all duration-300"
               style={{
                 borderRadius: "30px",
                 fontFamily: HeadFontFamily,
               }}
             >
-              DIGITAL CERTIFICATE FOR INSTITUTIONS
+              DIGITAL CERTIFICATE <br /> FOR INSTITUTIONS
             </Button>
             <Button
               size="md"
-              className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold hover:bg-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
+              className="rounded-full  text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-to-r hover:from-white hover:shadow-md  hover:to-white hover:text-[#1273be] hover:border-[#085d9e] transition-all duration-300"
               style={{
                 borderRadius: "30px",
                 fontFamily: HeadFontFamily,
@@ -364,7 +386,7 @@ function Unversities() {
             </Button>
             <Button
               size="md"
-              className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold hover:bg-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
+              className="rounded-full  text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-to-r hover:from-white hover:shadow-md  hover:to-white hover:text-[#1273be] hover:border-[#085d9e] transition-all duration-300"
               style={{
                 borderRadius: "30px",
                 fontFamily: HeadFontFamily,
@@ -372,6 +394,16 @@ function Unversities() {
             >
               Contact Us
             </Button>
+            <Button
+              size="md"
+              className=" rounded-full  text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-to-r hover:from-white hover:shadow-md  hover:to-white hover:text-[#1273be] hover:border-[#085d9e] transition-all duration-300"
+              style={{
+                borderRadius: "30px",
+                fontFamily: HeadFontFamily,
+              }}
+            >
+              get in touch with us
+             </Button>
           </div>
         </div>
       </div>

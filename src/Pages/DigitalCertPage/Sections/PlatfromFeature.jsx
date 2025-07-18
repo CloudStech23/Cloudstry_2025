@@ -145,12 +145,12 @@ export default function PlatformFeature() {
             >
               <div className="mb-2 font-light">{feature.icon}</div>
               <div
-                className="text-xl font-bold tracking-wide"
+                className="text-[18px] font-semibold tracking-wide"
                 style={{ fontFamily: HeadFontFamily }}
               >
                 {feature.title}
               </div>
-              <div className=" text-[15px] tracking-wide">
+              <div className=" text-[16px]  text-color">
                 {feature.subtitle}
               </div>
             </div>
@@ -180,17 +180,17 @@ export default function PlatformFeature() {
               <ul className="space-y-6">
                 {features.slice(0, 7).map((item, index) => (
                   <li key={index} className="flex items-start">
-                    <span className="mt-1 mr-3 text-[#1f1446] text-lg">
+                    <span className="mt-1 mr-3 text-black text-lg">
                       <BsFillArrowRightCircleFill />
                     </span>
                     <div>
                       <div
-                        className="font-semibold text-[20px] text-[#1f1446]"
+                        className="font-semibold text-[18px] text-black"
                         style={{ fontFamily: HeadFontFamily }}
                       >
                         {item.title}
                       </div>
-                      <div className="text-[17px] text-gray-700 mt-1">
+                      <div className="text-[15px] text-color mt-1">
                         {item.subtitle}
                       </div>
                     </div>
@@ -202,17 +202,17 @@ export default function PlatformFeature() {
               <ul className="space-y-6">
                 {features.slice(7).map((item, index) => (
                   <li key={index + 7} className="flex items-start">
-                    <span className="mt-1 mr-3 text-[#1f1446] text-lg">
+                    <span className="mt-1 mr-3 text-black text-lg">
                       <BsFillArrowRightCircleFill />
                     </span>
                     <div>
                       <div
-                        className="font-semibold text-[20px] text-[#1f1446]"
+                        className=" text-[18px] text-black"
                         style={{ fontFamily: HeadFontFamily }}
                       >
                         {item.title}
                       </div>
-                      <div className="text-[17px] text-gray-700 mt-1">
+                      <div className="text-[15px] text-color  mt-1">
                         {item.subtitle}
                       </div>
                     </div>

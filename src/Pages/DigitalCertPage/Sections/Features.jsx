@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from "react";
-import { HeadTextColor } from "../../../CustomeComponents/Theme";
+import React, { useState, useRef, } from "react";
+import { HeadFontFamily, HeadTextColor } from "../../../CustomeComponents/Theme";
 
 const accordionData = [
   {
@@ -54,7 +54,7 @@ function AccordionItem({ title, description }) {
       onClick={() => setIsOpen(!isOpen)}
     >
       <div className="flex justify-between items-center">
-        <h3 className="font-semibold text-[16] sm:text-[18px] text-[#1f1446]">
+        <h3 className="font-semibold text-[16px] sm:text-[18px] text-[#1f1446]" style={{fontFamily:HeadFontFamily}}>
           {title}
         </h3>
         <span
