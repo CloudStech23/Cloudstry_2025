@@ -206,7 +206,7 @@ function Unversities() {
               lineHeight: 1.2,
             }}
           >
-            Digital Badges - A Smarter Way for {" "}
+            Digital Badges - A Smarter Way for{" "}
             <span className="text-[#1f1446]">
               Universities to Recognize Achievements in Higher Education
             </span>
@@ -261,7 +261,6 @@ function Unversities() {
             Digital Certificates –{" "}
             <span className="text-[#1f1446] font-semibold">
               Use Cases and Benefits for Universities
-              
             </span>
           </h1>
           <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto rounded-full"></div>
@@ -270,7 +269,7 @@ function Unversities() {
         {/* Content */}
         <div className="py-8">
           {/* Pill Element */}
-          <div className="flex justify-start ml-[4.5rem]">
+          <div className="flex justify-start ml-[0.3em]">
             <div
               className="rounded-full px-4 py-2 text-sm font-medium text-white shadow-md uppercase"
               style={{
@@ -298,7 +297,7 @@ function Unversities() {
                   </div>
                   <div>
                     <p
-                      className="text-[18px] font-semibold text-gray-900"
+                      className="text-[16px] font-semibold text-gray-900"
                       style={{ fontFamily: HeadFontFamily }}
                     >
                       {item.title}
@@ -323,7 +322,7 @@ function Unversities() {
                   </span>
                   <div>
                     <h4
-                      className="text-[18px] font-semibold text-white"
+                      className="text-[16px] font-semibold text-white"
                       style={{ fontFamily: HeadFontFamily }}
                     >
                       {item.title}
@@ -341,7 +340,7 @@ function Unversities() {
 
       {/* Call to action section */}
 
-      <div className="w-full md:h-[240px] py-16 flex justify-center items-center relative overflow-hidden">
+      <div className="w-full md:h-[250px] py-16 flex justify-center items-center relative overflow-hidden">
         {/* Background Image with Dark Overlay */}
         <div className="absolute inset-0">
           <img
@@ -353,27 +352,17 @@ function Unversities() {
         </div>
 
         {/* Foreground Content */}
-        <div className="relative z-10 max-w-7xl w-full px-4 text-left">
+        <div className="relative z-10 max-w-8xl w-full px-4 text-left">
           <h2
-            className="text-white text-xl md:text-3xl font-semibold mb-6"
-            style={{ fontFamily: HeadFontFamily }}
+            className="text-white text-xl md:text-[34px] text-center font-semibold mb-6 uppercase"
+            style={{ fontFamily: HeadFontFamily,lineHeight:"1.2" }}
           >
-            Get in touch with us today to implement secure, verifiable digital
-            certificates for universities and enhance your institution’s
-            recognition system.
+            Get in touch to implement secure, verifiable digital certificates
+            and elevate your university’s recognition system
           </h2>
 
-          <div className="gap-4 flex flex-row items-center ">
-            <Button
-              size="md"
-              className="rounded-full  text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-to-r hover:from-white hover:shadow-md  hover:to-white hover:text-[#1273be] hover:border-[#085d9e] transition-all duration-300"
-              style={{
-                borderRadius: "30px",
-                fontFamily: HeadFontFamily,
-              }}
-            >
-              DIGITAL CERTIFICATE <br /> FOR INSTITUTIONS
-            </Button>
+          <div className="gap-4 flex flex-row items-center justify-center mt-10 ">
+            
             <Button
               size="md"
               className="rounded-full  text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-to-r hover:from-white hover:shadow-md  hover:to-white hover:text-[#1273be] hover:border-[#085d9e] transition-all duration-300"
@@ -384,7 +373,7 @@ function Unversities() {
             >
               DIGITAL CERTIFICATE FOR ORGANIZATIONS
             </Button>
-            <Button
+            {/* <Button
               size="md"
               className="rounded-full  text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-to-r hover:from-white hover:shadow-md  hover:to-white hover:text-[#1273be] hover:border-[#085d9e] transition-all duration-300"
               style={{
@@ -393,7 +382,7 @@ function Unversities() {
               }}
             >
               Contact Us
-            </Button>
+            </Button> */}
             <Button
               size="md"
               className=" rounded-full  text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-to-r hover:from-white hover:shadow-md  hover:to-white hover:text-[#1273be] hover:border-[#085d9e] transition-all duration-300"
@@ -403,7 +392,17 @@ function Unversities() {
               }}
             >
               get in touch with us
-             </Button>
+            </Button>
+            <Button
+              size="md"
+              className="rounded-full  text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-to-r hover:from-white hover:shadow-md  hover:to-white hover:text-[#1273be] hover:border-[#085d9e] transition-all duration-300"
+              style={{
+                borderRadius: "30px",
+                fontFamily: HeadFontFamily,
+              }}
+            >
+              DIGITAL CERTIFICATE  FOR INSTITUTIONS
+            </Button>
           </div>
         </div>
       </div>

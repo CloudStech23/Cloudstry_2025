@@ -4,6 +4,7 @@ import {
   HeadFontFamily,
 } from "../../../CustomeComponents/Theme";
 import whychooseimg from "../../../assets/Images/DigCertPage/whychoose_bg-3.svg";
+import Bgimg from "../../../assets/Images/HomePage/why_choose_us.svg";
 import { LuComputer } from "react-icons/lu";
 import { BsShieldLock } from "react-icons/bs";
 import { CgScreen } from "react-icons/cg";
@@ -13,6 +14,15 @@ import { GoGraph } from "react-icons/go";
 function WhyChooseUs() {
   return (
     <div className="relative w-full z-10">
+      <div className="absolute inset-0 -z-10">
+        <img
+          src={Bgimg}
+          alt="Background"
+          className="sm:w-[100%] sm:h-[100%] sm:object-contain"
+          style={{ objectPosition: "top" }}
+        />
+        {/* Optional Overlay */}
+      </div>
       {/* Section Title */}
       <div className="text-center mb-6 px-6 pt-12">
         <h1

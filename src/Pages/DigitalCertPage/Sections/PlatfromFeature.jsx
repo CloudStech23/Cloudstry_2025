@@ -62,11 +62,12 @@ export default function PlatformFeature() {
       icon: <FiUnlock size={40} className="text-[#085d9e]" />,
     },
     {
-      title: "LMS Integration",
+      title: "Customizable Email Templates",
       subtitle:
-        "Compatibility with Learning Management Systems for streamlined processes.",
-      icon: <FiBookOpen size={40} className="text-[#085d9e]" />,
+        "All email types, including issuance, reminders, and expiration notifications, can be fully customized. Our platform provides a comprehensive selection of wildcards to streamline and enhance the customization process.",
+      icon: <FiEdit3 size={40} className="text-[#085d9e]" />,
     },
+
     {
       title: "Automated QR Code Verification",
       subtitle:
@@ -109,10 +110,10 @@ export default function PlatformFeature() {
       icon: <FiSend size={40} className="text-[#085d9e]" />,
     },
     {
-      title: "Customizable Email Templates",
+      title: "LMS Integration",
       subtitle:
-        "All email types, including issuance, reminders, and expiration notifications, can be fully customized. Our platform provides a comprehensive selection of wildcards to streamline and enhance the customization process.",
-      icon: <FiEdit3 size={40} className="text-[#085d9e]" />,
+        "Compatibility with Learning Management Systems for streamlined processes.",
+      icon: <FiBookOpen size={40} className="text-[#085d9e]" />,
     },
   ];
 
@@ -145,14 +146,12 @@ export default function PlatformFeature() {
             >
               <div className="mb-2 font-light">{feature.icon}</div>
               <div
-                className="text-[18px] font-semibold tracking-wide"
+                className="text-[16px] font-semibold tracking-wide"
                 style={{ fontFamily: HeadFontFamily }}
               >
                 {feature.title}
               </div>
-              <div className=" text-[16px]  text-color">
-                {feature.subtitle}
-              </div>
+              <div className=" text-[16px]  text-color">{feature.subtitle}</div>
             </div>
           ))}
         </div>
@@ -185,7 +184,7 @@ export default function PlatformFeature() {
                     </span>
                     <div>
                       <div
-                        className="font-semibold text-[18px] text-black"
+                        className="font-semibold text-[17px] text-black"
                         style={{ fontFamily: HeadFontFamily }}
                       >
                         {item.title}
@@ -201,18 +200,18 @@ export default function PlatformFeature() {
               {/* RIGHT column (remaining 8 items) */}
               <ul className="space-y-6">
                 {features.slice(7).map((item, index) => (
-                  <li key={index + 7} className="flex items-start">
+                  <li key={index} className="flex items-start">
                     <span className="mt-1 mr-3 text-black text-lg">
                       <BsFillArrowRightCircleFill />
                     </span>
                     <div>
                       <div
-                        className=" text-[18px] text-black"
+                        className="font-semibold text-[17px] text-black"
                         style={{ fontFamily: HeadFontFamily }}
                       >
                         {item.title}
                       </div>
-                      <div className="text-[15px] text-color  mt-1">
+                      <div className="text-[15px] text-color mt-1">
                         {item.subtitle}
                       </div>
                     </div>

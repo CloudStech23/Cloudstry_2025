@@ -8,5 +8,6 @@ export default defineConfig({
     port: 3000,
     host: true,
     allowedHosts: [".ngrok-free.app"],
+    historyApiFallback: true, // ✅ Add this line
   },
 });

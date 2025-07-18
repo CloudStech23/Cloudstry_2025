@@ -28,7 +28,11 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   const location = useLocation();
-  const DigitalPage = location.pathname === "/digital-certificate" || location.pathname === "/digital-certificate/universities" || location.pathname === "/digital-certificate/organizations" || location.pathname === "/digital-certificate/institutes";
+  const DigitalPage =
+    location.pathname === "/digital-certificate" ||
+    location.pathname === "/digital-certificate/universities" ||
+    location.pathname === "/digital-certificate/organizations" ||
+    location.pathname === "/digital-certificate/institutes";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -144,17 +148,18 @@ const Navbar = () => {
                     </MenuHandler>
                     <MenuList className="p-2 rounded-xl shadow-lg z-50 w-52 border border-gray-100 bg-white ml-1">
                       <Link to="/digital-certificate/universities">
-                      <MenuItem
-                        className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
-                        style={{
-                          color: NavbarSubItemColor,
-                          fontSize: NavbarItemSubHeadFontSize,
-                          fontFamily: NavbarItemSubHeadFontFamily,
-                        }}
-                      >
-                        Universities
-                      </MenuItem>
+                        <MenuItem
+                          className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                          style={{
+                            color: NavbarSubItemColor,
+                            fontSize: NavbarItemSubHeadFontSize,
+                            fontFamily: NavbarItemSubHeadFontFamily,
+                          }}
+                        >
+                          Universities
+                        </MenuItem>
                       </Link>
+                      <Link to="/digital-certificate/organizations">
                       <MenuItem
                         className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
                         style={{
@@ -165,6 +170,8 @@ const Navbar = () => {
                       >
                         Organizations
                       </MenuItem>
+                      </Link>
+                      <Link to="/digital-certificate/institutes">
                       <MenuItem
                         className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
                         style={{
@@ -175,6 +182,7 @@ const Navbar = () => {
                       >
                         Institutions
                       </MenuItem>
+                      </Link>
                     </MenuList>
                   </Menu>
 
@@ -444,7 +452,7 @@ const Navbar = () => {
                   fontFamily: HeadFontFamily,
                 }}
               >
-               Login
+                Login
               </Button>
 
               {/* <Button
