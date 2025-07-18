@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HeadTextColor } from "../../../CustomeComponents/Theme";
+import { HeadTextColor,HeadFontFamily } from "../../../CustomeComponents/Theme";
 import { FiPlus, FiMinus } from "react-icons/fi";
 
 const faqsLeft = [
@@ -43,7 +43,8 @@ const AccordionItem = ({ question, answer, isOpen, onClick }) => {
     <div className="mb-3 border-b border-gray-200">
       <button
         onClick={onClick}
-        className="flex justify-between items-center w-full py-4 text-left font-semibold text-[#1f1446] transition-all duration-300"
+        className="flex justify-between gap-4 items-center w-full py-4 text-left font-semibold text-[#1f1446] transition-all duration-300"
+        style={{ fontFamily: HeadFontFamily }}
       >
         {question}
         <span className="text-xl">{isOpen ? <FiMinus /> : <FiPlus />}</span>

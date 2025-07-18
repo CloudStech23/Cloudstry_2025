@@ -28,7 +28,7 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   const location = useLocation();
-  const DigitalPage = location.pathname === "/digital-certificate";
+  const DigitalPage = location.pathname === "/digital-certificate" || location.pathname === "/digital-certificate/universities" || location.pathname === "/digital-certificate/organizations" || location.pathname === "/digital-certificate/institutes";
 
   useEffect(() => {
     const handleScroll = () => {

@@ -20,6 +20,7 @@ import {
   FiBarChart2,
   FiSettings,
 } from "react-icons/fi";
+import { BsFillArrowRightCircleFill } from "react-icons/bs";
 
 export default function PlatformFeature() {
   const features = [
@@ -29,12 +30,7 @@ export default function PlatformFeature() {
         "A user-friendly interface for creating visually appealing badges.",
       icon: <FiAward size={40} className="text-[#085d9e]" />,
     },
-    {
-      title: "Issuer API",
-      subtitle:
-        "A RESTful API integration that can be leveraged to facilitate the integration with any Learning Management System.",
-      icon: <FiSend size={40} className="text-[#085d9e]" />,
-    },
+
     {
       title: "Earner API",
       subtitle:
@@ -59,12 +55,7 @@ export default function PlatformFeature() {
         "Whitelist your email address to that your users receive emails from you directly. ",
       icon: <FiMail size={40} className="text-[#085d9e]" />,
     },
-    {
-      title: "Customizable Email Templates",
-      subtitle:
-        "All email types, including issuance, reminders, and expiration notifications, can be fully customized. Our platform provides a comprehensive selection of wildcards to streamline and enhance the customization process.",
-      icon: <FiEdit3 size={40} className="text-[#085d9e]" />,
-    },
+
     {
       title: "SSO Authentication",
       subtitle: "Seamless single sign-on (SSO) integration.",
@@ -88,12 +79,7 @@ export default function PlatformFeature() {
         "Enable stackable micro-credentials for flexible learning pathways.",
       icon: <FiLayers size={40} className="text-[#085d9e]" />,
     },
-    {
-      title: "Self-Service Tools",
-      subtitle:
-        "Upload new artwork, customize badge expiration workflows, and create personalized recipient engagements.",
-      icon: <FiTool size={40} className="text-[#085d9e]" />,
-    },
+
     {
       title: "Advanced Email Delivery",
       subtitle: "Robust email delivery capabilities to enhance communication.",
@@ -109,6 +95,24 @@ export default function PlatformFeature() {
       title: "Reports and Analytics",
       subtitle: "Updated, downloadable reports for data-driven insights.",
       icon: <FiBarChart2 size={40} className="text-[#085d9e]" />,
+    },
+    {
+      title: "Self-Service Tools",
+      subtitle:
+        "Upload new artwork, customize badge expiration workflows, and create personalized recipient engagements.",
+      icon: <FiTool size={40} className="text-[#085d9e]" />,
+    },
+    {
+      title: "Issuer API",
+      subtitle:
+        "A RESTful API integration that can be leveraged to facilitate the integration with any Learning Management System.",
+      icon: <FiSend size={40} className="text-[#085d9e]" />,
+    },
+    {
+      title: "Customizable Email Templates",
+      subtitle:
+        "All email types, including issuance, reminders, and expiration notifications, can be fully customized. Our platform provides a comprehensive selection of wildcards to streamline and enhance the customization process.",
+      icon: <FiEdit3 size={40} className="text-[#085d9e]" />,
     },
   ];
 
@@ -131,11 +135,11 @@ export default function PlatformFeature() {
           <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto mb-10 rounded-full"></div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
+        <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 ">
           {features.map((feature, index) => (
             <div
               key={index}
-              className={`flex flex-col gap-2 p-6 border-2 border-[#085d9e] ${
+              className={`flex flex-col gap-2 p-4 border border-[#085d9e] ${
                 index === 2 ? "rounded-tr-[100px]" : ""
               }`}
             >
@@ -151,6 +155,72 @@ export default function PlatformFeature() {
               </div>
             </div>
           ))}
+        </div>
+        {/* Additional Feature Highlights in Bullet Format */}
+        {/* Additional Bullet Format Highlights */}
+        <div className="mt-20 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12 px-6">
+              <h1
+                className="sm:text-4xl text-2xl font-bold mb-6"
+                style={{
+                  fontFamily: "Poppines, sans-serif",
+                  color: HeadTextColor,
+                  lineHeight: 1.2,
+                  textTransform: "uppercase",
+                }}
+              >
+                PLATFORM <span className="text-[#1f1446]"> FEATURES</span>
+              </h1>
+              <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto mb-10 rounded-full"></div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-10">
+              {/* LEFT column (first 7 items) */}
+              <ul className="space-y-6">
+                {features.slice(0, 7).map((item, index) => (
+                  <li key={index} className="flex items-start">
+                    <span className="mt-1 mr-3 text-[#1f1446] text-lg">
+                      <BsFillArrowRightCircleFill />
+                    </span>
+                    <div>
+                      <div
+                        className="font-semibold text-[20px] text-[#1f1446]"
+                        style={{ fontFamily: HeadFontFamily }}
+                      >
+                        {item.title}
+                      </div>
+                      <div className="text-[17px] text-gray-700 mt-1">
+                        {item.subtitle}
+                      </div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+
+              {/* RIGHT column (remaining 8 items) */}
+              <ul className="space-y-6">
+                {features.slice(7).map((item, index) => (
+                  <li key={index + 7} className="flex items-start">
+                    <span className="mt-1 mr-3 text-[#1f1446] text-lg">
+                      <BsFillArrowRightCircleFill />
+                    </span>
+                    <div>
+                      <div
+                        className="font-semibold text-[20px] text-[#1f1446]"
+                        style={{ fontFamily: HeadFontFamily }}
+                      >
+                        {item.title}
+                      </div>
+                      <div className="text-[17px] text-gray-700 mt-1">
+                        {item.subtitle}
+                      </div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
