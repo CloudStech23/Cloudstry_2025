@@ -173,52 +173,6 @@ export default function PlatformFeature() {
               </h1>
               <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto mb-10 rounded-full"></div>
             </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-10">
-              {/* LEFT column (first 7 items) */}
-              <ul className="space-y-6">
-                {features.slice(0, 7).map((item, index) => (
-                  <li key={index} className="flex items-start">
-                    <span className="mt-1 mr-3 text-black text-lg">
-                      <BsFillArrowRightCircleFill />
-                    </span>
-                    <div>
-                      <div
-                        className="font-semibold text-[17px] text-black"
-                        style={{ fontFamily: HeadFontFamily }}
-                      >
-                        {item.title}
-                      </div>
-                      <div className="text-[15px] text-color mt-1">
-                        {item.subtitle}
-                      </div>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-
-              {/* RIGHT column (remaining 8 items) */}
-              <ul className="space-y-6">
-                {features.slice(7).map((item, index) => (
-                  <li key={index} className="flex items-start">
-                    <span className="mt-1 mr-3 text-black text-lg">
-                      <BsFillArrowRightCircleFill />
-                    </span>
-                    <div>
-                      <div
-                        className="font-semibold text-[17px] text-black"
-                        style={{ fontFamily: HeadFontFamily }}
-                      >
-                        {item.title}
-                      </div>
-                      <div className="text-[15px] text-color mt-1">
-                        {item.subtitle}
-                      </div>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
         </div>
       </div>
