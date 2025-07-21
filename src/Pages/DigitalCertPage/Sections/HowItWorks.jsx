@@ -5,7 +5,9 @@ import {
 } from "../../../CustomeComponents/Theme";
 import { Button } from "@material-tailwind/react";
 import BgImage from "../../../assets/Images/DigCertPage/how_it_work_bg.png";
-import { IoIosCheckmarkCircleOutline } from "react-icons/io";
+import DesktopMob from "../../../assets//Images/DigCertPage/desktop-mob.png"
+import Laptop from "../../../assets/Images/DigCertPage/Macbook.png"
+import { Link } from "react-router-dom";
 
 function HowItWorks() {
   return (
@@ -39,7 +41,7 @@ function HowItWorks() {
             }}
           >
             <img
-              src="https://badgecert.com/wp-content/uploads/2020/07/Macbook.png"
+              src={Laptop}
               alt="Dashboard preview"
               className="w-full max-w-[450px] object-contain h-auto z-10 relative"
             />
@@ -103,7 +105,7 @@ function HowItWorks() {
                 Seamless LMS and CRM integration with powerful APIs
               </li>
             </ul>
-
+            <Link to="/contact-us">
             <Button
               size="md"
               className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold flex flex-start"
@@ -114,6 +116,7 @@ function HowItWorks() {
             >
               TALK TO OUR EXPERTS
             </Button>
+            </Link>
           </div>
         </div>
         {/* Image + Content Section */}
@@ -161,7 +164,8 @@ function HowItWorks() {
                 signatures
               </li>
             </ul>
-
+            
+            <Link to="/contact-us">
             <Button
               size="md"
               className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold flex flex-start"
@@ -172,6 +176,7 @@ function HowItWorks() {
             >
               TALK TO OUR EXPERTS
             </Button>
+            </Link>
           </div>
 
           {/* Right Image */}
@@ -184,7 +189,7 @@ function HowItWorks() {
             }}
           >
             <img
-              src="https://badgecert.com/wp-content/uploads/2020/07/desktop-mob.png"
+              src={DesktopMob}
               alt="Dashboard preview"
               className="w-full max-w-[450px] object-contain h-auto z-10 relative"
             />

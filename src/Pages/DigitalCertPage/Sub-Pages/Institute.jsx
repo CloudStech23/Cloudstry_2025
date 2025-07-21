@@ -22,6 +22,7 @@ import {
 } from "react-icons/fa";
 
 import ContactSection from "../Sections/ContactSection";
+import callToActionBg from "../../../assets/CommonIMG/call_to_action_bg.jpg"
 
 const AccordionItem = ({ question, answer, isOpen, onClick }) => {
   return (
@@ -182,16 +183,18 @@ function Institute() {
               Secure, <br /> Shareable, and Verifiable Digital Credentials
             </p>
             <div className="flex gap-4 pt-[2rem]">
-              <Button
-                size="md"
-                className="rounded-full  text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-to-r hover:from-white hover:shadow-md  hover:to-white hover:text-[#1273be] hover:border-[#085d9e] transition-all duration-300 "
-                style={{
-                  borderRadius: "30px",
-                  fontFamily: HeadFontFamily,
-                }}
-              >
-                Contact us
-              </Button>
+              <Link to="/contact-us">
+                <Button
+                  size="md"
+                  className="rounded-full  text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-to-r hover:from-white hover:shadow-md  hover:to-white hover:text-[#1273be] hover:border-[#085d9e] transition-all duration-300 "
+                  style={{
+                    borderRadius: "30px",
+                    fontFamily: HeadFontFamily,
+                  }}
+                >
+                  Contact us
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -351,7 +354,7 @@ function Institute() {
         {/* Background Image with Dark Overlay */}
         <div className="absolute inset-0">
           <img
-            src="https://www.31west.net/wp-content/uploads/2022/08/what-are-the-benefits-of-a-help-desk.jpg"
+            src={callToActionBg}
             alt="Background"
             className="w-full h-full object-cover"
           />
@@ -369,27 +372,32 @@ function Institute() {
           </h2>
 
           <div className="gap-4 flex flex-row items-center justify-center mt-10 ">
-            <Button
-              size="md"
-              className="rounded-full  text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-to-r hover:from-white hover:shadow-md  hover:to-white hover:text-[#1273be] hover:border-[#085d9e] transition-all duration-300"
-              style={{
-                borderRadius: "30px",
-                fontFamily: HeadFontFamily,
-              }}
-            >
-              DIGITAL CERTIFICATE FOR UNIVERSITIES
-            </Button>
-             
-            <Button
-              size="md"
-              className=" rounded-full  text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-to-r hover:from-white hover:shadow-md  hover:to-white hover:text-[#1273be] hover:border-[#085d9e] transition-all duration-300"
-              style={{
-                borderRadius: "30px",
-                fontFamily: HeadFontFamily,
-              }}
-            >
-              get in touch with us
-            </Button>
+            <Link to="/digital-certificate/universities">
+              <Button
+                size="md"
+                className="rounded-full  text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-to-r hover:from-white hover:shadow-md  hover:to-white hover:text-[#1273be] hover:border-[#085d9e] transition-all duration-300"
+                style={{
+                  borderRadius: "30px",
+                  fontFamily: HeadFontFamily,
+                }}
+              >
+                DIGITAL CERTIFICATE FOR UNIVERSITIES
+              </Button>
+            </Link>
+
+            <Link to="/contact-us">
+              <Button
+                size="md"
+                className=" rounded-full  text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-to-r hover:from-white hover:shadow-md  hover:to-white hover:text-[#1273be] hover:border-[#085d9e] transition-all duration-300"
+                style={{
+                  borderRadius: "30px",
+                  fontFamily: HeadFontFamily,
+                }}
+              >
+                get in touch with us
+              </Button>
+            </Link>
+            <Link to="/digital-certificate/organizations">
             <Button
               size="md"
               className="rounded-full  text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-to-r hover:from-white hover:shadow-md  hover:to-white hover:text-[#1273be] hover:border-[#085d9e] transition-all duration-300"
@@ -400,6 +408,7 @@ function Institute() {
             >
               DIGITAL CERTIFICATE FOR ORGANIZATIONS
             </Button>
+            </Link>
           </div>
         </div>
       </div>
@@ -407,7 +416,7 @@ function Institute() {
       {/* FAQ section */}
 
       <div className="relative w-full py-12 mt-[1rem] px-4 sm:px-6 lg:px-8 z-10 bg-white">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           {/* Section Title */}
           <div className="text-center mb-16 px-6">
             <h1

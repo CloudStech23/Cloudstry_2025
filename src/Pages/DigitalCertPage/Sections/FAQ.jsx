@@ -32,7 +32,7 @@ const faqsRight = [
       "Absolutely. Recipients can easily share their digital badges and verified digital credentials on social media, email, online portfolios, and employer databases. This boosts visibility and enhances credibility in both academic and professional networks.",
   },
   {
-    question: "What are the benefits of using a digital credentials platform?",
+    question: "What are the benefits of using a digital credentials platform ?",
     answer:
       "A digital credentials platform streamlines the entire credentialing process—helping you issue, manage, and track digital certificate solutions with ease. It reduces administrative workload, ensures data security, enables real-time analytics, and enhances the reach and authenticity of your credentials.",
   },
@@ -72,7 +72,7 @@ function FAQ() {
 
   return (
     <div className="relative w-full py-12 mt-[1rem] px-4 sm:px-6 lg:px-8 z-10 bg-white">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-16 px-6">
           <h1

@@ -9,6 +9,8 @@ import DigCert from "./Pages/DigitalCertPage/DigCert";
 import Unversities from "./Pages/DigitalCertPage/Sub-Pages/Unversities";
 import Organization from "./Pages/DigitalCertPage/Sub-Pages/Organization";
 import Institute from "./Pages/DigitalCertPage/Sub-Pages/Institute";
+import ContactUs from "./Pages/ContactUs/ContactUs";
+import RequestDemo from "./Pages/DigitalCertPage/Sections/RequestDemo";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/article" element={<Article />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/demo" element={<RequestDemo />} />
           <Route path="/digital-certificate" element={<DigCert />} />
           <Route
             path="/digital-certificate/universities"

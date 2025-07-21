@@ -4,6 +4,7 @@ import "../../../CSS/Home.css";
 import { FaBackward, FaForward, FaHandshake, FaMinus } from "react-icons/fa";
 import { LuLaptopMinimalCheck } from "react-icons/lu";
 import { MdManageAccounts } from "react-icons/md";
+import SolutionOfrBg from "../../../assets/Images/HomePage/solution_we_ofr_bg.avif"
 
 import {
   HeadFontFamily,
@@ -138,7 +139,7 @@ const SolutionsWeOffer = () => {
             {/* Background */}
             <div className="absolute inset-0 z-0">
               <img
-                src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80"
+                src={SolutionOfrBg}
                 alt="Background"
                 className="w-full h-full object-cover"
               />

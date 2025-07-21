@@ -118,7 +118,7 @@ export default function PlatformFeature() {
   ];
 
   return (
-    <div className="relative w-full py-12 px-4 sm:px-6 lg:px-8 z-10 bg-white">
+    <div className="relative w-full py-5 px-4 sm:px-6 lg:px-8 z-10 bg-white">
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Section Title */}
         <div className="text-center mb-12 px-6">
@@ -155,26 +155,7 @@ export default function PlatformFeature() {
             </div>
           ))}
         </div>
-        {/* Additional Feature Highlights in Bullet Format */}
-        {/* Additional Bullet Format Highlights */}
-        <div className="mt-20 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12 px-6">
-              <h1
-                className="sm:text-4xl text-2xl font-bold mb-6"
-                style={{
-                  fontFamily: "Poppines, sans-serif",
-                  color: HeadTextColor,
-                  lineHeight: 1.2,
-                  textTransform: "uppercase",
-                }}
-              >
-                PLATFORM <span className="text-[#1f1446]"> FEATURES</span>
-              </h1>
-              <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto mb-10 rounded-full"></div>
-            </div>
-          </div>
-        </div>
+          
       </div>
     </div>
   );

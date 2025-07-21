@@ -2,6 +2,7 @@ import CountUp from "react-countup";
 import { CiFlag1 } from "react-icons/ci";
 import { PiCertificate, PiStudent } from "react-icons/pi";
 import { useInView } from "react-intersection-observer";
+import CounterBg from "../../../assets/Images/HomePage/solution_we_ofr_bg.avif"
 
 const Counter = () => {
   const { ref, inView } = useInView({
@@ -17,7 +18,7 @@ const Counter = () => {
       {/* Background Image with Dark Overlay */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=80"
+          src={CounterBg}
           alt="Background"
           className="w-full h-full object-cover"
         />

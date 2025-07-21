@@ -1,6 +1,8 @@
 import React from "react";
 import { HeadFontFamily } from "../../../CustomeComponents/Theme";
 import { Button } from "@material-tailwind/react";
+import callToActionBg from "../../../assets/CommonIMG/call_to_action_bg.jpg";
+import { Link } from "react-router-dom";
 
 function CallToAction() {
   return (
@@ -8,7 +10,7 @@ function CallToAction() {
       {/* Background Image with Dark Overlay */}
       <div className="absolute inset-0">
         <img
-          src="https://www.31west.net/wp-content/uploads/2022/08/what-are-the-benefits-of-a-help-desk.jpg"
+          src={callToActionBg}
           alt="Background"
           className="w-full h-full object-cover"
           style={{ objectFit: "cover", objectPosition: "center" }}
@@ -30,16 +32,18 @@ function CallToAction() {
             </h2>
 
             {/* Button */}
-            <Button
-              size="md"
-              className="sm:absolute relative rounded-full text-[14px] top-[2rem] md:top-0 md:right-[8rem] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-gradient-to-r hover:from-white  hover:to-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
-              style={{
-                borderRadius: "30px",
-                fontFamily: HeadFontFamily,
-              }}
-            >
-              Contact Us
-            </Button>
+            <Link to="/contact-us">
+              <Button
+                size="md"
+                className="sm:absolute relative rounded-full text-[14px] top-[2rem] md:top-0 md:right-[8rem] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-gradient-to-r hover:from-white  hover:to-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
+                style={{
+                  borderRadius: "30px",
+                  fontFamily: HeadFontFamily,
+                }}
+              >
+                Contact Us
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

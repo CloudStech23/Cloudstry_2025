@@ -16,6 +16,7 @@ import ItStrategyConsultancyBg from "../../../assets/Images/HomePage/ITStrategyC
 import ItSoftwareMaintBg from "../../../assets/Images/HomePage/IT_Software_Maintenance.png";
 import bgimg from "../../../assets/Images/HomePage/slider-banner.png";
 import svgImg from "../../../assets/Images/HomePage/svg_img.svg";
+import { Link } from "react-router-dom";
 
 const slides = [
   {
@@ -24,6 +25,7 @@ const slides = [
     description:
       "Expert guidance to align your IT investments with business goals, driving smarter decisions and sustainable growth.",
     buttonText: "Learn More",
+    linkURL1: "",
   },
   {
     src: ItSoftwareMaintBg,
@@ -31,6 +33,7 @@ const slides = [
     description:
       "Custom-built software and ongoing support tailored to your unique business needs for seamless performance and growth.",
     buttonText: "Learn More",
+    linkURL1: "",
   },
   {
     src: svgImg,
@@ -38,6 +41,7 @@ const slides = [
     description:
       "Delivering skilled IT talent on demand to power your projects with speed, expertise, and flexibility.",
     buttonText: "Learn More",
+    linkURL1: "",
   },
   {
     src: DigiCertbg,
@@ -46,6 +50,8 @@ const slides = [
       "SaaS platform, record digital Badge, and Certificates  on blockchain.",
     buttonText: "Schedule a demo",
     buttonText1: "Login",
+    linkURL1: "/demo",
+    linkURL2: "https://badgecert.com/login/",
   },
   {
     src: cattlebg,
@@ -53,6 +59,7 @@ const slides = [
     description:
       "A digital identity platform for Cattle powered with AI/ML, supporting traceability, health records, and subsidy management.",
     buttonText: "Learn More",
+    linkURL1: "",
   },
   {
     src: bgimg,
@@ -60,6 +67,7 @@ const slides = [
     description:
       "3PL Solutions powered with AI/ML to streamlining planning, forecasting, and fulfilment in supply chain.",
     buttonText: "Learn More",
+    linkURL1: "",
   },
 ];
 
@@ -122,27 +130,31 @@ const CarouselSlider = () => {
                   {item.description}
                 </p>
                 <div className="flex gap-4 sm:pt-[2rem] pt-[0.5rem]">
-                  <Button
-                    size="md"
-                    className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold"
-                    style={{
-                      borderRadius: "30px",
-                      fontFamily: HeadFontFamily,
-                    }}
-                  >
-                    {item.buttonText}
-                  </Button>
-                  {item.buttonText1 && (
+                  <Link to={item.linkURL1}>
                     <Button
                       size="md"
-                      className="rounded-full text-[14px] sm:w-[10rem] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold hover:bg-white hover:text-[#1273be]"
+                      className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold"
                       style={{
                         borderRadius: "30px",
                         fontFamily: HeadFontFamily,
                       }}
                     >
-                      {item.buttonText1}
+                      {item.buttonText}
                     </Button>
+                  </Link>
+                  {item.buttonText1 && (
+                    <Link to={item.linkURL2} target="_blank">
+                      <Button
+                        size="md"
+                        className="rounded-full text-[14px] sm:w-[10rem] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold "
+                        style={{
+                          borderRadius: "30px",
+                          fontFamily: HeadFontFamily,
+                        }}
+                      >
+                        {item.buttonText1}
+                      </Button>
+                    </Link>
                   )}
                 </div>
               </div>

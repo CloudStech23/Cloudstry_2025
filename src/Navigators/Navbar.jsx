@@ -160,28 +160,28 @@ const Navbar = () => {
                         </MenuItem>
                       </Link>
                       <Link to="/digital-certificate/organizations">
-                      <MenuItem
-                        className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
-                        style={{
-                          color: NavbarSubItemColor,
-                          fontSize: NavbarItemSubHeadFontSize,
-                          fontFamily: NavbarItemSubHeadFontFamily,
-                        }}
-                      >
-                        Organizations
-                      </MenuItem>
+                        <MenuItem
+                          className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                          style={{
+                            color: NavbarSubItemColor,
+                            fontSize: NavbarItemSubHeadFontSize,
+                            fontFamily: NavbarItemSubHeadFontFamily,
+                          }}
+                        >
+                          Organizations
+                        </MenuItem>
                       </Link>
                       <Link to="/digital-certificate/institutes">
-                      <MenuItem
-                        className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
-                        style={{
-                          color: NavbarSubItemColor,
-                          fontSize: NavbarItemSubHeadFontSize,
-                          fontFamily: NavbarItemSubHeadFontFamily,
-                        }}
-                      >
-                        Institutions
-                      </MenuItem>
+                        <MenuItem
+                          className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                          style={{
+                            color: NavbarSubItemColor,
+                            fontSize: NavbarItemSubHeadFontSize,
+                            fontFamily: NavbarItemSubHeadFontFamily,
+                          }}
+                        >
+                          Institutions
+                        </MenuItem>
                       </Link>
                     </MenuList>
                   </Menu>
@@ -434,26 +434,32 @@ const Navbar = () => {
           {/* CTA Buttons */}
           {DigitalPage ? (
             <div className="flex items-center gap-2 ml-2">
-              <Button
-                size="md"
-                className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-gradient-to-r hover:from-white  hover:to-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
-                style={{
-                  borderRadius: "30px",
-                  fontFamily: HeadFontFamily,
-                }}
-              >
-                Request a Demo
-              </Button>
-              <Button
-                size="md"
-                className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-gradient-to-r hover:from-white  hover:to-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
-                style={{
-                  borderRadius: "30px",
-                  fontFamily: HeadFontFamily,
-                }}
-              >
-                Login
-              </Button>
+              <Link to="/demo">
+                <Button
+                  size="md"
+                  className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-gradient-to-r hover:from-white  hover:to-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
+                  style={{
+                    borderRadius: "30px",
+                    fontFamily: HeadFontFamily,
+                  }}
+                >
+                  Request a Demo
+                </Button>
+              </Link>
+              <Link to="https://badgecert.com/login/" target="_blank">
+                <Button
+                  size="md"
+                  className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-gradient-to-r hover:from-white  hover:to-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
+                  style={{
+                    borderRadius: "30px",
+                    fontFamily: HeadFontFamily,
+
+                  }}
+                  
+                >
+                  Login
+                </Button>
+              </Link>
 
               {/* <Button
               size="sm"
@@ -466,16 +472,18 @@ const Navbar = () => {
             </div>
           ) : (
             <div className="flex items-center gap-2 ml-2">
-              <Button
-                size="md"
-                className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-gradient-to-r hover:from-white  hover:to-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
-                style={{
-                  borderRadius: "30px",
-                  fontFamily: HeadFontFamily,
-                }}
-              >
-                Contact Us
-              </Button>
+              <Link to="/contact-us">
+                <Button
+                  size="md"
+                  className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-gradient-to-r hover:from-white  hover:to-white hover:text-[#1273be] hover:border-[#2b3d8a] transition-all focus:outline-none focus:ring-0"
+                  style={{
+                    borderRadius: "30px",
+                    fontFamily: HeadFontFamily,
+                  }}
+                >
+                  Contact Us
+                </Button>
+              </Link>
 
               {/* <Button
               size="sm"

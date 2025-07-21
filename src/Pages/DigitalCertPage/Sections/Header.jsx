@@ -31,26 +31,30 @@ function Header() {
             From Paper to Digital — The Smarter Way to Recognize Achievement
           </p>
           <div className="flex gap-4 pt-[2rem]">
-            <Button
-              size="md"
-              className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  "
-              style={{
-                borderRadius: "30px",
-                fontFamily: HeadFontFamily,
-              }}
-            >
-              Request a Demo
-            </Button>
-            <Button
-              size="md"
-              className="rounded-full text-[14px] sm:w-[10rem] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold "
-              style={{
-                borderRadius: "30px",
-                fontFamily: HeadFontFamily,
-              }}
-            >
-              Contact us  
-            </Button>
+            <Link to="/demo">
+              <Button
+                size="md"
+                className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  "
+                style={{
+                  borderRadius: "30px",
+                  fontFamily: HeadFontFamily,
+                }}
+              >
+                Request a Demo
+              </Button>
+            </Link>
+            <Link to="/contact-us">
+              <Button
+                size="md"
+                className="rounded-full text-[14px] sm:w-[10rem] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold "
+                style={{
+                  borderRadius: "30px",
+                  fontFamily: HeadFontFamily,
+                }}
+              >
+                Contact us
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
