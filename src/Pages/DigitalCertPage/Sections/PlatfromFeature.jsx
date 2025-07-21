@@ -62,10 +62,10 @@ export default function PlatformFeature() {
       icon: <FiUnlock size={40} className="text-[#085d9e]" />,
     },
     {
-      title: "Customizable Email Templates",
+      title: "LMS Integration",
       subtitle:
-        "All email types, including issuance, reminders, and expiration notifications, can be fully customized. Our platform provides a comprehensive selection of wildcards to streamline and enhance the customization process.",
-      icon: <FiEdit3 size={40} className="text-[#085d9e]" />,
+        "Compatibility with Learning Management Systems for streamlined processes.",
+      icon: <FiBookOpen size={40} className="text-[#085d9e]" />,
     },
 
     {
@@ -109,11 +109,12 @@ export default function PlatformFeature() {
         "A RESTful API integration that can be leveraged to facilitate the integration with any Learning Management System.",
       icon: <FiSend size={40} className="text-[#085d9e]" />,
     },
+
     {
-      title: "LMS Integration",
+      title: "Customizable Email Templates",
       subtitle:
-        "Compatibility with Learning Management Systems for streamlined processes.",
-      icon: <FiBookOpen size={40} className="text-[#085d9e]" />,
+        "All email types, including issuance, reminders, and expiration notifications, can be fully customized. Our platform provides a comprehensive selection of wildcards to streamline and enhance the customization process.",
+      icon: <FiEdit3 size={40} className="text-[#085d9e]" />,
     },
   ];
 
@@ -155,7 +156,6 @@ export default function PlatformFeature() {
             </div>
           ))}
         </div>
-          
       </div>
     </div>
   );

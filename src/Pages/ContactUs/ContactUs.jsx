@@ -43,16 +43,16 @@ function ContactUs() {
             
         }}
       >
-        <div className="absolute inset-0 bg-contain bg-black/30 opacity-40"></div>
+        <div className="absolute inset-0 bg-contain bg-gray-50  opacity-50"></div>
 
         <div className="relative w-full py-12 ">
           {/* Background with opacity */}
 
-          <div className="relative max-w-7xl mx-auto">
+          <div className="relative max-w-7xl  mx-auto">
             <div className="flex flex-wrap ">
               {/* Contact Info Column */}
-              <div className="w-full md:w-[45%]    ">
-                <div className="bg-gray-100 bg-opacity-60 p-[2.95rem] rounded-tl-xl rounded-bl-xl">
+              <div className="w-full md:w-1/2 sm:w-1/2    ">
+                <div className="bg-gray-300 bg-opacity-60 p-[2.6rem] rounded-tl-xl rounded-bl-xl">
                   {/* Email Box */}
                   <div
                     className="p-4 text-center rounded-[7px] mb-4"
@@ -117,7 +117,7 @@ function ContactUs() {
                       className="text-white"
                       style={{ fontFamily: HeadFontFamily }}
                     >
-                      <h3 className="font-montserrat text-xl font-semibold ">
+                      <h3 className="font-montserrat text-xl font-semibold pb-2 ">
                         Address
                       </h3>
                       <p className="font-montserrat text-[17px] font-medium">
@@ -199,7 +199,10 @@ function ContactUs() {
                       </label>
                       <textarea
                         required
-                        className="w-full px-3 py-2 border border-gray-300 rounded h-48"
+                        className="w-full px-3 py-2 border border-gray-300 rounded "
+                        rows="6"
+                        placeholder="Your Message..."
+
                       ></textarea>
                     </div>
 

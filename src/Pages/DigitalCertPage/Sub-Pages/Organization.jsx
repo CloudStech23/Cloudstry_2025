@@ -177,13 +177,12 @@ function Organization() {
                 textTransform: "uppercase",
               }}
             >
-              Digital Badges for <br /> employees & professionals
+              Digital Badges for <br /> Employees, Professionals,<br />  and Organizations 
             </h2>
             <p className="text-white md:w-[70%] text-md md:text-[17.5px]">
-              Empowering Organizations with Secure, Verifiable Digital Badges to
-              Recognize <br /> Employee Skills and Professional Achievements.
+              A Smart Way for Organizations to Issue, Manage, and <br /> Track Employee Achievements Digitally 
             </p>
-            <div className="flex gap-4 pt-[2rem]">
+            <div className="flex gap-4 pt-[1rem]">
               <Link to="/contact-us">
               <Button
                 size="md"
@@ -214,9 +213,9 @@ function Organization() {
               lineHeight: 1.2,
             }}
           >
-            Digital Badges – A Modern Approach{" "}
+            Boost Employee Recognition and Build {" "}
             <span className="text-[#1f1446]">
-              to Recognizing Employee Achievements
+              tOrganizational Credibility with Verifiable Digital Badges 
             </span>
           </h1>
           <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto rounded-full"></div>
@@ -362,8 +361,7 @@ function Organization() {
             className="text-white text-xl md:text-[34px] text-center font-semibold mb-6 uppercase"
             style={{ fontFamily: HeadFontFamily, lineHeight: "1.2" }}
           >
-            Get in touch to implement secure, verifiable digital certificates
-            and elevate your university’s recognition system
+            Get in touch with us today to implement secure, verifiable digital certificates for organizations and boost employee recognition with trusted digital credentials
           </h2>
 
           <div className="gap-4 flex flex-row items-center justify-center mt-10 ">

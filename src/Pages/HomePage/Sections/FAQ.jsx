@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-import { HeadTextColor,HeadFontFamily } from "../../../CustomeComponents/Theme";
+import {
+  HeadTextColor,
+  HeadFontFamily,
+} from "../../../CustomeComponents/Theme";
 import { FiPlus, FiMinus } from "react-icons/fi";
 
 const faqsLeft = [
@@ -22,19 +25,20 @@ const faqsLeft = [
 
 const faqsRight = [
   {
-    question: "What is your IT Strategy and Architecture Consulting service?",
+    question: "What are Cattle Aadhaar and Logistic Solutions?",
     answer:
-      "We help businesses align their technology roadmap with their long-term vision by designing robust IT architectures, optimizing digital infrastructure, and improving tech-driven decision-making.",
+      "Cattle Aadhaar is an AI/ML-powered traceability platform for livestock, while our Logistics Solution optimizes 3PL operations using intelligent forecasting and real-time supply chain tracking.",
   },
+
   {
-    question: "What is the Digital Certificate Platform and who can use it?",
+    question: "What is the Digital Certificate Platform and who can use ?",
     answer:
       "Our digital certification platform allows institutions, universities, and organizations to issue tamper-proof digital badges and certificates that are easily shareable and verifiable.",
   },
   {
-    question: "What are Cattle Aadhaar and Logistic Solutions?",
+    question: "What is your IT Strategy and Architecture Consulting service?",
     answer:
-      "Cattle Aadhaar is an AI/ML-powered traceability platform for livestock, while our Logistics Solution optimizes 3PL operations using intelligent forecasting and real-time supply chain tracking.",
+      "We help businesses align their technology roadmap with their long-term vision by designing robust IT architectures, optimizing digital infrastructure, and improving tech-driven decision-making.",
   },
 ];
 

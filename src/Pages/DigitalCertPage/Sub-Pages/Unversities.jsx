@@ -62,9 +62,10 @@ function Unversities() {
         "Digital badges in higher education are used to recognize specific skills, competencies, or accomplishments. They can be awarded for completing a course, project, workshop, or internship, offering a more detailed and flexible way to showcase academic and co-curricular achievements.",
     },
     {
-      question: "What are micro-credentials and how do they help students?",
+      question:
+        "Why should universities adopt digital badging and certification ?",
       answer:
-        "Micro-credentials are short, targeted learning outcomes that demonstrate specific skills or knowledge. When combined with digital badges, they help students build a comprehensive, portable portfolio that enhances their employability and showcases continuous learning.",
+        "Adopting digital badging in higher education helps universities modernize their credentialing systems, reduce administrative costs, support eco-friendly practices, and offer students a globally recognized, easily shareable proof of achievement.",
     },
   ];
 
@@ -75,11 +76,11 @@ function Unversities() {
         "Yes, digital credentials issued through platforms like Cloudstry Tech are tamper-proof, blockchain-secured, and 100% verifiable. This ensures authenticity and trust, making them ideal for both academic and professional validation.",
     },
     {
-      question:
-        "Why should universities adopt digital badging and certification?",
+      question: "What are micro-credentials and how do they help students?",
       answer:
-        "Adopting digital badging in higher education helps universities modernize their credentialing systems, reduce administrative costs, support eco-friendly practices, and offer students a globally recognized, easily shareable proof of achievement.",
+        "Micro-credentials are short, targeted learning outcomes that demonstrate specific skills or knowledge. When combined with digital badges, they help students build a comprehensive, portable portfolio that enhances their employability and showcases continuous learning.",
     },
+
     {
       question:
         "Can digital certificates and badges be shared on social media or job platforms?",
