@@ -43,7 +43,7 @@ function ContactUs() {
             
         }}
       >
-        <div className="absolute inset-0 bg-contain bg-gray-50  opacity-50"></div>
+        <div className="absolute inset-0 bg-contain bg-gray-100  opacity-50"></div>
 
         <div className="relative w-full py-12 ">
           {/* Background with opacity */}

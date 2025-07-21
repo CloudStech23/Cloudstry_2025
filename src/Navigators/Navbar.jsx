@@ -32,7 +32,9 @@ const Navbar = () => {
     location.pathname === "/digital-certificate" ||
     location.pathname === "/digital-certificate/universities" ||
     location.pathname === "/digital-certificate/organizations" ||
-    location.pathname === "/digital-certificate/institutes";
+    location.pathname === "/digital-certificate/institutes" ||
+    location.pathname === "/demo";
+
 
   useEffect(() => {
     const handleScroll = () => {
