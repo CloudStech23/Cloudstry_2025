@@ -17,7 +17,7 @@ import {
 } from "react-icons/fa";
 
 import ContactSection from "../Sections/ContactSection";
-import callToActionBg from "../../../assets/CommonIMG/call_to_action_bg.jpg"
+import callToActionBg from "../../../assets/CommonIMG/call_to_action_bg.jpg";
 
 const AccordionItem = ({ question, answer, isOpen, onClick }) => {
   return (
@@ -180,16 +180,16 @@ function Unversities() {
             </p>
             <div className="flex gap-4 pt-[2rem]">
               <Link to="/contact-us">
-              <Button
-                size="md"
-                className="rounded-full  text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-to-r hover:from-white hover:shadow-md  hover:to-white hover:text-[#1273be] hover:border-[#085d9e] transition-all duration-300 "
-                style={{
-                  borderRadius: "30px",
-                  fontFamily: HeadFontFamily,
-                }}
-              >
-                Contact us
-              </Button>
+                <Button
+                  size="md"
+                  className="rounded-full  text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-to-r hover:from-white hover:shadow-md  hover:to-white hover:text-[#1273be] hover:border-[#085d9e] transition-all duration-300 "
+                  style={{
+                    borderRadius: "30px",
+                    fontFamily: HeadFontFamily,
+                  }}
+                >
+                  Contact us
+                </Button>
               </Link>
             </div>
           </div>
@@ -315,7 +315,7 @@ function Unversities() {
 
             {/* Right: Benefits */}
             <div
-              className="border border-gray-200 max-w-[570px] rounded-xl shadow-lg p-6 md:py-8 md:px-6 space-y-3"
+              className="border border-gray-200 max-w-[570px] rounded-xl shadow-lg p-6 md:py-8 md:px-6 space-y-3 rounded-tr-[80px]"
               style={{ background: gradientBG }}
             >
               {benefits.map((item, idx) => (
@@ -358,7 +358,7 @@ function Unversities() {
         <div className="relative z-10 max-w-8xl w-full px-4 text-left">
           <h2
             className="text-white text-xl md:text-[34px] text-center font-semibold mb-6 uppercase"
-            style={{ fontFamily: HeadFontFamily,lineHeight:"1.2" }}
+            style={{ fontFamily: HeadFontFamily, lineHeight: "1.2" }}
           >
             Get in touch to implement secure, verifiable digital certificates
             and elevate your university’s recognition system
@@ -366,31 +366,31 @@ function Unversities() {
 
           <div className="gap-4 flex flex-row items-center justify-center mt-10 ">
             <Link to="/digital-certificate/organizations">
-            <Button
-              size="md"
-              className="rounded-full  text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-to-r hover:from-white hover:shadow-md  hover:to-white hover:text-[#1273be] hover:border-[#085d9e] transition-all duration-300"
-              style={{
-                borderRadius: "30px",
-                fontFamily: HeadFontFamily,
-              }}
-            >
-              DIGITAL CERTIFICATE FOR ORGANIZATIONS
-            </Button>
+              <Button
+                size="md"
+                className="rounded-full  text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-to-r hover:from-white hover:shadow-md  hover:to-white hover:text-[#1273be] hover:border-[#085d9e] transition-all duration-300"
+                style={{
+                  borderRadius: "30px",
+                  fontFamily: HeadFontFamily,
+                }}
+              >
+                DIGITAL CERTIFICATE FOR ORGANIZATIONS
+              </Button>
             </Link>
-            
-           <Link to="/contact-us">
-            <Button
-              size="md"
-              className=" rounded-full  text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-to-r hover:from-white hover:shadow-md  hover:to-white hover:text-[#1273be] hover:border-[#085d9e] transition-all duration-300"
-              style={{
-                borderRadius: "30px",
-                fontFamily: HeadFontFamily,
-              }}
-            >
-              get in touch with us
-            </Button>
-           </Link>
-           <Link to="/digital-certificate/institutes"></Link>
+
+            <Link to="/contact-us">
+              <Button
+                size="md"
+                className=" rounded-full  text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-to-r hover:from-white hover:shadow-md  hover:to-white hover:text-[#1273be] hover:border-[#085d9e] transition-all duration-300"
+                style={{
+                  borderRadius: "30px",
+                  fontFamily: HeadFontFamily,
+                }}
+              >
+                get in touch with us
+              </Button>
+            </Link>
+            <Link to="/digital-certificate/institutes"></Link>
             <Button
               size="md"
               className="rounded-full  text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-to-r hover:from-white hover:shadow-md  hover:to-white hover:text-[#1273be] hover:border-[#085d9e] transition-all duration-300"
@@ -399,7 +399,7 @@ function Unversities() {
                 fontFamily: HeadFontFamily,
               }}
             >
-              DIGITAL CERTIFICATE  FOR INSTITUTIONS
+              DIGITAL CERTIFICATE FOR INSTITUTIONS
             </Button>
           </div>
         </div>

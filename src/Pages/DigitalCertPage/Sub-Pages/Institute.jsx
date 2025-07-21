@@ -322,7 +322,7 @@ function Institute() {
 
             {/* Right: Benefits */}
             <div
-              className="border border-gray-200 max-w-[570px] rounded-xl shadow-lg p-6 md:py-8 md:px-6 space-y-3"
+              className="border border-gray-200 max-w-[570px] rounded-xl shadow-lg p-6 md:py-8 md:px-6 space-y-3 rounded-tr-[80px]"
               style={{ background: gradientBG }}
             >
               {benefits.map((item, idx) => (
