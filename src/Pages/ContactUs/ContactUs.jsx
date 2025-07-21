@@ -43,7 +43,8 @@ function ContactUs() {
             
         }}
       >
-        <div className="absolute inset-0 bg-contain bg-gray-100  opacity-50"></div>
+        <div className="absolute inset-0 bg-contain bg-[#e4e4e4]  opacity-40"></div>
+        <div className="absolute inset-0 bg-contain bg-[#d5d5d5]  opacity-60"></div>
 
         <div className="relative w-full py-12 ">
           {/* Background with opacity */}
@@ -52,7 +53,7 @@ function ContactUs() {
             <div className="flex flex-wrap ">
               {/* Contact Info Column */}
               <div className="w-full md:w-1/2 sm:w-1/2    ">
-                <div className="bg-gray-300 bg-opacity-60 p-[2.6rem] rounded-tl-xl rounded-bl-xl">
+                <div className="bg-[#c2c2c2]  bg-opacity-60 p-[2.6rem] rounded-tl-xl rounded-bl-xl">
                   {/* Email Box */}
                   <div
                     className="p-4 text-center rounded-[7px] mb-4"

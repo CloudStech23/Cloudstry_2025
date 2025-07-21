@@ -31,18 +31,6 @@ function Header() {
             From Paper to Digital — The Smarter Way to Recognize Achievement
           </p>
           <div className="flex gap-4 pt-[2rem]">
-            <Link to="/demo">
-              <Button
-                size="md"
-                className="rounded-full text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  "
-                style={{
-                  borderRadius: "30px",
-                  fontFamily: HeadFontFamily,
-                }}
-              >
-                Request a Demo
-              </Button>
-            </Link>
             <Link to="/contact-us">
               <Button
                 size="md"

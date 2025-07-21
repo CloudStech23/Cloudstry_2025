@@ -46,12 +46,11 @@ function RequestDemo() {
               </h1>
 
               <div className="space-y-6">
-                <p className="text-lg md:text-xl text-gray-600 font-montserrat-medium text-center lg:text-left">
+                <p className="text-[15px] md:text-[17px] text-gray-600 font-montserrat-medium text-center lg:text-left">
                   We’re glad you’re here and interested in exploring how our
                   secure, verifiable{" "}
                   <a
                     href="/digital-certificate"
-                    
                     rel="noopener noreferrer"
                     className="text-blue-500 underline font-semibold hover:text-blue-600"
                   >
@@ -60,29 +59,41 @@ function RequestDemo() {
                   can streamline your credentialing process.
                 </p>
 
-                <p className="text-lg md:text-xl text-gray-600 font-montserrat-medium text-center lg:text-left">
+                <p className="text-[15px] md:text-[17px] text-gray-600 font-montserrat-medium text-center lg:text-left">
                   Whether you're an educational institution, corporate
                   organization, or training provider, our platform is designed
                   to simplify certificate management, enhance recognition, and
                   build trust with tamper-proof digital credentials.
                 </p>
-                <p className="italic text-[15px] sm:text-[17px] text-[#1f1446] font-montserrat-medium text-center lg:text-left " style={{fontFamily:HeadFontFamily}}>
+                <p
+                  className="italic text-[15px] sm:text-[17px] text-[#1f1446] font-montserrat-medium text-center lg:text-left "
+                  style={{ fontFamily: HeadFontFamily }}
+                >
                   To get started, Kindly fill out the form.
                 </p>
 
-                <p
-                  className="text-[16px] md:text-[35px] text-[#1f1446] font-montserrat-medium text-center lg:text-left"
-                  style={{ fontFamily: "Abril Fatface, serif",letterSpacing:"1.6px" }}
-                >
-                  Experience the future of digital credentialing — one demo away!
+                <p className="text-[15px] md:text-[17px] text-gray-600 font-montserrat-medium text-center lg:text-left">
+                  Our team will review your request and get in touch within 24
+                  hours to schedule a personalized demo tailored to your needs.
                 </p>
+
+                <h1
+                  className="italic text-[17px] md:text-[20px] font-bold text-gray-600 pb-6 font-montserrat-bold text-center lg:text-left"
+                  style={{ fontFamily: HeadFontFamily }}
+                >
+                  Experience the future of digital credentialing — one demo
+                  away!
+                </h1>
               </div>
             </div>
 
             {/* Right Column - Form */}
             <div className="w-full lg:w-1/2 px-4">
               <div className="bg-gray-50 rounded-lg shadow-lg overflow-hidden max-w-2xl mx-auto lg:mx-0">
-                <div className="bg-[#085d9e] py-3 px-4 text-center">
+                <div
+                  className="  py-3 px-4 text-center"
+                  style={{ background: gradientBG }}
+                >
                   <h2
                     className="text-white text-xl font-bold font-montserrat-bold uppercase"
                     style={{ fontFamily: HeadFontFamily }}

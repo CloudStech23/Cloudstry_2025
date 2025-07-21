@@ -5,8 +5,7 @@ import {
 } from "../../../CustomeComponents/Theme";
 import whychooseimg from "../../../assets/Images/DigCertPage/whychoose_bg-3.svg";
 import Bgimg from "../../../assets/Images/HomePage/why_choose_us.svg";
-import { LuComputer } from "react-icons/lu";
-import { BsShieldLock } from "react-icons/bs";
+ import { BsShieldLock } from "react-icons/bs";
 import { CgScreen } from "react-icons/cg";
 import { IoEarth } from "react-icons/io5";
 import { GoGraph } from "react-icons/go";

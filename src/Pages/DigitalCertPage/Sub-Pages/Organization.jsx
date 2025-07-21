@@ -177,10 +177,10 @@ function Organization() {
                 textTransform: "uppercase",
               }}
             >
-              Digital Badges for <br /> Employees, Professionals,<br />  and Organizations 
+              Digital Badges for <br /> Professionals<br />  and Organizations 
             </h2>
             <p className="text-white md:w-[70%] text-md md:text-[17.5px]">
-              A Smart Way for Organizations to Issue, Manage, and <br /> Track Employee Achievements Digitally 
+              A Smart Way for Organizations to Issue, Manage, and Track Employee Achievements Digitally 
             </p>
             <div className="flex gap-4 pt-[1rem]">
               <Link to="/contact-us">
@@ -215,7 +215,7 @@ function Organization() {
           >
             Boost Employee Recognition and Build {" "}
             <span className="text-[#1f1446]">
-              tOrganizational Credibility with Verifiable Digital Badges 
+              Organizational Credibility with Verifiable Digital Badges 
             </span>
           </h1>
           <div className="w-24 h-1.5 bg-gradient-to-r from-[#085d9e] to-[#00c1de] mx-auto rounded-full"></div>
