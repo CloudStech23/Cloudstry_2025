@@ -4,7 +4,7 @@ import { gradientBG, HeadFontFamily } from "../../../CustomeComponents/Theme";
 
 function RequestDemo() {
   return (
-    <div className="w-full overflow-hidden">
+    <div className="w-full ">
       {/* Header section remains unchanged */}
       <div className="relative w-full h-[26rem] sm:h-[21.5rem]">
         {/* Background Image */}
@@ -66,10 +66,10 @@ function RequestDemo() {
                   build trust with tamper-proof digital credentials.
                 </p>
                 <p
-                  className="italic text-[15px] sm:text-[17px] text-[#1f1446] font-montserrat-medium text-center lg:text-left "
+                  className="italic text-[15px] sm:text-[16px] text-[#1f1446] font-montserrat-medium text-center lg:text-left "
                   style={{ fontFamily: HeadFontFamily }}
                 >
-                  To get started, Kindly fill out the form.
+                  To get started, kindly fill out the form.
                 </p>
 
                 <p className="text-[15px] md:text-[17px] text-gray-600 font-montserrat-medium text-center lg:text-left">

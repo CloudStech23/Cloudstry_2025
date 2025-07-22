@@ -4,7 +4,7 @@ import { HeadTextColor } from "../../../CustomeComponents/Theme";
 function OurCustomers() {
   return (
     <div className="mt-5">
-      <main className=" px-4 sm:px-6 lg:px-0 pb-2  mx-auto bg-[#efefef] rounded-tr-[80px]">
+      <main className=" px-4 sm:px-6 lg:px-0 pb-2  mx-auto rounded-tr-[80px]" style={{background:"linear-gradient(180deg,rgba(237,240,245,1) 0%,rgba(255,255,255,1) 100%)"}}>
         <div className="text-center  py-12 px-4">
           <h3
             className="sm:text-4xl text-2xl font-bold  sm:leading-none mb-6"

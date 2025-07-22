@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import logo from "../assets/cloudstry-logo-2.png";
 import { FooterFontFamily } from "../CustomeComponents/Theme";
 import FooterBg from "../assets/CommonIMG/White_Background.jpg";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const [maxDwidth, setMaxDwidth] = React.useState(window.innerWidth);
@@ -51,19 +52,19 @@ function Footer() {
             <h5 className="text-xl font-medium mb-3">SERVICES</h5>
             <ul className="flex flex-col space-y-2">
               <li>
-                <a href="#" className="text-gray-500 hover:text-black">
+                <p className="text-gray-500 hover:text-black">
                   IT Strategy and Architecture Consulting
-                </a>
+                </p>
               </li>
               <li>
-                <a href="#" className="text-gray-500 hover:text-black">
+                <p className="text-gray-500 hover:text-black">
                   IT Software and Maintenance
-                </a>
+                </p>
               </li>
               <li>
-                <a href="#" className="text-gray-500 hover:text-black">
+                <p className="text-gray-500 hover:text-black">
                   Manpower Solution
-                </a>
+                </p>
               </li>
             </ul>
           </div>
@@ -72,20 +73,17 @@ function Footer() {
           <div className="w-full sm:w-1/2 md:w-[20%] mb-6">
             <h5 className="text-xl font-medium mb-3">PRODUCTS</h5>
             <ul className="flex flex-col space-y-2">
+              <Link to="/digital-certificate"></Link>
               <li>
-                <a href="#" className="text-gray-500 hover:text-black">
+                <p className="text-gray-500 hover:text-black">
                   Digital Certificate
-                </a>
+                </p>
               </li>
               <li>
-                <a href="#" className="text-gray-500 hover:text-black">
-                  Cattle Aadhar
-                </a>
+                <p className="text-gray-500 hover:text-black">Cattle Aadhar</p>
               </li>
               <li>
-                <a href="#" className="text-gray-500 hover:text-black">
-                  3PL Solutions
-                </a>
+                <p className="text-gray-500 hover:text-black">3PL Solutions</p>
               </li>
             </ul>
           </div>
@@ -95,29 +93,19 @@ function Footer() {
             <h5 className="text-xl font-medium mb-3">INDUSTRIES</h5>
             <ul className="flex flex-col space-y-2">
               <li>
-                <a href="#" className="text-gray-500 hover:text-black">
-                  Education
-                </a>
+                <p className="text-gray-500 hover:text-black">Education</p>
               </li>
               <li>
-                <a href="#" className="text-gray-500 hover:text-black">
-                  Utility
-                </a>
+                <p className="text-gray-500 hover:text-black">Utility</p>
               </li>
               <li>
-                <a href="#" className="text-gray-500 hover:text-black">
-                  Government
-                </a>
+                <p className="text-gray-500 hover:text-black">Government</p>
               </li>
               <li>
-                <a href="#" className="text-gray-500 hover:text-black">
-                  Logistic
-                </a>
+                <p className="text-gray-500 hover:text-black">Logistic</p>
               </li>
               <li>
-                <a href="#" className="text-gray-500 hover:text-black">
-                  Health Care
-                </a>
+                <p className="text-gray-500 hover:text-black">Health Care</p>
               </li>
             </ul>
           </div>
@@ -127,35 +115,32 @@ function Footer() {
             <h5 className="text-xl font-medium mb-3">PAGES</h5>
             <ul className="flex flex-col space-y-2">
               <li>
-                <a href="#" className="text-gray-500 hover:text-black">
-                  Resources
-                </a>
+                <p className="text-gray-500 hover:text-black">Resources</p>
+              </li>
+              <Link to="/demo">
+                <li>
+                  <p className="text-gray-500 hover:text-black">
+                    Request a demo
+                  </p>
+                </li>
+              </Link>
+              <Link to="https://badgecert.com/login" target="_blank">
+                <li>
+                  <p className="text-gray-500 hover:text-black">Login</p>
+                </li>
+              </Link>
+
+              <li>
+                <p className="text-gray-500 hover:text-black">Articles</p>
               </li>
               <li>
-                <a href="#" className="text-gray-500 hover:text-black">
-                  Podcasts
-                </a>
+                <p className="text-gray-500 hover:text-black">Sitemap</p>
               </li>
-              <li>
-                <a href="#" className="text-gray-500 hover:text-black">
-                  Demo Video
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-500 hover:text-black">
-                  Testimonials
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-500 hover:text-black">
-                  Articles
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-500 hover:text-black">
-                  Sitemap
-                </a>
-              </li>
+              <Link to="/contact-us">
+                <li>
+                  <p className="text-gray-500 hover:text-black">Contact us</p>
+                </li>
+              </Link>
             </ul>
           </div>
         </div>

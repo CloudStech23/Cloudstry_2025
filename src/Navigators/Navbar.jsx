@@ -35,7 +35,6 @@ const Navbar = () => {
     location.pathname === "/digital-certificate/institutes" ||
     location.pathname === "/demo";
 
-
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 80;
@@ -274,20 +273,22 @@ const Navbar = () => {
           {/* Industries */}
           <Menu allowHover>
             <MenuHandler>
-              <Button
-                size="sm"
-                variant="text"
-                style={{
-                  color: NavbarItemColor,
-                  fontFamily: HeadFontFamily,
-                  fontSize: NavbarItemHeadFontSize,
-                  letterSpacing: "0.2px",
-                }}
-                className=" font-medium flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-0"
-              >
-                Industries
-                <FaChevronDown className="text-[13px] mx-1 opacity-70  h-5 transition-transform" />{" "}
-              </Button>
+              <Link to="/industries-we-serve">
+                <Button
+                  size="sm"
+                  variant="text"
+                  style={{
+                    color: NavbarItemColor,
+                    fontFamily: HeadFontFamily,
+                    fontSize: NavbarItemHeadFontSize,
+                    letterSpacing: "0.2px",
+                  }}
+                  className=" font-medium flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-0"
+                >
+                  Industries
+                  <FaChevronDown className="text-[13px] mx-1 opacity-70  h-5 transition-transform" />{" "}
+                </Button>
+              </Link>
             </MenuHandler>
             <MenuList className="p-2 rounded-xl shadow-lg z-50 w-40 mt-2 border border-gray-100 bg-white">
               <MenuItem
@@ -455,9 +456,7 @@ const Navbar = () => {
                   style={{
                     borderRadius: "30px",
                     fontFamily: HeadFontFamily,
-
                   }}
-                  
                 >
                   Login
                 </Button>

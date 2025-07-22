@@ -35,7 +35,7 @@ function HowItWorks() {
           <div
             className="md:w-1/2 w-full flex justify-center relative bg-no-repeat bg-center bg-contain"
             style={{
-              backgroundImage: `url(${BgImage})`, // 👈 Replace with your real path
+              backgroundImage: `url(${BgImage})`, 
               backgroundSize: "500px", // or "cover" or "contain"
               minHeight: "450px",
             }}

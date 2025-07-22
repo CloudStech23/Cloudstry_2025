@@ -11,6 +11,7 @@ import Organization from "./Pages/DigitalCertPage/Sub-Pages/Organization";
 import Institute from "./Pages/DigitalCertPage/Sub-Pages/Institute";
 import ContactUs from "./Pages/ContactUs/ContactUs";
 import RequestDemo from "./Pages/DigitalCertPage/Sections/RequestDemo";
+import Industries from "./Pages/Industries/Industries";
 
 function App() {
   return (
@@ -19,10 +20,11 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/digital-certificate" element={<DigCert />} />
+          <Route path="/industries-we-serve" element={<Industries />} />
           <Route path="/article" element={<Article />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/demo" element={<RequestDemo />} />
-          <Route path="/digital-certificate" element={<DigCert />} />
           <Route
             path="/digital-certificate/universities"
             element={<Unversities />}
