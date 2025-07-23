@@ -46,7 +46,7 @@ function Industries() {
           {/* LEFT TEXT SECTION */}
           <div className="w-full sm:w-[45%] px-[15px]">
             <div
-              className=" rounded-full p-[14.5px] text-center inline-block w-[70px] h-[70px] "
+              className=" rounded-full p-[14.5px] text-center inline-block w-[65px] h-[65px] "
               style={{ background: gradientBG }}
             >
               <img src={utility} alt="" />
@@ -54,7 +54,7 @@ function Industries() {
 
             <div className="  mt-6">
               <h2
-                className="font-semibold leading-[1.1] mb-4 mt-5 text-2xl text-[#1f1446] uppercase "
+                className="font-bold leading-[1.1] mb-4 mt-5 text-[30px] text-[#1f1446] uppercase "
                 style={{ fontFamily: HeadFontFamily }}
               >
                 utilities
@@ -76,7 +76,7 @@ function Industries() {
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-4 mt-[5rem]">
+            <div className="flex flex-wrap gap-4 mt-[5rem] w-full">
               <Link to="/contact-us">
                 <Button
                   size="md"
