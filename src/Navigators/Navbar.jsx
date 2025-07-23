@@ -291,56 +291,66 @@ const Navbar = () => {
               </Link>
             </MenuHandler>
             <MenuList className="p-2 rounded-xl shadow-lg z-50 w-40 mt-2 border border-gray-100 bg-white">
-              <MenuItem
-                className="rounded-lg  hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
-                style={{
-                  color: NavbarSubItemColor,
-                  fontSize: NavbarItemSubHeadFontSize,
-                  fontFamily: NavbarItemSubHeadFontFamily,
-                }}
-              >
-                Utilities
-              </MenuItem>
-              <MenuItem
-                className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
-                style={{
-                  color: NavbarSubItemColor,
-                  fontSize: NavbarItemSubHeadFontSize,
-                  fontFamily: NavbarItemSubHeadFontFamily,
-                }}
-              >
-                Logistic
-              </MenuItem>
-              <MenuItem
-                className="rounded-lg hover:bg-gray-50 text-[16px] px-3 py-2 focus:outline-none focus:ring-0"
-                style={{
-                  color: NavbarSubItemColor,
-                  fontSize: NavbarItemSubHeadFontSize,
-                  fontFamily: NavbarItemSubHeadFontFamily,
-                }}
-              >
-                Education
-              </MenuItem>
-              <MenuItem
-                className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
-                style={{
-                  color: NavbarSubItemColor,
-                  fontSize: NavbarItemSubHeadFontSize,
-                  fontFamily: NavbarItemSubHeadFontFamily,
-                }}
-              >
-                Health Care
-              </MenuItem>
-              <MenuItem
-                className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
-                style={{
-                  color: NavbarSubItemColor,
-                  fontSize: NavbarItemSubHeadFontSize,
-                  fontFamily: NavbarItemSubHeadFontFamily,
-                }}
-              >
-                Government
-              </MenuItem>
+              <Link to="/industries-we-serve#utilities">
+                <MenuItem
+                  className="rounded-lg  hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                  style={{
+                    color: NavbarSubItemColor,
+                    fontSize: NavbarItemSubHeadFontSize,
+                    fontFamily: NavbarItemSubHeadFontFamily,
+                  }}
+                >
+                  Utilities
+                </MenuItem>
+              </Link>
+              <Link to="/industries-we-serve#logistics">
+                <MenuItem
+                  className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                  style={{
+                    color: NavbarSubItemColor,
+                    fontSize: NavbarItemSubHeadFontSize,
+                    fontFamily: NavbarItemSubHeadFontFamily,
+                  }}
+                >
+                  Logistic
+                </MenuItem>
+              </Link>
+              <Link to="/industries-we-serve#education">
+                <MenuItem
+                  className="rounded-lg hover:bg-gray-50 text-[16px] px-3 py-2 focus:outline-none focus:ring-0"
+                  style={{
+                    color: NavbarSubItemColor,
+                    fontSize: NavbarItemSubHeadFontSize,
+                    fontFamily: NavbarItemSubHeadFontFamily,
+                  }}
+                >
+                  Education
+                </MenuItem>
+              </Link>
+              <Link to="/industries-we-serve#healthcare">
+                <MenuItem
+                  className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                  style={{
+                    color: NavbarSubItemColor,
+                    fontSize: NavbarItemSubHeadFontSize,
+                    fontFamily: NavbarItemSubHeadFontFamily,
+                  }}
+                >
+                  Health Care
+                </MenuItem>
+              </Link>
+              <Link to="/industries-we-serve#government">
+                <MenuItem
+                  className="rounded-lg hover:bg-gray-50 px-3 py-2 focus:outline-none focus:ring-0"
+                  style={{
+                    color: NavbarSubItemColor,
+                    fontSize: NavbarItemSubHeadFontSize,
+                    fontFamily: NavbarItemSubHeadFontFamily,
+                  }}
+                >
+                  Government
+                </MenuItem>
+              </Link>
             </MenuList>
           </Menu>
 

@@ -12,11 +12,13 @@ import Institute from "./Pages/DigitalCertPage/Sub-Pages/Institute";
 import ContactUs from "./Pages/ContactUs/ContactUs";
 import RequestDemo from "./Pages/DigitalCertPage/Sections/RequestDemo";
 import Industries from "./Pages/Industries/Industries";
+import ScrollToHashElement from "./CustomeComponents/ScrollToHashEl";
 
 function App() {
   return (
     <React.Fragment>
       <BrowserRouter>
+      <ScrollToHashElement/>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

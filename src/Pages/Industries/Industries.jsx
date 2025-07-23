@@ -11,6 +11,8 @@ import education from "../../assets/Images/Industries/icons/education-icon.svg";
 import healthcare from "../../assets/Images/Industries/icons/healthcare-icon.svg";
 import govt from "../../assets/Images/Industries/icons/government-icon.svg";
 
+/*side images*/
+
 function Industries() {
   return (
     <div className="w-full">
@@ -39,7 +41,7 @@ function Industries() {
       </div>
 
       {/*section-1 -  */}
-      <div className="container mx-auto max-w-[80rem] py-12 ">
+      <div className="container mx-auto max-w-[80rem] py-12 scroll-mt-[70px] " id="utilities">
         <div className="flex flex-wrap items-start  gap-x-[50px]">
           {/* LEFT TEXT SECTION */}
           <div className="w-full sm:w-[45%] px-[15px]">
@@ -142,7 +144,7 @@ function Industries() {
         }}
       >
         {/*section-2 -  */}
-        <div className="container mx-auto max-w-[80rem] py-12">
+        <div className="container mx-auto max-w-[80rem] py-12 scroll-mt-[70px]" id="logistics">
           <div className="flex flex-wrap items-start gap-y-10 gap-x-[50px]">
             {/* LEFT IMAGE SECTION */}
             <div className="w-full sm:w-[50%] px-[15px] mt-6 sm:mt-[4rem]">
@@ -237,7 +239,7 @@ function Industries() {
         </div>
 
         {/* section-3 - */}
-        <div className="container mx-auto max-w-[80rem] py-12 ">
+        <div className="container mx-auto max-w-[80rem] py-12 scroll-mt-[70px]" id="education">
           <div className="flex flex-wrap items-start gap-y-10 gap-x-[50px]">
             {/* LEFT TEXT SECTION */}
             <div className="w-full sm:w-[45%] px-[15px]">
@@ -346,7 +348,8 @@ function Industries() {
         }}
       >
         {/*section-4 -  */}
-        <div className="container mx-auto max-w-[80rem] py-12">
+
+        <div className="container mx-auto max-w-[80rem] py-12 scroll-mt-[70px] " id="healthcare">
           <div className="flex flex-wrap items-start gap-y-10 gap-x-[50px]">
             {/* LEFT IMAGE SECTION */}
             <div className="w-full sm:w-[50%] px-[15px] mt-6 sm:mt-[4rem]">
@@ -441,7 +444,7 @@ function Industries() {
         </div>
 
         {/* section-5 - */}
-        <div className="container mx-auto max-w-[80rem] py-12 ">
+        <div className="container mx-auto max-w-[80rem] py-12 scroll-mt-[70px] " id="government">
           <div className="flex flex-wrap items-start gap-y-10 gap-x-[50px]">
             {/* LEFT TEXT SECTION */}
             <div className="w-full sm:w-[45%] px-[15px]">
