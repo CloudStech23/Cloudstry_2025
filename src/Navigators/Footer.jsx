@@ -53,7 +53,7 @@ function Footer() {
             <ul className="flex flex-col space-y-2">
               <li>
                 <p className="text-gray-500 hover:text-black">
-                  IT Strategy and Architecture Consulting
+                  Manpower Solution
                 </p>
               </li>
               <li>
@@ -63,7 +63,7 @@ function Footer() {
               </li>
               <li>
                 <p className="text-gray-500 hover:text-black">
-                  Manpower Solution
+                  IT Strategy and Architecture Consulting
                 </p>
               </li>
             </ul>
@@ -75,16 +75,18 @@ function Footer() {
             <ul className="flex flex-col space-y-2">
               <Link to="/digital-certificate"></Link>
               <li>
-                <p className="text-gray-500 hover:text-black">
-                  Digital Certificate
-                </p>
+                <p className="text-gray-500 hover:text-black">3PL Solutions</p>
               </li>
               <li>
                 <p className="text-gray-500 hover:text-black">Cattle Aadhar</p>
               </li>
-              <li>
-                <p className="text-gray-500 hover:text-black">3PL Solutions</p>
-              </li>
+              <Link to="/digital-certificate">
+                <li>
+                  <p className="text-gray-500 hover:text-black">
+                    Digital Certificate
+                  </p>
+                </li>
+              </Link>
             </ul>
           </div>
 
@@ -92,21 +94,31 @@ function Footer() {
           <div className="w-full sm:w-1/2 md:w-[20%] mb-6">
             <h5 className="text-xl font-medium mb-3">INDUSTRIES</h5>
             <ul className="flex flex-col space-y-2">
-              <li>
-                <p className="text-gray-500 hover:text-black">Education</p>
-              </li>
-              <li>
-                <p className="text-gray-500 hover:text-black">Utility</p>
-              </li>
-              <li>
-                <p className="text-gray-500 hover:text-black">Government</p>
-              </li>
-              <li>
-                <p className="text-gray-500 hover:text-black">Logistic</p>
-              </li>
-              <li>
-                <p className="text-gray-500 hover:text-black">Health Care</p>
-              </li>
+              <Link to="/industries-we-serve#utilities">
+                <li>
+                  <p className="text-gray-500 hover:text-black">Utility</p>
+                </li>
+              </Link>
+              <Link to="/industries-we-serve#logistics">
+                <li>
+                  <p className="text-gray-500 hover:text-black">Logistic</p>
+                </li>
+              </Link>
+              <Link to="/industries-we-serve#education">
+                <li>
+                  <p className="text-gray-500 hover:text-black">Education</p>
+                </li>
+              </Link>
+              <Link to="/industries-we-serve#healthcare">
+                <li>
+                  <p className="text-gray-500 hover:text-black">Health Care</p>
+                </li>
+              </Link>
+              <Link to="/industries-we-serve#government">
+                <li>
+                  <p className="text-gray-500 hover:text-black">Government</p>
+                </li>
+              </Link>
             </ul>
           </div>
 
@@ -114,16 +126,6 @@ function Footer() {
           <div className="w-full sm:w-1/2 md:w-[20%] mb-6">
             <h5 className="text-xl font-medium mb-3">PAGES</h5>
             <ul className="flex flex-col space-y-2">
-              <li>
-                <p className="text-gray-500 hover:text-black">Resources</p>
-              </li>
-              <Link to="/demo">
-                <li>
-                  <p className="text-gray-500 hover:text-black">
-                    Request a demo
-                  </p>
-                </li>
-              </Link>
               <Link to="https://badgecert.com/login" target="_blank">
                 <li>
                   <p className="text-gray-500 hover:text-black">Login</p>
@@ -139,6 +141,16 @@ function Footer() {
               <Link to="/contact-us">
                 <li>
                   <p className="text-gray-500 hover:text-black">Contact us</p>
+                </li>
+              </Link>
+              <li>
+                <p className="text-gray-500 hover:text-black">Resources</p>
+              </li>
+              <Link to="/demo" >
+                <li>
+                  <p className="text-gray-500 hover:text-black">
+                    Request a demo
+                  </p>
                 </li>
               </Link>
             </ul>

@@ -13,12 +13,14 @@ import ContactUs from "./Pages/ContactUs/ContactUs";
 import RequestDemo from "./Pages/DigitalCertPage/Sections/RequestDemo";
 import Industries from "./Pages/Industries/Industries";
 import ScrollToHashElement from "./CustomeComponents/ScrollToHashEl";
+import ScrollToTop from "./CustomeComponents/ScrollToTop";
 
 function App() {
   return (
     <React.Fragment>
       <BrowserRouter>
-      <ScrollToHashElement/>
+        <ScrollToHashElement />
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

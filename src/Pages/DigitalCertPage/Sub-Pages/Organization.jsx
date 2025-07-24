@@ -246,7 +246,7 @@ function Organization() {
             authentic, and aligned with your brand. From seamless badge creation
             and issuing to real-time tracking and analytics, Cloudstry Tech
             simplifies the entire credentialing process—empowering your
-            workforce and enhancing your organizational credibility
+            workforce and enhancing your organizational credibility.
           </p>
         </div>
       </div>

@@ -5,6 +5,8 @@ import {
   SubTextFontFamily,
 } from "../../../CustomeComponents/Theme";
 import bgimg from "../../../assets/Images/HomePage/industries_bg.svg";
+ 
+
 
 function IndustriesWeCater() {
   return (
@@ -89,7 +91,7 @@ function IndustriesWeCater() {
                 className="text-color text-[15px] hover-card-text mt-2 text-center"
                 style={{ fontFamily: SubTextFontFamily }}
               >
-                We support governance with platforms like Cattle Aadhaar,
+                We support governance with platforms like Cattle Aadhar,
                 driving transparency, traceability, and efficient delivery of
                 subsidies and welfare schemes.
               </p>
@@ -107,7 +109,7 @@ function IndustriesWeCater() {
               >
                 Our demand management and 3PL solutions optimize inventory,
                 forecasting, and fulfilment -boosting agility and reducing
-                operational costs in supply chains
+                operational costs in supply chains.
               </p>
             </div>
             <div className="relative sm:w-[210px] w-[230px] hover-card rounded-xl bg-white p-5 pt-10 pb-6">

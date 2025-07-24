@@ -22,7 +22,7 @@ import {
 } from "react-icons/fa";
 
 import ContactSection from "../Sections/ContactSection";
-import callToActionBg from "../../../assets/CommonIMG/call_to_action_bg.jpg"
+import callToActionBg from "../../../assets/CommonIMG/call_to_action_bg.jpg";
 
 const AccordionItem = ({ question, answer, isOpen, onClick }) => {
   return (
@@ -367,8 +367,9 @@ function Institute() {
             className="text-white text-xl md:text-[34px] text-center font-semibold mb-6 uppercase"
             style={{ fontFamily: HeadFontFamily, lineHeight: "1.2" }}
           >
-            Get in touch to implement secure, verifiable digital certificates
-            and elevate your university’s recognition system
+            Get in touch with us today to implement secure, verifiable digital
+            certificates for institutes and empower your students with
+            recognized digital badges and credentials
           </h2>
 
           <div className="gap-4 flex flex-row items-center justify-center mt-10 ">
@@ -398,16 +399,16 @@ function Institute() {
               </Button>
             </Link>
             <Link to="/digital-certificate/organizations">
-            <Button
-              size="md"
-              className="rounded-full  text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-to-r hover:from-white hover:shadow-md  hover:to-white hover:text-[#1273be] hover:border-[#085d9e] transition-all duration-300"
-              style={{
-                borderRadius: "30px",
-                fontFamily: HeadFontFamily,
-              }}
-            >
-              DIGITAL CERTIFICATE FOR ORGANIZATIONS
-            </Button>
+              <Button
+                size="md"
+                className="rounded-full  text-[14px] text-white bg-gradient-to-r from-[#085d9e] to-[#00c1de] font-semibold  hover:bg-to-r hover:from-white hover:shadow-md  hover:to-white hover:text-[#1273be] hover:border-[#085d9e] transition-all duration-300"
+                style={{
+                  borderRadius: "30px",
+                  fontFamily: HeadFontFamily,
+                }}
+              >
+                DIGITAL CERTIFICATE FOR ORGANIZATIONS
+              </Button>
             </Link>
           </div>
         </div>

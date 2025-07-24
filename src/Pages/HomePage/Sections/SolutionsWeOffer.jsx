@@ -24,7 +24,7 @@ const ServicesData = [
     title: "IT SOFTWARE AND MAINTENANCE",
     icon: <LuLaptopMinimalCheck size={30} />,
     color: "rose-600",
-    text: `We develop custom software solutions designed to fit your specific requirements and business processes. From development to deployment and ongoing maintenance, our services ensure smooth performance, enhanced productivity, and long-term reliability - keeping your systems secure, scalable, and aligned with evolving goals`,
+    text: `We develop custom software solutions designed to fit your specific requirements and business processes. From development to deployment and ongoing maintenance, our services ensure smooth performance, enhanced productivity, and long-term reliability - keeping your systems secure, scalable, and aligned with evolving goals.`,
   },
   {
     title: "MANPOWER SOLUTION",
@@ -38,7 +38,7 @@ const ProductData = [
     title: "DIGITAL CERTIFICATE",
     icon: <FaHandshake size={30} />,
     color: "green-600",
-    text: `Say goodbye to paper certificates! Join leading institutions and millions of professionals embracing Cloudtry Tech - your trusted partner in secure digital badging and credentialing. Enhance credibility, simplify verification, and empower earners to showcase achievements with confidence in today’s fast-paced digital world`,
+    text: `Say goodbye to paper certificates! Join leading institutions and millions of professionals embracing Cloudstry Tech - your trusted partner in secure digital badging and credentialing. Enhance credibility, simplify verification, and empower earners to showcase achievements with confidence in today’s fast-paced digital world.`,
   },
   {
     title: "CATTLE AADHAR",

@@ -73,7 +73,7 @@ function WhyChooseUs() {
                   </h4>
                   <p className="text-gray-600 text-left w-full sm:w-[70%] text-[14px]">
                     We customize our services to perfectly fit your unique
-                    business needs and challenges
+                    business needs and challenges.
                   </p>
                 </div>
               </div>
@@ -90,7 +90,7 @@ function WhyChooseUs() {
                   </h4>
                   <p className="text-gray-600 text-left w-full sm:w-[70%] text-[14px]">
                     Our skilled professionals bring years of industry experience
-                    and deep technical knowledge
+                    and deep technical knowledge.
                   </p>
                 </div>
               </div>
@@ -107,7 +107,7 @@ function WhyChooseUs() {
                   </h4>
                   <p className="text-gray-600 text-left w-full sm:w-[70%] text-[14px]">
                     We leverage the latest tools and innovations to ensure
-                    future-ready solutions
+                    future-ready solutions.
                   </p>
                 </div>
               </div>
