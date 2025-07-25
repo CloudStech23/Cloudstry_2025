@@ -11,7 +11,10 @@ import education from "../../assets/Images/Industries/icons/education-icon.svg";
 import healthcare from "../../assets/Images/Industries/icons/healthcare-icon.svg";
 import govt from "../../assets/Images/Industries/icons/government-icon.svg";
 
-import utility1 from "../../assets/Images/Industries/utilities.jpg"
+import utility1 from "../../assets/Images/Industries/utilities1.jpg";
+import logistic1 from "../../assets/Images/Industries/logistic1.jpg";
+import logistic2 from "../../assets/Images/Industries/logistic2.jpg";
+import government2 from "../../assets/Images/Industries/government2.jpeg"
 
 function Industries() {
   return (
@@ -42,17 +45,17 @@ function Industries() {
 
       {/*section-1 -  */}
       <div
-        className="container mx-auto max-w-[80rem] py-12 scroll-mt-[70px] "
+        className="container px-6 max-w-[80rem] py-12 scroll-mt-[70px]"
         id="utilities"
       >
-        <div className="flex flex-wrap items-start  gap-x-[50px]">
+        <div className="flex flex-wrap items-start gap-y-10 gap-x-[50px]">
           {/* LEFT TEXT SECTION */}
-          <div className="w-full sm:w-[45%] px-[15px]">
+          <div className="w-full sm:w-[50.5%] ">
             <div
               className=" rounded-full p-[10.5px] text-center inline-block w-[55px] h-[55px] "
               style={{ background: gradientBG }}
             >
-              <img src={utility} alt="" />
+              <img src={healthcare} alt="" />
             </div>
 
             <div className="  mt-6">
@@ -62,20 +65,8 @@ function Industries() {
               >
                 utilities
               </h2>
-              <p className="text-[#333] text-color text-[16px] mb-4 leading-relaxed">
-                Cloudstry Tech empowers utility providers—across power, water,
-                gas, and waste management—with targeted IT strategy consulting,
-                manpower solutions, and custom software services. Our consulting
-                experts work closely with utility organizations to modernize
-                legacy systems, align IT investments with business goals, and
-                drive digital transformation. We offer access to skilled and
-                reliable professionals through our staffing solutions, helping
-                utilities address workforce shortages and enhance field
-                operations. Our tailored software solutions support asset
-                management, billing, monitoring, and compliance
-                tracking—enabling smarter, more efficient utility services. With
-                Cloudstry Tech, utility companies can innovate confidently while
-                maintaining service continuity and regulatory compliance.
+              <p className="text-[#333] mb-4 leading-relaxed">
+                Cloudstry Tech empowers utility providers—across power, water, gas, and waste management—with targeted IT strategy consulting, manpower solutions, and custom software services. Our consulting experts work closely with utility organizations to modernize legacy systems, align IT investments with business goals, and drive digital transformation. We offer access to skilled and reliable professionals through our staffing solutions, helping utilities address workforce shortages and enhance field operations. Our tailored software solutions support asset management, billing, monitoring, and compliance tracking—enabling smarter, more efficient utility services. With Cloudstry Tech, utility companies can innovate confidently while maintaining service continuity and regulatory compliance.
               </p>
             </div>
 
@@ -89,7 +80,7 @@ function Industries() {
                     fontFamily: HeadFontFamily,
                   }}
                 >
-                  It strategy
+                  software solutions
                 </Button>
               </Link>
               <Link to="/contact-us">
@@ -101,9 +92,10 @@ function Industries() {
                     fontFamily: HeadFontFamily,
                   }}
                 >
-                  it software
+                  It consulting
                 </Button>
               </Link>
+
               <Link to="/contact-us">
                 <Button
                   size="md"
@@ -120,17 +112,17 @@ function Industries() {
           </div>
 
           {/* RIGHT IMAGE SECTION */}
-          <div className="w-full sm:w-[50%] px-[15px] mt-[6.2rem]">
+          <div className="w-full sm:w-[45%] px-[15px] mt-[6.2rem]">
             <div className="relative pb-[80%]">
               <img
-                className="absolute top-0 left-0 rounded-[10px] max-w-[390px] w-full h-auto object-cover shadow-xl"
+                className="absolute top-[-14%] left-[-2.2rem] rounded-[10px] max-w-[390px] w-full h-auto object-cover shadow-xl"
                 src={utility1}
                 alt="Professional Services Finance"
               />
 
               <img
-                className="absolute right-0 bottom-12 z-[2] rounded-[10px]   max-w-[390px] w-full h-auto object-cover shadow-xl"
-                src="https://www.maxburst.com/wp-content/uploads/2021/11/Professional-Services-Finance-1299055072.jpg"
+                className="absolute right-0 bottom-9 z-[2] rounded-[10px]   max-w-[390px] w-full h-auto object-cover shadow-xl"
+                src="https://thumbs.dreamstime.com/b/electricians-laptop-computer-happy-using-electrical-substation-43815187.jpg"
                 alt="Professional Services Finance"
               />
             </div>
@@ -153,16 +145,17 @@ function Industries() {
         >
           <div className="flex flex-wrap items-start gap-y-10 gap-x-[50px]">
             {/* LEFT IMAGE SECTION */}
-            <div className="w-full sm:w-[50%] px-[15px] mt-6 sm:mt-[4rem]">
+            <div className="w-full sm:w-[45%] px-[15px] mt-[6.2rem]">
               <div className="relative pb-[80%]">
                 <img
-                  className="absolute top-0 left-0 rounded-[10px] max-w-[390px] w-full h-auto object-cover shadow-xl"
-                  src="https://www.maxburst.com/wp-content/uploads/2021/11/Professional-Services-Finance-687687166.jpg"
+                  className="absolute top-[-14%] left-0 rounded-[10px] max-w-[390px] w-full h-auto object-cover shadow-xl"
+                  src={logistic1}
                   alt="Professional Services Finance"
                 />
+
                 <img
-                  className="absolute right-0 bottom-12 z-[2] rounded-[10px]   max-w-[390px] w-full h-auto object-cover shadow-xl"
-                  src="https://www.maxburst.com/wp-content/uploads/2021/11/Professional-Services-Finance-1299055072.jpg"
+                  className="absolute right-0 bottom-9 z-[2] rounded-[10px]   max-w-[390px] w-full h-auto object-cover shadow-xl"
+                  src={logistic2}
                   alt="Professional Services Finance"
                 />
               </div>
@@ -222,12 +215,12 @@ function Industries() {
 
         {/* section-3 - */}
         <div
-          className="container  mx-auto max-w-[80rem] py-12 scroll-mt-[70px]"
+          className="container px-6 max-w-[80rem] py-12 scroll-mt-[70px]"
           id="healthcare"
         >
           <div className="flex flex-wrap items-start gap-y-10 gap-x-[50px]">
             {/* LEFT TEXT SECTION */}
-            <div className="w-full sm:w-[46.5%] ">
+            <div className="w-full sm:w-[50.5%] ">
               <div
                 className=" rounded-full p-[10.5px] text-center inline-block w-[55px] h-[55px] "
                 style={{ background: gradientBG }}
@@ -302,17 +295,17 @@ function Industries() {
             </div>
 
             {/* RIGHT IMAGE SECTION */}
-            <div className="w-full sm:w-[49.5%] px-[15px] mt-[6.2rem]">
+            <div className="w-full sm:w-[45%] px-[15px] mt-[6.2rem]">
               <div className="relative pb-[80%]">
                 <img
-                  className="absolute top-0 left-[-0.5rem] rounded-[10px] max-w-[390px] w-full h-auto object-cover shadow-xl"
-                  src="https://www.maxburst.com/wp-content/uploads/2021/11/Professional-Services-Finance-687687166.jpg"
+                  className="absolute top-[-14%] left-[-2.2rem] rounded-[10px] max-w-[390px] w-full h-auto object-cover shadow-xl"
+                  src="https://images.pexels.com/photos/5327916/pexels-photo-5327916.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt="Professional Services Finance"
                 />
 
                 <img
                   className="absolute right-0 bottom-9 z-[2] rounded-[10px]   max-w-[390px] w-full h-auto object-cover shadow-xl"
-                  src="https://www.maxburst.com/wp-content/uploads/2021/11/Professional-Services-Finance-1299055072.jpg"
+                  src="https://st.depositphotos.com/1011643/1956/i/450/depositphotos_19562845-stock-photo-friendly-young-nurse-talking-to.jpg"
                   alt="Professional Services Finance"
                 />
               </div>
@@ -489,13 +482,13 @@ function Industries() {
               <div className="relative pb-[80%]">
                 <img
                   className="absolute top-0 left-0 rounded-[10px] max-w-[390px] w-full h-auto object-cover shadow-xl"
-                  src="https://www.maxburst.com/wp-content/uploads/2021/11/Professional-Services-Finance-687687166.jpg"
+                  src="https://www.openaccessgovernment.org/wp-content/uploads/2018/04/dreamstime_s_38213697.jpg"
                   alt="Professional Services Finance"
                 />
 
                 <img
                   className="absolute right-0 bottom-12 z-[2] rounded-[10px]   max-w-[390px] w-full h-auto object-cover shadow-xl"
-                  src="https://www.maxburst.com/wp-content/uploads/2021/11/Professional-Services-Finance-1299055072.jpg"
+                  src={government2}
                   alt="Professional Services Finance"
                 />
               </div>
